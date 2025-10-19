@@ -1,0 +1,74 @@
+[
+    {
+        "Name": "Common",
+        "Content": [],
+        "SubItems": []
+    },
+    {
+        "Name": "Uncommon",
+        "Content": [],
+        "SubItems": [
+            {
+                "Name": "Elemental Gem",
+                "Content": [
+                    {
+                        "Type": "Title",
+                        "Location": "Full",
+                        "Content": "Elemental Gem"
+                    },
+                    {
+                        "Type": "Table",
+                        "Location": "Right",
+                        "Content": [
+                            [
+                                "Gem",
+                                "Summoned Elemental"
+                            ],
+                            [
+                                "Blue sapphire",
+                                "Air Elemental"
+                            ],
+                            [
+                                "Yellow diamond",
+                                "Earth Elemental"
+                            ],
+                            [
+                                "Red corundum",
+                                "Fire Elemental"
+                            ],
+                            [
+                                "Emerald",
+                                "Water Elemental"
+                            ]
+                        ]
+                    },
+                    {
+                        "Type": "Text",
+                        "Location": "Left",
+                        "Content": "This gem contains a mote of elemental energy. When you use an action to break the gem, an elemental is summoned as if you had cast the conjure elemental spell, and the gem's magic is lost. The type of gem determines the elemental summoned by the spell."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Rare",
+        "Content": [],
+        "SubItems": []
+    },
+    {
+        "Name": "Very Rare",
+        "Content": [],
+        "SubItems": []
+    },
+    {
+        "Name": "Legendary",
+        "Content": [],
+        "SubItems": []
+    },
+    {
+        "Name": "Artifacts",
+        "Content": [],
+        "SubItems": []
+    }
+]

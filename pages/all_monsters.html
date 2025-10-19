@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>The Lost Compendium - All Monsters</title>
+		<link href="../styles.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<script src="../scripts/all_monsters.js" type="module"></script>
+		<script src="../scripts/script.js" type="module"></script>
+		<script id="replace_with_navbar" src="../navbar/nav.js" type="module"></script>
+		<div class="tiles" style="--columns:6">
+			<div style="grid-column: span 2" class="container">
+				<label for="name">Name</label>
+				<input type="text" id="name" style="float: right; width: 90%; height: 19px">
+			</div>
+			<div class="container">
+				<p>Min CR</p>
+				<select id="min_cr" style="float: right">
+					<option>All</option>
+					<option>0</option>
+					<option value="0.125">1/8</option>
+					<option value="0.25">1/4</option>
+					<option value="0.5">1/2</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+					<option>11</option>
+					<option>12</option>
+					<option>13</option>
+					<option>14</option>
+					<option>15</option>
+					<option>16</option>
+					<option>17</option>
+					<option>18</option>
+					<option>19</option>
+					<option>20</option>
+					<option>21</option>
+					<option>22</option>
+					<option>23</option>
+					<option>24</option>
+					<option>25</option>
+					<option>26</option>
+					<option>27</option>
+					<option>28</option>
+					<option>29</option>
+					<option>30</option>
+				</select>
+			</div>
+			<div class="container">
+				<p>Max CR</p>
+				<select id="max_cr" style="float: right">
+					<option>All</option>
+					<option>0</option>
+					<option value="0.125">1/8</option>
+					<option value="0.25">1/4</option>
+					<option value="0.5">1/2</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+					<option>11</option>
+					<option>12</option>
+					<option>13</option>
+					<option>14</option>
+					<option>15</option>
+					<option>16</option>
+					<option>17</option>
+					<option>18</option>
+					<option>19</option>
+					<option>20</option>
+					<option>21</option>
+					<option>22</option>
+					<option>23</option>
+					<option>24</option>
+					<option>25</option>
+					<option>26</option>
+					<option>27</option>
+					<option>28</option>
+					<option>29</option>
+					<option>30</option>
+				</select>
+			</div>
+			<div class="container">
+				<p>Type</p>
+				<select id="type" style="float: right">
+					<option>All</option>
+					<option>Aberration</option>
+					<option>Elemental</option>
+					<option>Monstrosity</option>
+					<option>Fiend</option>
+					<option>Ooze</option>
+					<option>Fey</option>
+					<option>Construct</option>
+					<option>Giant</option>
+					<option>Celestial</option>
+					<option>Dragon</option>
+					<option>Undead</option>
+					<option>Plant</option>
+				</select>
+			</div>
+			<div class="container">
+				<p>Size</p>
+				<select id="size" style="float: right">
+					<option>All</option>
+					<option>Tiny</option>
+					<option>Small</option>
+					<option>Medium</option>
+					<option>Large</option>
+					<option>Gargantuan</option>
+				</select>
+			</div>
+		</div>
+		<div style="height: 107vh">
+			<div id="monster_box" class="scrollbox" style="--above: 256px; margin-left: 16px; width: calc(100% - 16px); display: grid; grid-template-columns: 1fr 1fr; align-content: start">
+				<div class="monster-row-short" style="font-weight: bold">
+					<div style="border-color: var(--shadow)">Name</div>
+					<div style="border-color: var(--shadow)">CR</div>
+					<div style="border-color: var(--shadow)">Type</div>
+					<div style="border-color: var(--shadow)">Size</div>
+				</div><div class="monster-row-short" style="font-weight: bold">
+					<div style="border-color: var(--shadow)">Name</div>
+					<div style="border-color: var(--shadow)">CR</div>
+					<div style="border-color: var(--shadow)">Type</div>
+					<div style="border-color: var(--shadow)">Size</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

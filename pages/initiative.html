@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>The Lost Compendium - Initiative Tracker</title>
+		<link href="../styles.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<script src="../scripts/init.js" type="module"></script>
+		<script src="../scripts/script.js" type="module"></script>
+		<script id="replace_with_navbar" src="../navbar/nav.js" type="module"></script>
+		<div class="sidebar no-overflow">
+			<div class="label">
+				<p>CR</p>
+				<div>
+					<select id="cr_options">
+						<option>All</option>
+						<option>0</option>
+						<option value="0.125">1/8</option>
+						<option value="0.25">1/4</option>
+						<option value="0.5">1/2</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+						<option>9</option>
+						<option>10</option>
+						<option>11</option>
+						<option>12</option>
+						<option>13</option>
+						<option>14</option>
+						<option>15</option>
+						<option>16</option>
+						<option>17</option>
+						<option>18</option>
+						<option>19</option>
+						<option>20</option>
+						<option>21</option>
+						<option>22</option>
+						<option>23</option>
+						<option>24</option>
+						<option>25</option>
+						<option>26</option>
+						<option>27</option>
+						<option>28</option>
+						<option>29</option>
+						<option>30</option>
+					</select>
+				</div>
+			</div>
+			<div class="label">
+				<p>Type</p>
+				<div>
+					<select id="type_options">
+						<option>All</option>
+						<option>Aberration</option>
+						<option>Elemental</option>
+						<option>Monstrosity</option>
+						<option>Fiend</option>
+						<option>Ooze</option>
+						<option>Fey</option>
+						<option>Construct</option>
+						<option>Giant</option>
+						<option>Celestial</option>
+						<option>Dragon</option>
+						<option>Undead</option>
+						<option>Plant</option>
+					</select>
+				</div>
+			</div>
+			<div class="label">
+				<p>Size</p>
+				<div>
+					<select id="size_options">
+						<option>All</option>
+						<option>Tiny</option>
+						<option>Small</option>
+						<option>Medium</option>
+						<option>Large</option>
+						<option>Gargantuan</option>
+					</select>
+				</div>
+			</div>
+			<div class="scrollbox" style="--above: calc(52px * 3)" id="monster_scroll">
+				<div class="sidebar-item">hi</div>
+			</div>
+		</div>
+		<div>
+			<button id="manual_button">Add Manually</button>
+			<button id="reload_button">Reload</button>
+			<button id="reset_button">Reset</button>
+			<button id="difficulty_button" style="float:right;margin-right: 8px">Difficulty</button>
+			<div style="height: 111vh">
+				<div id="init_box" class="scrollbox" style="--above: 256px">
+					<div class="monster-row" style="font-weight: bold">
+						<div style="border-color: var(--shadow)">Init</div>
+						<div style="border-color: var(--shadow)">Name</div>
+						<div style="border-color: var(--shadow)">AC</div>
+						<div style="grid-column: span 5; border-color: var(--shadow)">HP</div>
+						<div style="grid-column: span 2; border-color: var(--shadow)">Conditions</div>
+						<div style="border-color: var(--shadow)"></div>
+						<div style="border: none">Link</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

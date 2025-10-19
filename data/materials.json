@@ -1,0 +1,32 @@
+[
+    {
+        "Name": "Metals",
+        "Content": [],
+        "SubItems": [
+            {
+                "Name": "Copper",
+                "Content": []
+            },
+            {
+                "Name": "Iron",
+                "Content": []
+            },
+            {
+                "Name": "Silver",
+                "Content": []
+            },
+            {
+                "Name": "Electrum",
+                "Content": []
+            },
+            {
+                "Name": "Gold",
+                "Content": []
+            },
+            {
+                "Name": "Platinum",
+                "Content": []
+            }
+        ]
+    }
+]

@@ -1,0 +1,83 @@
+[
+    {
+        "Name": "Nature Gods",
+        "Content": [],
+        "SubItems": [
+            {
+                "Name": "Hawthorne",
+                "Content": [
+                    {
+                        "Type": "Title",
+                        "Location": "Left",
+                        "Content": "Hawthorne"
+                    },
+                    {
+                        "Type": "Values",
+                        "Location": "Right",
+                        "Content": {
+                            "Main Temple Location": "Hawthorne",
+                            "Patron City": "Hawthorne",
+                            "": ""
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "Ocean Gods",
+        "Content": [
+            {
+                "Type": "New",
+                "Location": "Full",
+                "Content": []
+            }
+        ],
+        "SubItems": [
+            {
+                "Name": "Elvarill",
+                "Content": [
+                    {
+                        "Type": "Title",
+                        "Location": "Full",
+                        "Content": "Elvarill"
+                    },
+                    {
+                        "Type": "Text",
+                        "Location": "Left",
+                        "Content": "God of Ocean trade and peace,keeps order across the sea by helping people share goods"
+                    },
+                    {
+                        "Type": "Values",
+                        "Location": "Right",
+                        "Content": {
+                            "Domain": "Order, Peace"
+                        }
+                    }
+                ]
+            },
+            {
+                "Name": "Devan",
+                "Content": [
+                    {
+                        "Type": "Title",
+                        "Location": "Full",
+                        "Content": "Devan"
+                    },
+                    {
+                        "Type": "Text",
+                        "Location": "Left",
+                        "Content": "God of chaose upon the high seas, controls goods to purpetuate war"
+                    },
+                    {
+                        "Type": "Values",
+                        "Location": "Right",
+                        "Content": {
+                            "Domain": "War"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Untitled Document</title>
+		<link href="../styles.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<script src="../scripts/monster.js" type="module"></script>
+		<script src="../scripts/script.js" type="module"></script>
+		<script id="replace_with_navbar" src="../navbar/nav.js" type="module"></script>
+		<div style="float: right; max-height: 90vh">
+			<img id="thin" class="thin">
+			<img id="normal" class="normal">
+			<img id="wide" class="wide">
+		</div>
+		<div class="monster-box">
+			<div class="swap" id="units"><div class="status" state="off">ft</div></div>
+			<h1 id="name">Monster Name</h1>
+			<h2 id="sta">Size type, alignment</h2>
+			<div><strong>AC</strong> <t id="ac">0</t></div>
+			<div><strong>HP</strong> <t id="hp">0 (0d0 + 0)</t></div>
+			<div><strong>Speed</strong> <t id="speed">0ft</t></div>
+			<div><strong>Initiative</strong> <t id="init">+3 (13)</t><br></div>
+			<table id="stats"></table>
+			<div id="skill_div"><strong>Skills</strong> <t id="skill"></t></div>
+			<div><strong>Senses</strong> <t id="sense"></t></div>
+			<div><strong>Languages</strong> <t id="lang"></t></div>
+			<div><strong>CR</strong> <t id="cr"></t></div>
+			<div id="Resistances_div"><strong>Resistances</strong> <t id="Resistances"></t></div>
+			<div id="Immunities_div"><strong>Immunities</strong> <t id="Immunities"></t></div>
+			<div id="Vulnerabilities_div"><strong>Vulnerabilities</strong> <t id="Vulnerabilities"></t></div>
+			<div style="padding: 0" id="features"></div>
+		</div>
+	</body>
+</html>

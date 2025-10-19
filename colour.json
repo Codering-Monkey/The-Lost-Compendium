@@ -1,0 +1,68 @@
+{
+    "Forest": {
+        "--dark": "#557153",
+        "--dark-text": "#ffffff",
+        "--dark-hover": "#8DBF8B",
+        "--shadow": "#808080",
+        "--light": "#f9f9f9",
+        "--light-hover": "#ECECEC",
+        "--light-text": "#000000",
+        "--background": "#DAE3BB",
+        "--contrast": "#FFD159"
+    },
+    "Cliffside": {
+        "--dark": "#023246",
+        "--dark-text": "#ffffff",
+        "--dark-hover": "#287094",
+        "--shadow": "#808080",
+        "--light": "#f9f9f9",
+        "--light-hover": "#ECECEC",
+        "--light-text": "#000000",
+        "--background": "#E5F1F6",
+        "--contrast": "#F95A37"
+    },
+    "Pop": {
+        "--dark": "#7E395C",
+        "--dark-text": "#ffffff",
+        "--dark-hover": "#D55F8F",
+        "--shadow": "#333745",
+        "--light": "#FFBD46",
+        "--light-hover": "#FF9A00",
+        "--light-text": "#000000",
+        "--background": "#F7ECDF",
+        "--contrast": "#76E2DC"
+    },
+    "Formal": {
+        "--dark": "#2C2627",
+        "--dark-text": "#ffffff",
+        "--dark-hover": "#BC2C3d",
+        "--shadow": "#333745",
+        "--light": "#F9476C",
+        "--light-hover": "#FF8195",
+        "--light-text": "#000000",
+        "--background": "#F8F3E6",
+        "--contrast": "#731421"
+    },
+    "Darcula": {
+        "--dark": "#2B2B2B",
+        "--dark-text": "#A9B7C6",
+        "--dark-hover": "#323232",
+        "--shadow": "#5F864C",
+        "--light": "#3C3F41",
+        "--light-hover": "#313335",
+        "--light-text": "#A9B7C6",
+        "--background": "#222222",
+        "--contrast": "#C55C2D"
+    },
+    "Fantasy": {
+        "--dark": "#18303A",
+        "--dark-text": "#E9EEF0",
+        "--dark-hover": "#2E4751",
+        "--shadow": "#61A2BD",
+        "--light": "#F7EEDA",
+        "--light-hover": "#DDE4E4",
+        "--light-text": "#18303A",
+        "--background": "#FEFDFB",
+        "--contrast": "#E8BB50"
+    }
+}

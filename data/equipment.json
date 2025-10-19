@@ -1,0 +1,28 @@
+[
+    {
+        "Name": "Weapons",
+        "Content": [],
+        "SubItems": [
+            {
+                "Name": "Simple Melee",
+                "Content": [],
+                "SubItems": []
+            },
+            {
+                "Name": "Simple Ranged",
+                "Content": [],
+                "SubItems": []
+            },
+            {
+                "Name": "Martial Melee",
+                "Content": [],
+                "SubItems": []
+            },
+            {
+                "Name": "Martial Ranged",
+                "Content": [],
+                "SubItems": []
+            }
+        ]
+    }
+]

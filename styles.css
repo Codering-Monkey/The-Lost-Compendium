@@ -1,0 +1,712 @@
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&family=Outfit:wght@100..900&display=swap');
+
+:root {}
+
+* {
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+	scrollbar-width: 10px;	
+	scrollbar-color: var(--dark) var(--dark-hover); 
+	font-family: "Markazi Text", Sans-serif;
+}
+
+body {
+	background-color: var(--background);
+}
+
+p {
+	padding: 8px;
+	font-size: 1em;
+	color: var(--light-text)
+}
+
+a {
+	color: var(--contrast)
+}
+
+
+a:hover {
+	color: var(--shadow)
+}
+
+button { 
+	padding: 8px;
+	margin: 8px 0px 8px 8px;
+	width: 100px;
+	background-color: var(--light);
+	color: var(--light-text)
+}
+
+button:hover {
+	box-shadow: 2px 2px var(--shadow);
+	transition: box-shadow 0.3s;
+	background-color: var(--light-hover)
+}
+
+button:active {
+	background-color: var(--contrast)
+}
+
+input {
+	accent-color: var(--contrast);
+}
+
+select {
+	background-color: var(--dark);
+	color: var(--dark-text);
+}
+
+hr {
+	border: solid 1px var(--light)
+}
+
+option {
+	font-size: 1em
+}
+
+td, th {
+	text-align: center
+}
+
+.overlay {
+	position: fixed; 
+	width: 100%; 
+	height: 100%; 
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.5); 
+	z-index: 2; 
+	cursor: pointer; 
+	align-content: center;
+}
+
+.overlay-box {
+	min-width: 300px;
+	background-color: var(--dark);
+	overflow-y: scroll;
+	max-height: 80%;
+	color: var(--dark-text);
+	width: auto;
+	height: auto;
+	max-width: fit-content;
+	text-align: center;
+	margin: 0 auto;
+	padding: 8px;
+	box-shadow: 4px 4px var(--shadow)
+}
+
+.overlay-box label {
+	float: left;
+	margin: 8px
+}
+
+.overlay-box input {
+	float: right;
+	margin: 8px;
+	min-width: 200px
+}
+
+.navbar ul {
+ 	list-style-type: none;
+ 	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+	background-color: var(--dark);
+	color: white;
+}
+
+.navbar li {
+  	float: left;
+}
+
+.navbar li:not(h1) a, .navbar .dropdown-button, .navbar li > h1 a{
+  	display: flex;
+  	color: var(--dark-text);
+  	text-align: center;
+  	padding: 14px 16px;
+	font-size: 3vh;
+  	text-decoration: none;
+  	width: 5vw;
+	height: 7vh;
+  	margin: 0px;
+  	align-items: center;
+  	justify-content: center;
+}
+
+.navbar li h1 a {
+	font-size: 5vh;
+	width: 20vw;
+	overflow: hidden;
+	text-decoration: none
+}
+
+.navbar li > h1:hover a {
+	color: var(--contrast)
+}
+
+.navbar li > a:hover, .navbar .dropdown:hover .navbar .dropdown-button, .navbar, .dropdown:has(.dropdown-content a:hover) .dropdown-button {
+  	background-color: var(--dark-hover);
+}
+
+.navbar li .dropdown {
+  	display: inline-block;
+}
+
+.navbar .dropdown-content {
+  	display: none;
+  	position: absolute;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.navbar .dropdown-content a {
+	background-color: var(--light);
+  	z-index: 1;
+	width: 5vw;
+	font-size: 2.5vh;
+	box-shadow: 2px 0px var(--shadow)
+}
+
+.navbar .dropdown-content a:last-child {
+	box-shadow: 2px 0px var(--shadow), 2px 2px var(--shadow)
+}
+
+.navbar .dropdown:hover .dropdown-content {
+	animation: dropdown-slide 1.5s
+}
+
+.navbar .dropdown-content a {
+	color: var(--light-text);
+  	padding: 0px 16px;
+  	text-decoration: none;
+  	display: flex;
+  	text-align: center;
+	overflow: hidden;
+	align-items: center;
+  	justify-content: center;
+}
+
+.navbar .dropdown-content a:hover {
+	background-color: var(--light-hover);
+}
+
+.navbar .dropdown:hover .dropdown-content {
+  	display: block;
+	height: 80vh;
+	width: 16vw
+}
+
+.body {
+	scrollbar-width: 10px;	
+	scrollbar-color: var(--dark) var(--dark-hover); 
+	overflow-y: scroll;
+	height:89vh;
+}
+
+@keyframes dropdown-slide {
+	from {
+		height: 0vh
+	}
+	to {
+		height: 80vh
+	}
+}
+
+.sidebar {
+	width: 20%;
+	background-color: var(--dark-hover);
+	padding-bottom: 16px;
+	height: calc(90vh - 16px);
+	float: left;
+	list-style-type: none;
+	scrollbar-width: 10px;	
+	scrollbar-color: var(--dark) var(--dark-hover); 
+	overflow-y: scroll;
+}
+
+.sidebar select {
+	width: calc(100% - 26px);
+	padding: 8px;
+	font-size: 16px;
+	margin: 8px;
+	background-color: var(--dark);
+	color: var(--dark-text);
+	height: 36px
+}
+
+.sidebar > .label {
+	width: 100% !important
+}
+
+.sidebar > .label > p {
+	float: left;
+	width: calc(20% - 32px);
+	height: 36px;
+	font-size: 16px;
+	align-content: center;
+	color: var(--dark-text)
+}
+
+.sidebar > .label > div {
+	float: right;
+	width: calc(80% - 32px)
+}
+
+.sidebar-item {
+	color: var(--dark-text);
+	font-size: 16px;
+	padding: 8px 8px 8px 8px;
+	margin: 0px 0px 0px calc(calc(var(--indent) - 1) * 16px);
+	border-left: var(--contrast) solid;
+	cursor: pointer
+}
+
+.sidebar-multiitem > .sidebar-item > div:nth-child(1) {
+	float: right;
+	width: 20px;
+	height: 20px;
+	text-align: center; 
+	cursor: pointer;
+	transition: box-shadow 0.3s
+}
+
+.sidebar-multiitem > .sidebar-item > div:nth-child(1):hover {
+	background-color: var(--contrast);
+	box-shadow: 2px 2px var(--shadow);
+}
+
+.sidebar-item:hover:not(:has(*:hover)) {
+	background-color: var(--contrast)
+}
+
+.tiles {
+	display: grid;
+	grid-template-columns: repeat(var(--columns), 1fr);
+	width: 98%;
+	padding: 16px
+}
+
+.portion {
+	padding: 8px;
+	width: 200px;
+	vertical-align: middle;
+	text-align: left
+}
+
+.portion div input, .portion div label {
+	padding: 0px 6px;
+	vertical-align: middle;
+	align-content: center;
+	font-weight: bolder;
+	font-size: 20px;
+	accent-color: var(--contrast);
+}
+
+.portion div input {
+	height: 100%
+}
+
+.card {
+	background-color: var(--dark);
+	padding: 8px;
+	margin: 8px;
+	aspect-ratio : 7 / 8;
+	box-shadow: 4px 4px var(--shadow);
+	transition: 0.5s;
+	color: var(--dark-text);
+	text-align: center
+}
+
+.card img {
+	width: 100%
+}
+
+.card:hover {
+	box-shadow: 6px 6px var(--contrast)
+}
+
+.content-box {
+	width: 80%;
+	float:right;
+	overflow-y: scroll;
+	scrollbar-width: 10px !important;
+	scrollbar-color: var(--dark) var(--dark-hover);
+	padding-bottom: 16px;
+	height: calc(90vh - 16px);
+}
+
+.content-box > div {
+	margin: 0px 8px 8px;
+	overflow: visible;
+}
+
+.content-box::after {
+	content: "";
+	display: table;
+	clear: both
+}
+
+.content-box .left {
+	float: left;
+	width: calc(48% - 16px);
+	text-align: left;
+	clear: left;
+	padding: 8px 8px 0px;
+}
+
+.content-box .right {
+	margin-left: calc(48% + 16px);
+	width: calc(48% - 16px);
+	padding: 8px 8px 0px;
+	text-align: left;
+	clear: right;
+}
+
+.content-box .full {
+	padding: 8px 8px 0px;
+	text-align: center
+}
+
+.content-box > * > h2 {
+	font-size: 7vh;
+	color: var(--contrast)
+}
+
+.content-box > * > h3 {
+	font-size: 2.5vh;
+	color: var(--shadow)
+}
+
+.content-box > * > table {
+	width: 100%
+}
+
+.content-box > *:has(img) {
+	text-align: center !important;
+}
+
+.content-box > * > img {
+	max-height: calc(70vh - 16px);
+	max-width: 100%;
+}
+
+@media (max-width: 800px) {
+	.thin {
+		display: inline
+	}
+	.normal, .wide {
+		display: none
+	}
+}
+
+@media (max-width: 1400px) {
+	.normal {
+		display: inline
+	}
+	.thin, .wide {
+		display: none
+	}
+}
+
+@media (min-width: 1400px) {
+	.wide {
+		display: inline
+	}
+	.thin, .normal {
+		display: none
+	}
+}
+
+.content-box > * {
+	color: var(--light-text)
+}
+
+.plate {
+	box-shadow: 3px 3px var(--shadow);
+	background-color: var(--light);
+	margin: 8px;
+	height: fit-content;
+}
+
+.textplate {
+	padding: 8px;
+	color: var(--light-text)
+}
+
+.nameplate {
+	background-color: var(--dark);
+	color: var(--dark-text);
+	padding: 8px
+}
+
+.no-overflow {
+	overflow: hidden !important
+}
+
+.scrollbox {
+	scrollbar-width: 10px;	
+	scrollbar-color: var(--dark) var(--dark-hover); 
+	overflow-y: scroll;
+	width: 100%;
+	height: calc(100% - var(--above));
+}
+
+.monster-row, .monster-row-short {
+	padding: 8px 0px;
+	margin: 8px;
+	color: var(--light-text);
+	display: grid;
+	text-align: center;
+	width: calc(100% - 32px);
+	height: 19px
+}
+
+.monster-row {
+	grid-template-columns: 0.5fr 2fr 1fr 1fr repeat(4, 0.5fr) 1.5fr 0.5fr 0fr 0.5fr;
+}
+
+.monster-row-short {
+	grid-template-columns: 2fr 0.5fr 1fr 1fr;
+}
+
+.monster-row > div, .monster-row-short > div {
+	border-left: 2px solid var(--contrast);
+	padding: 0px;
+	margin: 0px
+}
+
+.monster-row > div:nth-child(1), .monster-row-short > div:nth-child(1){
+	border: none
+}
+
+.monster-row:nth-child(2n) {
+	background-color: var(--light);
+}
+
+.monster-row:nth-child(2n-1) {
+	background-color: var(--light-hover);
+}
+
+.monster-row button, .monster-row a {
+	margin: 0px 4px;
+	padding: 0px 4px;
+	width: auto;
+	height: auto;
+	background-color: var(--dark);
+	color: var(--dark-text);
+	font-size: small;
+	align-content: center;
+	text-decoration: none
+}
+
+.monster-row a:hover {
+	color: var(--dark-text);
+	box-shadow: 2px 2px var(--shadow);
+	transition: box-shadow 0.3s;
+}
+
+.monster-row input {
+	margin: 0px 4px;
+	padding: 0px;
+	width: calc(100% - 8px);
+	height: auto;
+	background-color: var(--dark);
+	border: 0.5px solid var(--shadow);
+	color: var(--dark-text)
+}
+
+.monster-row-short:not(.monster-row-short:nth-child(1), .monster-row-short:nth-child(2)):hover {
+	box-shadow: 2px 2px var(--shadow);
+	transition: 0.5s
+}
+
+.monster-row-short:not(.monster-row-short:nth-child(1), .monster-row-short:nth-child(2)) {
+	background-color: var(--light);
+}
+
+.monster-row-short:nth-child(1), .monster-row-short:nth-child(2) {
+	background-color: var(--light-hover);
+	font-weight: bold;
+	position: sticky;
+	top: 0px;
+	box-shadow: 0px 6px var(--background);
+	z-index: 2
+}
+
+.monster-row-short:nth-child(1), .monster-row-short:nth-child(2) {
+	border-color: var(--shadow)
+}
+
+.scrolling-text {
+	overflow: hidden;
+	min-width: 100%;
+	white-space: nowrap;
+	box-sizing: border-box;
+	animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+	0% { transform: translateX(100%); }
+	100% { transform: translateX(-100%); }
+}
+
+.container {
+	background-color: var(--dark);
+	color: var(--dark-text);
+	margin: 8px;
+	padding: 8px;
+	align-content: center;
+	text-align: center;
+	height: 32px
+}
+
+.container input, .container select, .container label, .container p {
+	height: 16px;
+	font-size: 16px;
+}
+
+.container:has(select) p, .container:has(input[type="text"]) p{
+	width: 30%;
+}
+
+.container:has(input[type="checkbox"]) p {
+	width: 50%;
+}
+
+.container p {
+	float: left;
+	margin: 8px;
+	padding: 0px
+}
+
+.container select {
+	margin: 8px;
+    float: left;
+    width: 55%;
+	text-align: center
+}
+
+.container input[type="checkbox"] {
+	align-content: center;
+	align-items: center;
+	height: 32px
+}
+
+.monster-box {
+	float:left; 
+	height: 85vh; 
+	background-color: var(--dark); 
+	box-shadow: 2px 2px var(--shadow); 
+	padding: 8px; 
+	margin: 8px; 
+	width: 40%; 
+	color: var(--dark-text); 
+	overflow-y: scroll;
+}
+
+.monster-box div {
+	line-height: 20px
+}
+
+.monster-box div:has(h1) {
+    line-height: normal;
+}
+
+.monster-box h1 {
+	font-size: 48px;
+	color: var(--contrast)
+}
+
+.monster-box table {
+	width: 100%;
+	text-align: center
+}
+
+.monster-box table tr:nth-child(2n) {
+	background-color: var(--dark-hover)
+}
+
+.swap {
+    float: right;
+    width: 32px;
+    border-radius: 32px;
+	height: 18px;
+	transition: 0.5s
+}
+
+.swap:has(.status[state="on"]) {
+	background-color: var(--contrast)
+}
+
+.swap:has(.status[state="off"]) {
+	background-color: var(--shadow)
+}
+
+.status[state="on"] {
+    right: 0px;
+	left: 12px
+}
+
+.status[state="off"] {
+    left: 0px;
+	right: 12px
+}
+
+.status {
+    background-color: var(--dark);
+	position: relative;
+    border-radius: 32px;
+    text-align: center;
+	cursor: pointer;
+	width: 20px;
+	height: 18px;
+	transition: 0.5s
+}
+
+.hover:hover {
+	color: var(--contrast)
+}
+
+.hover {
+	cursor: pointer
+}
+
+.tooltip {
+	cursor: pointer;
+	position: relative;
+	width: fit-content;
+	overflow: visible;
+}
+
+.tooltip:not(.tooltip-text) {
+	text-decoration: underline var(--shadow)
+}
+
+.tooltip:hover:not(.tooltip-text) {
+	text-decoration: underline var(--contrast)
+}
+
+.tooltip-text {
+	z-index: 2;
+	text-decoration: underline var(--light);
+	display: none;
+	background-color: var(--light);
+	padding: 8px;
+	position: absolute;
+	left: 120%;
+	top: 0;
+	bottom: 0;
+	height: fit-content;
+	margin: 0;
+	max-width: 400px;
+	min-width: 150px;
+	width: fit-content
+}
+
+.tooltip:hover > .tooltip-text {
+	display: inline
+}
