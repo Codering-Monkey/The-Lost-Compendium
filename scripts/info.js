@@ -1,14 +1,14 @@
-import { IdGet, inject, capitalise, renderText } from "../scripts/script.js"
+import { IdGet, inject, capitalise, renderText } from "./script"
 
 let info_source
 let data
 
 async function loadInfo() {
 	const substring = window.location.search.substring(1).split('=')
-	if (substring[0] == "location") {
+	if (substring[0] === "location") {
 		info_source = substring[1]
 	} else {
-		alert("An Error Occured, Please specify a location query")
+		alert("An Error Occurred, Please specify a location query")
 	}
 	document.title = "The Lost Compendium - " + capitalise(info_source)
 	let response = await fetch("../data/" + info_source + ".json")
@@ -17,7 +17,7 @@ async function loadInfo() {
 	let sidebar = IdGet("sidebar");
 	let first = sidebar.firstChild
 	if (first) {
-		if (!(((first.className == "sidebar-multiitem") && (first.firstChild.textContent == data[0]["Name"] + "x")) || ((first.className == "sidebar-item") && (first.textContent == data[0]["Name"])))) {
+		if (!(((first.className === "sidebar-multiitem") && (first.firstChild.textContent === data[0]["Name"] + "x")) || ((first.className === "sidebar-item") && (first.textContent === data[0]["Name"])))) {
 			while (sidebar.firstChild) {
 				sidebar.removeChild(sidebar.lastChild);
 			}
@@ -29,7 +29,7 @@ async function loadInfo() {
 	loadContent()
 }
 
-export function renderItem(parent, name, indent, trail, parameter, func=function(param, evt) { if (evt.target.id = trail + name + "_item") { sidebarRedirect(param) } }) {
+export function renderItem(parent, name, indent, trail, parameter, func=function(param, evt) { if (evt.target.id === trail + name + "_item") { sidebarRedirect(param) } }) {
 	let child = document.createElement("div");
 	child.classList = "sidebar-item";
 	child.textContent = name;
@@ -69,7 +69,7 @@ function renderMultiItem(parent, name, indent, trail) {
 function createSidebarStatic(parent, array_of_items, indent, trail) {
 	for (let i = 0; i < array_of_items.length; i++) {
 		const item = array_of_items[i]
-		if ("SubItems" in item == true) {
+		if ("SubItems" in item) {
 			let new_container = renderMultiItem(parent, item["Name"], indent, trail)
 			createSidebarStatic(new_container, item["SubItems"], indent+1, trail + item["Name"] + "/");	
 		} else {
@@ -78,52 +78,10 @@ function createSidebarStatic(parent, array_of_items, indent, trail) {
 	}
 }
 
-function createSidebarFluid(parent, object_of_items, sorting_data, reload=false) {
-	const info_source = window.location.hash.split("#").pop().split("/").shift()
-	if (reload) {
-		sessionStorage.setItem(info_source, IdGet(info_source + " dropdown").value)	
-	}
-	while (parent.firstChild) {
-		parent.removeChild(parent.lastChild);
-	}
-	
-	let dropdown = document.createElement("select")
-	let keys = Object.keys(sorting_data)
-	for (let i = 0; i < keys.length; i++){
-		let option = document.createElement("option");
-		option.textContent = keys[i];
-		option.value = keys[i];
-		dropdown.appendChild(option);
-	};
-	if (!sessionStorage.getItem(info_source) || sessionStorage.getItem(info_source) == "undefined") {
-		sessionStorage.setItem(info_source, keys[0])
-	}
-	dropdown.value = sessionStorage.getItem(info_source)
-	dropdown.id = info_source + " dropdown"
-	dropdown.addEventListener("change", function() { createSidebarFluid(parent, object_of_items, sorting_data, true) })
-	parent.appendChild(dropdown)
-	
-	let sorting_key = sessionStorage.getItem(info_source)
-	let sorted_catagories = {}
-	Object.entries(object_of_items).forEach(([key, value]) => {
-		if (!sorted_catagories[value[sorting_key]]) {
-			sorted_catagories[value[sorting_key]] = []
-		};
-		sorted_catagories[value[sorting_key]] = sorted_catagories[value[sorting_key]].concat(key)
-	});
-	console.log(sorted_catagories)
-	Object.entries(sorted_catagories).forEach(([key, value]) => {
-		let multi_container = renderMultiItem(parent, key, 1, "")
-		for (let i = 0; i < value.length; i++) {
-			renderItem(multi_container, value[i], 2, "")
-		}
-	});
-}
-
 function toggleSidebarItem(trail, multibar_name) {
 	let toggle = IdGet(trail + multibar_name + "_toggle")
 	let container = IdGet(trail + multibar_name + "_container")
-	if (toggle.textContent == "x") {
+	if (toggle.textContent === "x") {
 		container.style.display = "none"
 		toggle.textContent = "+"
 	} else {
@@ -132,7 +90,7 @@ function toggleSidebarItem(trail, multibar_name) {
 	}
 }
 
-function sidebarRedirect(button_name, event) {
+function sidebarRedirect(button_name) {
 	window.location.hash = "#" + info_source + "/" + button_name
 	loadContent()
 }
@@ -148,9 +106,9 @@ function loadContent() {
 	for (let i = 0; i < trail.length; i++) {
 		trail[i] = trail[i].replaceAll("%20", " ")
 		for (let j = 0; j < item.length; j++) {
-			if (item[j]["Name"] == trail[i] && i+1 == trail.length) {
+			if (item[j]["Name"] === trail[i] && i+1 === trail.length) {
 				item = item[j]
-			} else if (item[j]["Name"] == trail[i]) {
+			} else if (item[j]["Name"] === trail[i]) {
 				item = item[j]["SubItems"]
 			}
 		}
@@ -159,26 +117,26 @@ function loadContent() {
 	for (let i = 0; i < content.length; i++) {
 		let content_info = content[i];
 		let content_item = document.createElement("div")
-		if (content_info["Location"] == "Left") {
+		if (content_info["Location"] === "Left") {
 			content_item.classList = content_item.classList + "left"
-		} else if (content_info["Location"] == "Right") {
+		} else if (content_info["Location"] === "Right") {
 			content_item.classList = content_item.classList + "right"
-		} else if (content_info["Location"] == "Full") {
+		} else if (content_info["Location"] === "Full") {
 			content_item.classList = content_item.classList + "full"
 		}
-		if (content_info["Type"] == "Title") {
+		if (content_info["Type"] === "Title") {
 			let content_item_title = document.createElement("h2")
 			content_item_title.textContent = content_info["Content"]
 			content_item.appendChild(content_item_title)
-		} else if (content_info["Type"] == "Subtitle") {
+		} else if (content_info["Type"] === "Subtitle") {
 			let content_item_subtitle = document.createElement("h3")
 			content_item_subtitle.textContent = content_info["Content"]
 			content_item.appendChild(content_item_subtitle)
-		} else if (content_info["Type"] == "Text") {
+		} else if (content_info["Type"] === "Text") {
 			let content_item_text = document.createElement("t")
 			content_item_text.innerHTML = renderText(content_info["Content"])
 			content_item.appendChild(content_item_text)
-		} else if (content_info["Type"] == "Image") {
+		} else if (content_info["Type"] === "Image") {
 			const image_sizes = ["Thin", "Normal", "Wide"]
 			let images = content_info["Content"]
 			if (!("Normal" in images)) {
@@ -200,7 +158,7 @@ function loadContent() {
 				content_item_image.classList = content_item_image.classList + " " + image_sizes[j].toLowerCase()
 				content_item.appendChild(content_item_image)
 			}
-		} else if (content_info["Type"] == "Values") {
+		} else if (content_info["Type"] === "Values") {
 			Object.entries(content_info["Content"]).forEach(([key, value]) => {
 				let text_key = document.createElement("strong")
 				text_key.textContent = key + ": "
@@ -210,13 +168,13 @@ function loadContent() {
 				content_item.appendChild(text_value)
 				content_item.appendChild(document.createElement("br"))
 			});
-		} else if (content_info["Type"] == "Table") {
+		} else if (content_info["Type"] === "Table") {
 			let content_item_table = document.createElement("table")
 			for (let i = 0; i < content_info["Content"].length; i++) {
 				let current_row = document.createElement("tr")
 				for (let j = 0; j < content_info["Content"][i].length; j++) {
 					let current_cell = document.createElement("td")
-					if (i == 0) {
+					if (i === 0) {
 						current_cell = document.createElement("th")
 					}
 					current_cell.innerHTML = renderText(content_info["Content"][i][j])
@@ -228,7 +186,7 @@ function loadContent() {
 		}
 		content_box.appendChild(content_item)
 	}
-};
+}
 
 window.addEventListener("hashchange", function() { loadInfo() });
-if (window.location.pathname == "/pages/info.html") { loadInfo() }
+if (window.location.pathname === "/pages/info.html") { loadInfo() }
