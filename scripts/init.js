@@ -1,6 +1,6 @@
 import { IdGet, diceCalc, createOverlay, getJSON, setJSON, foundIn, getMonster, lineBreak, inject, sortDict, arrayDelete } from "../scripts/script.js"
 import base_monsters from "../data/monsters.json" with { type: 'json' }
-import { renderItem } from "../scripts/info.js"
+import { renderItem } from "./info"
 
 let monsters = sortDict(inject(base_monsters, "monsters"))
 
