@@ -15,6 +15,7 @@
                         "Type": "Values",
                         "Location": "Right",
                         "Content": {
+                            "Domain": "Nature",
                             "Main Temple Location": "Hawthorne",
                             "Patron City": "Hawthorne",
                             "": ""
