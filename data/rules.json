@@ -1,0 +1,109 @@
+[
+    {
+        "Name": "Movement",
+        "Content": [
+            {
+                "Type": "Table",
+                "Location": "Full",
+                "Content": [
+                    [
+                        "Terrain",
+                        "Maximum Pace",
+                        "Encounter Distance",
+                        "Foraging DC",
+                        "Navigation DC",
+                        "Search DC"
+                    ],
+                    [
+                        "Arctic",
+                        "Fast*",
+                        "6d6 * 10 ft",
+                        "20",
+                        "10",
+                        "10"
+                    ],
+                    [
+                        "Coastal",
+                        "Normal",
+                        "2d10 * 10 ft",
+                        "10",
+                        "5",
+                        "15"
+                    ],
+                    [
+                        "Desert",
+                        "Normal",
+                        "6d6 * 10 ft",
+                        "20",
+                        "10",
+                        "10"
+                    ],
+                    [
+                        "Forest",
+                        "Normal",
+                        "2d8 * 10 ft",
+                        "10",
+                        "15",
+                        "15"
+                    ],
+                    [
+                        "Grassland",
+                        "Fast",
+                        "6d6 * 10 ft",
+                        "15",
+                        "5",
+                        "15"
+                    ],
+                    [
+                        "Hill",
+                        "Normal",
+                        "2d10 * 10 ft",
+                        "15",
+                        "10",
+                        "15"
+                    ],
+                    [
+                        "Mountain",
+                        "Slow",
+                        "4d10 * 10 ft",
+                        "20",
+                        "15",
+                        "20"
+                    ],
+                    [
+                        "Swamp",
+                        "Slow",
+                        "2d8 * 10 ft",
+                        "10",
+                        "15",
+                        "20"
+                    ],
+                    [
+                        "Underdark",
+                        "Normal",
+                        "2d6 * 10 ft",
+                        "20",
+                        "10",
+                        "20"
+                    ],
+                    [
+                        "Urban",
+                        "Normal",
+                        "2d6 * 10 ft",
+                        "20",
+                        "15",
+                        "15"
+                    ],
+                    [
+                        "Waterbourne",
+                        "Special**",
+                        "6d6 * 10 ft",
+                        "15",
+                        "10",
+                        "15"
+                    ]
+                ]
+            }
+        ]
+    }
+]
