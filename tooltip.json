@@ -1,4 +1,4 @@
 {
-	"greataxe": "<h3>Greataxe</h3><strong>Damage: </strong>1d12 Slashing<br><strong>Properties: </strong>Heavy, two-handed",
-	"handaxe": "<h3>Handaxe</h3><strong>Damage: </strong>1d6 Slashing<br><strong>Properties: </strong>Light, Thrown (Range 20/60 ft)"
+    "greataxe": "<h3>Greataxe</h3><strong>Damage: </strong>1d12 Slashing<br><strong>Properties: </strong>Heavy, two-handed",
+    "handaxe": "<h3>Handaxe</h3><strong>Damage: </strong>1d6 Slashing<br><strong>Properties: </strong>Light, Thrown (Range 20/60 ft)"
 }
