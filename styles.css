@@ -290,6 +290,14 @@ td, th {
 	padding: 16px
 }
 
+.tiles > h1 {
+	grid-column: span var(--columns);
+	color: var(--dark-text);
+	border-bottom: solid 1px var(--light);
+	height: fit-content;
+	margin: 12px 8px 4px 0px
+}
+
 .portion {
 	padding: 8px;
 	width: 200px;
@@ -673,6 +681,15 @@ td, th {
 
 .hover {
 	cursor: pointer
+}
+
+.hover-shadow {
+	box-shadow: 3px 3px var(--shadow);
+	transition: 0.5s
+}
+
+.hover-shadow:hover {
+	box-shadow: 5px 5px var(--contrast);
 }
 
 .tooltip {

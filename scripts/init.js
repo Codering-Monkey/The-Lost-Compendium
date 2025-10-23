@@ -385,7 +385,7 @@ function loadOrder() {
 		if (!selected_monster["Custom"]) {
 			link_button.textContent = "View"
 			link_button.href = "monster.html#" + selected_monster["Name"]
-			link_button.target = "blank"
+			link_button.target = "_blank"
 		} else {
 			link_button.textContent = "Edit"
 			link_button.addEventListener("click", function() {editOverlay(i)})

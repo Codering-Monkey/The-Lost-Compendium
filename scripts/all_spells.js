@@ -107,7 +107,7 @@ function findSpells() {
 	clear(parent, 4)
 	Object.entries(validSpells).forEach(([key, value]) => {
 		let row = document.createElement("div")
-		row.addEventListener("click", function() {window.location.href = "spell.html#" + value["Name"]} )
+		row.addEventListener("click", function() {window.location.href = "spell.html?spell=" + value["Name"]} )
 		row.classList.add("monster-row-short")
 		
 		const data_types = ["Name", "Level", "School"]

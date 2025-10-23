@@ -34,7 +34,7 @@ function findMonsters() {
 
 function generateMonster(parent, name) {
 	let row = document.createElement("div")
-	row.addEventListener("click", function() {window.location.href = "monster.html#" + name} )
+	row.addEventListener("click", function() {window.location.href = "monster.html?monster=" + name} )
 	row.classList.add("monster-row-short")
 	const data_types = ["Name", "CR", "Type"]
 	const monster_data = monsters[name]

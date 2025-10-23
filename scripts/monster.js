@@ -22,7 +22,13 @@ if (localStorage.getItem("unit") == "m") {
 }
 
 function loadMonster() {
-	const selected_monster = monsters[(window.location.hash).replaceAll("#", "").replaceAll("%20", " ")]
+	const substring = window.location.search.substring(1).split('=')
+	if (substring[0] == "monster") {
+		const info_source = substring[1].replaceAll("%20", " ")
+	} else {
+		alert("An Error Occured, Please specify a monster query")
+	}
+	const selected_monster = monsters[info_source]
 	IdGet("name").textContent = selected_monster["Name"]
 	document.title = "The Lost Compendium - " + selected_monster["Name"]
 	let sta = ""

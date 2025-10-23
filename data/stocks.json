@@ -1,8 +1,254 @@
 {
-	"Trade Goods": {
-		"Copper": {
-			"Sector": "Basic Materials",
-			"Industry": "Copper"
-		}
-	}
+    "StockCatagories": [
+        {
+            "Name": "Animals",
+            "Stocks": {
+                "Chicken": "Chicken",
+                "Goat": "Goat",
+                "Sheep": "Sheep",
+                "Pig": "Pig",
+                "Cow": "Cow",
+                "Ox": "Ox"
+            }
+        },
+        {
+            "Name": "Metals",
+            "Stocks": {
+                "Iron": "kg",
+                "Copper": "kg",
+                "Silver": "kg",
+                "Gold": "kg",
+                "Platinum": "kg"
+            }
+        },
+        {
+            "Name": "Spices",
+            "Stocks": {
+                "Salt": "kg",
+                "Ginger": "kg",
+                "Cinnamon": "kg",
+                "Pepper": "kg",
+                "Cloves": "kg",
+                "Saffron": "kg"
+            }
+        },
+        {
+            "Name": "Fabrics",
+            "Stocks": {
+                "Canvas": "m2",
+                "Cotton Cloth": "m2",
+                "Linen": "m2",
+                "Silk": "m2"
+            }
+        },
+        {
+            "Name": "Grain",
+            "Stocks": {
+                "Wheat": "kg",
+                "Flour": "kg"
+            }
+        }
+    ],
+    "StockBase": {
+        "Wheat": [
+            115200
+        ],
+        "Flour": [
+            86400
+        ],
+        "Chicken": [
+            1920
+        ],
+        "Salt": [
+            14400
+        ],
+        "Iron": [
+            3840
+        ],
+        "Canvas": [
+            7680
+        ],
+        "Copper": [
+            2400
+        ],
+        "Cotton Cloth": [
+            6720
+        ],
+        "Ginger": [
+            960
+        ],
+        "Goat": [
+            384
+        ],
+        "Cinnamon": [
+            768
+        ],
+        "Pepper": [
+            768
+        ],
+        "Sheep": [
+            384
+        ],
+        "Cloves": [
+            576
+        ],
+        "Pig": [
+            288
+        ],
+        "Silver": [
+            192
+        ],
+        "Linen": [
+            5760
+        ],
+        "Silk": [
+            2880
+        ],
+        "Cow": [
+            192
+        ],
+        "Saffron": [
+            96
+        ],
+        "Ox": [
+            96
+        ],
+        "Gold": [
+            480
+        ],
+        "Platnium": [
+            96
+        ]
+    },
+    "StockBasePrice": {
+        "Wheat": 0.02,
+        "Flour": 0.04,
+        "Chicken": 0.02,
+        "Salt": 0.1,
+        "Iron": 0.2,
+        "Canvas": 0.1,
+        "Copper": 1,
+        "Cotton Cloth": 0.5,
+        "Ginger": 2,
+        "Goat": 1,
+        "Cinnamon": 4,
+        "Pepper": 4,
+        "Sheep": 2,
+        "Cloves": 6,
+        "Pig": 3,
+        "Silver": 10,
+        "Linen": 5,
+        "Silk": 10,
+        "Cow": 10,
+        "Saffron": 30,
+        "Ox": 15,
+        "Gold": 100,
+        "Platnium": 1000
+    },
+    "StockPricePerBase": {
+        "Wheat": 2304.0,
+        "Flour": 3456.0,
+        "Chicken": 38.4,
+        "Salt": 1440.0,
+        "Iron": 768.0,
+        "Canvas": 768.0,
+        "Copper": 2400,
+        "Cotton Cloth": 3360.0,
+        "Ginger": 1920,
+        "Goat": 384,
+        "Cinnamon": 3072,
+        "Pepper": 3072,
+        "Sheep": 768,
+        "Cloves": 3456,
+        "Pig": 864,
+        "Silver": 1920,
+        "Linen": 28800,
+        "Silk": 28800,
+        "Cow": 1920,
+        "Saffron": 2880,
+        "Ox": 1440,
+        "Gold": 48000,
+        "Platnium": 96000
+    },
+    "StockUpC": {
+        "Wheat": 4421,
+        "Flour": 2231,
+        "Chicken": 2241,
+        "Salt": 191,
+        "Iron": 2871,
+        "Canvas": 5111,
+        "Copper": 371,
+        "Cotton Cloth": 711,
+        "Ginger": 1101,
+        "Goat": 3661,
+        "Cinnamon": 6191,
+        "Pepper": 5901,
+        "Sheep": 2461,
+        "Cloves": 4761,
+        "Pig": 911,
+        "Silver": 3371,
+        "Linen": 141,
+        "Silk": 1151,
+        "Cow": 2291,
+        "Saffron": 121,
+        "Ox": 741,
+        "Gold": 1971,
+        "Platnium": 691
+    },
+    "StockDownC": {
+        "Wheat": 101,
+        "Flour": 151,
+        "Chicken": 141,
+        "Salt": 61,
+        "Iron": 91,
+        "Canvas": 141,
+        "Copper": 51,
+        "Cotton Cloth": 61,
+        "Ginger": 21,
+        "Goat": 91,
+        "Cinnamon": 41,
+        "Pepper": 151,
+        "Sheep": 121,
+        "Cloves": 61,
+        "Pig": 121,
+        "Silver": 11,
+        "Linen": 111,
+        "Silk": 181,
+        "Cow": 151,
+        "Saffron": 1,
+        "Ox": 271,
+        "Gold": 121,
+        "Platnium": 51
+    },
+    "StockChange": {
+        "Wheat": 1200,
+        "Flour": 900,
+        "Chicken": 20,
+        "Salt": 150,
+        "Iron": 40,
+        "Canvas": 80,
+        "Copper": 25,
+        "Cotton Cloth": 70,
+        "Ginger": 10,
+        "Goat": 4,
+        "Cinnamon": 8,
+        "Pepper": 8,
+        "Sheep": 4,
+        "Cloves": 6,
+        "Pig": 3,
+        "Silver": 2,
+        "Linen": 60,
+        "Silk": 30,
+        "Cow": 2,
+        "Saffron": 1,
+        "Ox": 1,
+        "Gold": 5,
+        "Platnium": 1
+    },
+    "Static": [
+        "Copper",
+        "Silver",
+        "Gold",
+        "Platnium"
+    ]
 }

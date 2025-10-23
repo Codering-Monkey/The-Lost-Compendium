@@ -4,7 +4,12 @@ let info_source
 let data
 
 async function loadInfo() {
-	info_source = window.location.hash.split("#").pop().split("/").shift();
+	const substring = window.location.search.substring(1).split('=')
+	if (substring[0] == "location") {
+		info_source = substring[1]
+	} else {
+		alert("An Error Occured, Please specify a location query")
+	}
 	document.title = "The Lost Compendium - " + capitalise(info_source)
 	let response = await fetch("../data/" + info_source + ".json")
 	let old_data = await response.json()

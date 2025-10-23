@@ -22,7 +22,14 @@ if (localStorage.getItem("unit") == "m") {
 }
 
 function loadSpell() {
-	const selected_spell = spells[(window.location.hash).replaceAll("#", "").replaceAll("%20", " ")]
+	const substring = window.location.search.substring(1).split('=')
+	let info_source
+	if (substring[0] == "spell") {
+		info_source = substring[1].replaceAll("%20", " ")
+	} else {
+		alert("An Error Occured, Please specify a spell query")
+	}
+	const selected_spell = spells[info_source]
 	document.title = "The Lost Compendium - " + selected_spell["Name"]
 	IdGet("name").textContent = selected_spell["Name"]
 	let classMessage = "(" + mergeArray(selected_spell["Classes"]) + ")"
