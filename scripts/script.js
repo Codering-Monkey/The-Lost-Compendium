@@ -1,5 +1,7 @@
 import colours from "../colour.json" with { type: 'json' };
 import tooltip from "../tooltip.json" with { type: 'json' };
+import base_monsters from "../data/monsters.json" with { type: 'json' }
+import {renderItem} from "./info";
 
 sessionStorage.setItem("tooltip", JSON.stringify(tooltip))
 
@@ -318,4 +320,33 @@ export function renderText(string) {
 		}
 	}
 	return string
+}
+
+export function monsterBar(clickCommand) {
+    let monsters = sortDict(inject(base_monsters, "monsters"))
+
+    const sorting_types = ["CR", "Type", "Size"]
+    for (let i = 0; i < sorting_types.length; i++) {
+        let selector = IdGet(sorting_types[i].toLowerCase() + "_options")
+        selector.addEventListener("change", function() { loadScrollbox() })
+    }
+    loadScrollbox(monsters)
+    return monsters
+}
+
+export function loadScrollbox(monsters, clickCommand) {
+    let parameters = {}
+    const sorting_types = ["CR", "Type", "Size"]
+	for (let i = 0; i < sorting_types.length; i++) {
+		let selector = IdGet(sorting_types[i].toLowerCase() + "_options")
+		parameters[sorting_types[i]] = selector.value
+	}
+	let parent = IdGet("monster_scroll")
+	while (parent.firstChild) {
+		parent.removeChild(parent.lastChild);
+	}
+	let valid_monsters = getMonster(monsters, parameters["CR"], parameters["CR"], parameters["Type"], parameters["Size"])
+	for (let i = 0; i < valid_monsters.length; i++) {
+		renderItem(parent, valid_monsters[i], 1, "", valid_monsters[i], function() { clickCommand() })
+	}
 }

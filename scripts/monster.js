@@ -5,7 +5,7 @@ let monsters = sortDict(inject(base_monsters, "monsters"))
 
 let unit_switch = IdGet("units")
 unit_switch.addEventListener("click", function() {
-	if (unit_switch.firstChild.getAttribute("state") == "on") {
+	if (unit_switch.firstChild.getAttribute("state") === "on") {
 		unit_switch.firstChild.setAttribute("state", "off")
 		unit_switch.firstChild.textContent = "ft"
 		localStorage.setItem("unit", "ft")
@@ -16,15 +16,16 @@ unit_switch.addEventListener("click", function() {
 	}
 	loadMonster()
 })
-if (localStorage.getItem("unit") == "m") {
+if (localStorage.getItem("unit") === "m") {
 	unit_switch.firstChild.setAttribute("state", "on")
 	unit_switch.firstChild.textContent = "m"
 }
 
 function loadMonster() {
 	const substring = window.location.search.substring(1).split('=')
-	if (substring[0] == "monster") {
-		const info_source = substring[1].replaceAll("%20", " ")
+    let info_source
+	if (substring[0] === "monster") {
+		info_source = substring[1].replaceAll("%20", " ")
 	} else {
 		alert("An Error Occured, Please specify a monster query")
 	}
@@ -44,7 +45,7 @@ function loadMonster() {
 	
 	let speed = checkUnit(selected_monster["Speed"]["Walk"]) + ". "
 	Object.entries(selected_monster["Speed"]).forEach(([key, value]) => {
-		if (key != "Walk") {
+		if (key !== "Walk") {
 			speed += key + " " + checkUnit(value) + ". "
 		}
 	})
@@ -82,7 +83,7 @@ function loadMonster() {
 	
 	let sense_text = ""
 	Object.entries(selected_monster["Senses"]).forEach(([key, value]) => {
-		if (key == "Passive perception") {
+		if (key === "Passive perception") {
 			sense_text += "Passive perception " + value
 		} else {
 			sense_text += key + " " + checkUnit(value) + "; "
@@ -140,7 +141,7 @@ function loadMonster() {
 			while (foundIn("  ft", innerValue)) {
 				let number = ""
 				let index = innerValue.indexOf("  ft") - 1
-				while ((!(isNaN(innerValue[index]))) || innerValue[index] == "/") {
+				while ((!(isNaN(innerValue[index]))) || innerValue[index] === "/") {
 					number = innerValue[index] + number
 					index -= 1
 				}

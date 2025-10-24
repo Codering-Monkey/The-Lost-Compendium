@@ -1,15 +1,7 @@
-import { IdGet, diceCalc, createOverlay, getJSON, setJSON, foundIn, getMonster, lineBreak, inject, sortDict, arrayDelete } from "../scripts/script.js"
-import base_monsters from "../data/monsters.json" with { type: 'json' }
-import { renderItem } from "../scripts/info.js"
+import { IdGet, diceCalc, createOverlay, getJSON, setJSON, foundIn, lineBreak, arrayDelete, monsterBar } from "../scripts/script.js"
 
-let monsters = sortDict(inject(base_monsters, "monsters"))
+let monsters = monsterBar(function(param) { addPreMade(param) })
 
-const sorting_types = ["CR", "Type", "Size"]
-for (let i = 0; i < sorting_types.length; i++) {
-	let selector = IdGet(sorting_types[i].toLowerCase() + "_options")
-	selector.addEventListener("change", function() { loadScrollbox() })
-}
-loadScrollbox()
 if (!sessionStorage.getItem("Init")) { setJSON("Init", []) }
 loadOrder()
 
@@ -93,9 +85,9 @@ IdGet("difficulty_button").addEventListener("click", function() {
 		lineBreak(calculations)
 		
 		let text = document.createElement("t")
-		if (title.textContent == "Deadly") {
+		if (title.textContent === "Deadly") {
 			text.textContent = "This encounter is Deadly because its total XP of " + totalXP + " sits above the party's Deadly threshold of " + thresholds["Deadly"] + " XP"
-		} else if (title.textContent == "Trivial") {
+		} else if (title.textContent === "Trivial") {
 			text.textContent = "This encounter is Trivial because its total XP of " + totalXP + " sits below the party's Easy threshold of " + thresholds["Easy"] + " XP"
 		} else {
 			const difficulties = ["Trivial", "Easy", "Medium", "Hard", "Deadly"]
@@ -128,7 +120,7 @@ function editOverlay(old_index=-1) {
 		if (old_index > -1) {
 			input.value = old_monster[statistics[i]]
 		}
-		if (statistics[i] == "AC") {input.type = "number"}
+		if (statistics[i] === "AC") {input.type = "number"}
 		else {input.type = "text"}
 		let label = document.createElement("label")
 		label.textContent = statistics[i]
@@ -145,7 +137,7 @@ function editOverlay(old_index=-1) {
 	hp_label.addEventListener("change", function() {
 		let affected_id = ["d", "size", "+", "amount"]
 		let new_value = "inline"
-		if (this.value == "Static") {new_value = "none"}
+		if (this.value === "Static") {new_value = "none"}
 		for (let i = 0; i < affected_id.length; i++) {
 			IdGet(affected_id[i]).style.display = new_value
 		}
@@ -229,22 +221,6 @@ function editOverlay(old_index=-1) {
 	overlay.appendChild(button)
 }
 
-function loadScrollbox() {
-	let parameters = {}
-	for (let i = 0; i < sorting_types.length; i++) {
-		let selector = IdGet(sorting_types[i].toLowerCase() + "_options")
-		parameters[sorting_types[i]] = selector.value
-	};
-	let parent = IdGet("monster_scroll")
-	while (parent.firstChild) {
-		parent.removeChild(parent.lastChild);
-	};
-	let valid_monsters = getMonster(monsters, parameters["CR"], parameters["CR"], parameters["Type"], parameters["Size"])
-	for (let i = 0; i < valid_monsters.length; i++) {
-		renderItem(parent, valid_monsters[i], 1, "", valid_monsters[i], function(param) { addPreMade(param) })
-	}
-}
-
 function addPreMade(name) {
 	let saved = getJSON("Init")
 	const selected_monster = monsters[name]
@@ -289,7 +265,7 @@ function loadOrder() {
 		let div = document.createElement("div")
 		div.classList.add("monster-row")
 		div.id = i
-		if (selected_monster["HP"] == 0) {
+		if (selected_monster["HP"] === 0) {
 			div.style.opacity = "50%"
 		}
 		parent.appendChild(div)
@@ -340,7 +316,6 @@ function loadOrder() {
 				setJSON("Init", init_data)
 				IdGet("overlay").remove()
 				loadOrder()
-				return
 			})
 			overlay.appendChild(confirm)
 		})
@@ -360,21 +335,21 @@ function loadOrder() {
 		let conditions = document.createElement("div")
 		let condition_text = ""
 		for (let j = 0; j < selected_monster["Cond"].length; j++) {
-			if (j == selected_monster["Cond"].length - 1) {condition_text = condition_text + selected_monster["Cond"][j]}
-			else if (j == selected_monster["Cond"].length - 2) {condition_text = condition_text + selected_monster["Cond"][j]+ " and "}
+			if (j === selected_monster["Cond"].length - 1) {condition_text = condition_text + selected_monster["Cond"][j]}
+			else if (j === selected_monster["Cond"].length - 2) {condition_text = condition_text + selected_monster["Cond"][j]+ " and "}
 			else {condition_text = condition_text + selected_monster["Cond"][j] + ", "}
 		}
 		conditions.textContent = condition_text
 		conditions.classList.add("scrolling-text")
 		conditions.style.width = (selected_monster["Cond"].length * 100) + "px";
-		if (selected_monster["Cond"].length == 1) {conditions.style.animationDuration = "5s"}
-		else {conditions.style.animationDuration = (selected_monster["Cond"].length * 2) + "s"};
+		if (selected_monster["Cond"].length === 1) {conditions.style.animationDuration = "5s"}
+		else {conditions.style.animationDuration = (selected_monster["Cond"].length * 2) + "s"}
 		let condition_shell = document.createElement("div");
 		condition_shell.appendChild(conditions);
 		div.appendChild(condition_shell)
 		
 		let cond_button = document.createElement("button")
-		cond_button.addEventListener("click", function() { editConds(i) })
+		cond_button.addEventListener("click", function() { editConditions(i) })
 		cond_button.textContent = "Edit"
 		div.appendChild(cond_button)
 		
@@ -401,9 +376,9 @@ function health(type, monster_number) {
 	if (!change) {
 		return
 	}
-	if (type == "Heal") {
+	if (type === "Heal") {
 		data[monster_number]["HP"] += change
-	} else if (type == "Harm") {
+	} else if (type === "Harm") {
 		if (data[monster_number]["TempHP"] > change) {
 			data[monster_number]["TempHP"] -= change
 		} else {
@@ -411,10 +386,10 @@ function health(type, monster_number) {
 			data[monster_number]["TempHP"] = 0
 			data[monster_number]["HP"] -= change
 		}
-	} else if (type == "Temp") {
+	} else if (type === "Temp") {
 		data[monster_number]["TempHP"] = change
 	}
-	if (data[monster_number]["HP"] == 0) {
+	if (data[monster_number]["HP"] === 0) {
 		IdGet(monster_number).style.opacity = "50%"
 	} else {
 		IdGet(monster_number).style.opacity = "100%"
@@ -435,18 +410,18 @@ function limitHealth(monster_number) {
 	setJSON("Init", data)
 }
 
-function editConds(monster_number) {
+function editConditions(monster_number) {
 	const conditions_dict = {
 		"Blinded": {
 			"Can't See": "You can't see and automatically fail any ability chack that requires sight", 
 			"Attacks Affected": "Attack rolls against you have Advantage, and your attack rolls have Disadvantage"
 		}, 
 		"Charmed": {
-			"Can’t Harm the Charmer": "You can’t attack the charmer or target the charmer with damaging abilities or magical effects.",
+			"Can't Harm the Charmer": "You can't attack the charmer or target the charmer with damaging abilities or magical effects.",
 			"Social Advantage": "The charmer has Advantage on any ability check to interact with you socially."
 		}, 
 		"Deafened": {
-			"Can’t Hear": "You can’t hear and automatically fail any ability check that requires hearing."
+			"Can't Hear": "You can't hear and automatically fail any ability check that requires hearing."
 		}, 
 		"Exhaustion": {
 			"Exhaustion Levels": "This condition is cumulative. Each time you receive it, you gain 1 Exhaustion level. You die if your Exhaustion level is 6",
@@ -456,34 +431,34 @@ function editConds(monster_number) {
 		},
 		"Frightened": {
 			"Ability Checks and Attacks Affected": "You have Disadvantage on ability checks and attack rolls while the source of fear is within line of sight", 
-			"Can’t Approach": "You can’t willingly move closer to the source of fear"
+			"Can't Approach": "You can't willingly move closer to the source of fear"
 		},
-		"Grappeled": {
-			"Speed 0": "Your Speed is 0 and can’t increase", 
-			"Attacks Affected": "You have Disadvantage on attackrolls  against any target other than the grappler", 
+		"Grappled": {
+			"Speed 0": "Your Speed is 0 and can't increase", 
+			"Attacks Affected": "You have Disadvantage on attack rolls  against any target other than the grappler",
 			"Movable": "The grappler can drag or carry you when it moves, but every foot of movement costs it 1 extra foot unless you are Tiny or two or more sizes smaller than it."
 		}, 
 		"Incapacitated": {
-			"Inactive": "You can’t take any action, Bonus Action, or Reaction", 
+			"Inactive": "You can't take any action, Bonus Action, or Reaction", 
 			"No Concentration": "Your Concentration is broken", 
-			"Speechless": "You can’t speak", 
-			"Surprised": "If you’re Incapacitated when you roll Initiative, you have Disadvantage on the roll"
+			"Speechless": "You can't speak", 
+			"Surprised": "If you're Incapacitated when you roll Initiative, you have Disadvantage on the roll"
 		}, 
 		"Invisible": {
-			"Surprise": "If you’re Invisible when you roll Initiative, you have Advantage on the roll", 
-			"Concealed": "You aren’t affected by any effect that requires its target to be seen unless the effect’s creator can somehow see you. Any equipment you are wearing or carrying is also concealed", 
-			"Attacks Affected": "Attack rolls against you have Disadvantage, and your attack rolls have Advantage. If a creature can somehow see you, you don’t gain this benefit against that creature"
+			"Surprise": "If you're Invisible when you roll Initiative, you have Advantage on the roll", 
+			"Concealed": "You aren't affected by any effect that requires its target to be seen unless the effect's creator can somehow see you. Any equipment you are wearing or carrying is also concealed", 
+			"Attacks Affected": "Attack rolls against you have Disadvantage, and your attack rolls have Advantage. If a creature can somehow see you, you don't gain this benefit against that creature"
 		}, 
 		"Paralyzed": {
 			"Incapacitated": "You have the Incapacitated condition.", 
-			"Speed 0": "Your Speed is 0 and can’t increase. Saving Throws Affected. You automatically fail Strength and Dexterity saving throws", 
+			"Speed 0": "Your Speed is 0 and can't increase. Saving Throws Affected. You automatically fail Strength and Dexterity saving throws", 
 			"Attacks Affected": "Attack rolls against you have Advantage",
 			"Automatic Critical Hits": "Any attack roll that hits you is a Critical Hit if the attacker is within 5 feet of you"
 		}, 
 		"Petrified": {
 			"Turned to Inanimate Substance": "You are transformed, along with any nonmagical objects you are wearing and carrying, into a solid  inanimate substance, (usually stone). Your weight increases by a factor of ten, and you cease aging",  
 			"Incapacitated": "You have the Incapacitated condition", 
-			"Speed 0": "Your Speed is 0 and can’t increase", 
+			"Speed 0": "Your Speed is 0 and can't increase", 
 			"Attacks Affected": "Attack rolls against you have Advantage", 
 			"Saving Throws Affected": "You automatically fail Strength and Dexterity saving throws", 
 			"Resist Damage": "You have Resistance to all damage", 
@@ -493,11 +468,11 @@ function editConds(monster_number) {
 			"Ability Checks and Attacks Affected": "You have Disadvantage on attack rolls and ability checks"
 		}, 
 		"Prone": {
-			"Restricted Movement": "Your only movement options are to crawl or to spend an amount of movement equal to half your Speed (round down) to right yourself and thereby end the condition. If your Speed is 0, you can’t right yourself",
+			"Restricted Movement": "Your only movement options are to crawl or to spend an amount of movement equal to half your Speed (round down) to right yourself and thereby end the condition. If your Speed is 0, you can't right yourself",
 			"Attacks Affected": "You have Disadvantage on attack rolls. An attack roll against you has Advantage if the attacker is within 5 feet of you. Otherwise, that attack roll has Disadvantage"
 		}, 
 		"Restrained": {
-			"Speed 0": "Your Speed is 0 and can’t increase",
+			"Speed 0": "Your Speed is 0 and can't increase",
 			"Attacks Affected": "Attack rolls against you have Advantage, and your attack rolls have Disadvantage",
 			"Saving Throws Affected": "You have Disadvantage on Dexterity saving throws"
 		}, 
@@ -507,19 +482,18 @@ function editConds(monster_number) {
 			"Attacks Affected": "Attack rolls against you have Advantage"
 		}, 
 		"Unconscious": {
-			"Inert": "You have the Incapacitated and Prone conditions, and you drop whatever you’re holding. When this condition ends, you remain Prone",
-			"Speed 0": "Your Speed is 0 and can’t increase",
+			"Inert": "You have the Incapacitated and Prone conditions, and you drop whatever you're holding. When this condition ends, you remain Prone",
+			"Speed 0": "Your Speed is 0 and can't increase",
 			"Attacks Affected": "Attack rolls against you have Advantage",
 			"Saving Throws Affected": "You automatically fail Strength and Dexterity saving throws",
 			"Automatic Critical Hits": "Any attack roll that hits you is a Critical Hit if the attacker is within 5 feet of you",
-			"Unaware": "You’re unaware of your surroundings"
+			"Unaware": "You're unaware of your surroundings"
 		}
 	}
-	const conditions_list = Object.keys(conditions_dict)
 	let data = getJSON("Init")
 	let overlay_array = createOverlay(false, false, true);
 	let overlay = overlay_array[0]
-	overlay_array[1].addEventListener("click", function(event) {if (event.target.id == "overlay") { loadOrder(); this.remove() }})
+	overlay_array[1].addEventListener("click", function(event) {if (event.target.id === "overlay") { loadOrder(); this.remove() }})
 	overlay.classList.add("tiles")
 	overlay.style = "--columns: 5"
 	overlay.style.padding = "8px"

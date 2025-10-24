@@ -19,7 +19,7 @@ function findMonsters() {
 		data[data_fields[i]] = IdGet(data_fields[i]).value
 	}
 	const valid_monsters = getMonster(monsters, data["min_cr"], data["max_cr"], data["type"], data["size"])
-	if (data["name"].trim() == "") {
+	if (data["name"].trim() === "") {
 		for (let i = 0; i < valid_monsters.length; i++) {
 			generateMonster(parent, valid_monsters[i])
 		}
@@ -40,8 +40,8 @@ function generateMonster(parent, name) {
 	const monster_data = monsters[name]
 	for (let i = 0; i < data_types.length; i++) {
 		let text = document.createElement("div")
-		if (data_types[i] == "CR") {
-			if ((parseFloat(monster_data[data_types[i]]) < 1) && (parseFloat(monster_data[data_types[i]]) != 0)) {
+		if (data_types[i] === "CR") {
+			if ((parseFloat(monster_data[data_types[i]]) < 1) && (parseFloat(monster_data[data_types[i]]) !== 0.0)) {
 				text.textContent = "1 / " + (1 / parseFloat(monster_data[data_types[i]]))	
 			} else {
 				text.textContent = monster_data[data_types[i]]

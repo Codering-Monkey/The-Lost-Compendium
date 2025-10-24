@@ -188,5 +188,5 @@ function loadContent() {
 	}
 }
 
-window.addEventListener("hashchange", function() { loadInfo() });
-if (window.location.pathname === "/pages/info.html") { loadInfo() }
+window.addEventListener("hashchange", function() { loadInfo().then() });
+if (window.location.pathname === "/pages/info.html") { loadInfo().then() }

@@ -1,11 +1,11 @@
 import base_spells from "../data/spells.json" with { type: 'json' }
-import { IdGet, forceSymbol, checkUnit, flattenNum, foundIn, sortDict, inject, lineBreak, mergeArray } from "../scripts/script.js"
+import { IdGet, checkUnit, foundIn, sortDict, inject, mergeArray } from "../scripts/script.js"
 
 let spells = sortDict(inject(base_spells, "spells"))
 
 let unit_switch = IdGet("units")
 unit_switch.addEventListener("click", function() {
-	if (unit_switch.firstChild.getAttribute("state") == "on") {
+	if (unit_switch.firstChild.getAttribute("state") === "on") {
 		unit_switch.firstChild.setAttribute("state", "off")
 		unit_switch.firstChild.textContent = "ft"
 		localStorage.setItem("unit", "ft")
@@ -16,7 +16,7 @@ unit_switch.addEventListener("click", function() {
 	}
 	loadSpell()
 })
-if (localStorage.getItem("unit") == "m") {
+if (localStorage.getItem("unit") === "m") {
 	unit_switch.firstChild.setAttribute("state", "on")
 	unit_switch.firstChild.textContent = "m"
 }
@@ -24,17 +24,17 @@ if (localStorage.getItem("unit") == "m") {
 function loadSpell() {
 	const substring = window.location.search.substring(1).split('=')
 	let info_source
-	if (substring[0] == "spell") {
+	if (substring[0] === "spell") {
 		info_source = substring[1].replaceAll("%20", " ")
 	} else {
-		alert("An Error Occured, Please specify a spell query")
+		alert("An Error Occurred, Please specify a spell query")
 	}
 	const selected_spell = spells[info_source]
 	document.title = "The Lost Compendium - " + selected_spell["Name"]
 	IdGet("name").textContent = selected_spell["Name"]
 	let classMessage = "(" + mergeArray(selected_spell["Classes"]) + ")"
 	let lscMessage
-	if (selected_spell["Level"] == 0) {
+	if (selected_spell["Level"] === 0) {
 		lscMessage = selected_spell["School"] + " Cantrip " + classMessage
 	} else {
 		lscMessage = "Level " + selected_spell["Level"] + " " + selected_spell["School"] + " " + classMessage
@@ -49,7 +49,7 @@ function loadSpell() {
 	while (foundIn("  ft", description)) {
 		let number = ""
 		let index = description.indexOf("  ft") - 1
-		while ((!(isNaN(description[index]))) || description[index] == "/") {
+		while ((!(isNaN(description[index]))) || description[index] === "/") {
 			number = description[index] + number
 			index -= 1
 		}
