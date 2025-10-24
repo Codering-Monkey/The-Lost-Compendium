@@ -1,5 +1,5 @@
 import data from "../data/index.json" with { type: 'json' }
-import { IdGet } from "./script"
+import { IdGet } from "../scripts/script.js"
 
 const tiles = IdGet("tiles")
 let available_info = data

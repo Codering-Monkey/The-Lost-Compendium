@@ -1,4 +1,4 @@
-import { IdGet, inject, capitalise, renderText } from "./script"
+import { IdGet, inject, capitalise, renderText } from "../scripts/script.js"
 
 let info_source
 let data
