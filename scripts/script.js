@@ -1,7 +1,7 @@
 import colours from "../colour.json" with { type: 'json' };
 import tooltip from "../tooltip.json" with { type: 'json' };
 import base_monsters from "../data/monsters.json" with { type: 'json' }
-import {renderItem} from "./info";
+import { renderItem } from "../scripts/info.js";
 
 sessionStorage.setItem("tooltip", JSON.stringify(tooltip))
 
@@ -25,7 +25,7 @@ function inject_iterate(list_of_items, old_data) {
 			let item_included = false
 			let index = 0
 			for (let j = 0; j < old_data.length; j++) {
-				if (current_item['Name'] == old_data[j]["Name"]) {
+				if (current_item['Name'] === old_data[j]["Name"]) {
 					item_included = true
 					break
 				}
@@ -51,12 +51,12 @@ export function IdGet(Object_ID) {
 	return document.getElementById(Object_ID)
 }
 
-export function diceCalc(amount, size, bonus) {
+export function diceCalc(amount, size, bonus=0, multiplier=1) {
 	let final = parseInt(bonus)
 	for (let i = 0; i < parseInt(amount); i++) {
 		final = parseInt(final) + Math.ceil(Math.random() * parseInt(size))
 	}
-	return final
+	return final * multiplier
 }
 
 export function createOverlay(plain=false, createEvent=true, returnBoth=false) {
@@ -112,13 +112,36 @@ export function redirect(location) {
 	window.location.href = location
 }
 
-export function getJSON(name) {
-	const storedData = sessionStorage.getItem(name)
+export function getJSON(name, type="session") {
+    let storedData
+    if (type === "local") {
+        storedData = localStorage.getItem(name)
+    } else {
+        storedData = sessionStorage.getItem(name)
+    }
 	return JSON.parse(storedData)
 }
 
-export function setJSON(name, data) {
+export function setJSON(name, data, type="session") {
+    let storedData = JSON.stringify(data)
+    if (type === "local") {
+        localStorage.setItem(name, storedData)
+    } else {
+        sessionStorage.setItem(name, storedData)
+    }
 	sessionStorage.setItem(name, JSON.stringify(data))
+}
+
+export function appendJSON(name, newData, type="session", appendAsIs=false) {
+    const data = getJSON(name, type)
+    if (Array.isArray(newData) && !appendAsIs) {
+        for (let i = 0; i < newData.length; i++) {
+            data.push(newData[i])
+        }
+    } else {
+        data.push(newData)
+    }
+    setJSON(name, data, type)
 }
 
 export function foundIn(key, string, deepSearch=false) {
@@ -261,6 +284,9 @@ export function capitalise(string, allWords=false) {
 	}
 	for (let i = 0; i < stringWords.length; i++) {
 		stringWords[i] = stringWords[i][0].toUpperCase() + stringWords[i].slice(1)
+        if (i < stringWords.length - 1) {
+            stringWords[i] += " "
+        }
 	}
 	return arrayToString(stringWords)
 }
@@ -328,9 +354,9 @@ export function monsterBar(clickCommand) {
     const sorting_types = ["CR", "Type", "Size"]
     for (let i = 0; i < sorting_types.length; i++) {
         let selector = IdGet(sorting_types[i].toLowerCase() + "_options")
-        selector.addEventListener("change", function() { loadScrollbox() })
+        selector.addEventListener("change", function() { loadScrollbox(monsters, clickCommand) })
     }
-    loadScrollbox(monsters)
+    loadScrollbox(monsters, clickCommand)
     return monsters
 }
 
@@ -347,6 +373,6 @@ export function loadScrollbox(monsters, clickCommand) {
 	}
 	let valid_monsters = getMonster(monsters, parameters["CR"], parameters["CR"], parameters["Type"], parameters["Size"])
 	for (let i = 0; i < valid_monsters.length; i++) {
-		renderItem(parent, valid_monsters[i], 1, "", valid_monsters[i], function() { clickCommand() })
+		renderItem(parent, valid_monsters[i], 1, "", valid_monsters[i], function() { clickCommand(valid_monsters[i]) })
 	}
 }

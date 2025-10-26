@@ -1,4 +1,15 @@
-import { IdGet, diceCalc, createOverlay, getJSON, setJSON, foundIn, lineBreak, arrayDelete, monsterBar } from "../scripts/script.js"
+import {
+    IdGet,
+    diceCalc,
+    createOverlay,
+    getJSON,
+    setJSON,
+    foundIn,
+    lineBreak,
+    arrayDelete,
+    monsterBar,
+    clear
+} from "../scripts/script.js"
 
 let monsters = monsterBar(function(param) { addPreMade(param) })
 
@@ -198,7 +209,7 @@ function editOverlay(old_index=-1) {
 			init = diceCalc(1, 20, init)
 		}
 		let new_data = {
-			"Init": init,
+			"Init": parseInt(init),
 			"Name": IdGet("NameInput").value, 
 			"AC": IdGet("ACInput").value,
 			"HP": health, 
@@ -242,7 +253,8 @@ function addPreMade(name) {
 }
 
 function renderHealth(monsterIndex) {
-	const selectedMonster = getJSON("Init")[monsterIndex]
+    const json = getJSON("Init")
+	const selectedMonster = json[monsterIndex]
 	let healthItem = IdGet(monsterIndex + "HP")
 	if (selectedMonster["TempHP"] > 0) {
 		healthItem.textContent = (selectedMonster["HP"] + " + " + selectedMonster["TempHP"] + " / " + selectedMonster["MaxHP"])
@@ -253,11 +265,10 @@ function renderHealth(monsterIndex) {
 
 function loadOrder() {
 	let parent = IdGet("init_box")
-	while (parent.childNodes.length > 2) {
-		parent.removeChild(parent.lastChild)
-	}
+	clear(parent, 2)
 	let init_data = getJSON("Init")
 	init_data.sort((a, b) => b["Init"] - a["Init"])
+    setJSON("Init", init_data)
 
 	for (let i = 0; i < init_data.length; i++) {
 		const selected_monster = init_data[i]
