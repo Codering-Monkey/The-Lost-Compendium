@@ -76,7 +76,7 @@ function loadTiles() {
         const cr = parseFloat(monster[key]["CR"])
         for (let j = 0; j < value; j++) {
             monetaryValue += diceCalc(loot["Value"][cr][0], loot["Value"][cr][1], 0, loot["Value"][cr][2]) // money is calculated in cp
-        }
+        } //whack a doodle doo
         textplate.textContent = monetaryValue + " cp"
     })
 }
