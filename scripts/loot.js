@@ -30,8 +30,7 @@ if (substring[0] === "loot") {
             }
         }
 	} else {
-        const capital = capitalise(info_source, true)
-        info_source[capital] = 1
+        info_source[capitalise(info_source, true)] = 1
     }
 } else {
 	info_source = {}
@@ -78,7 +77,7 @@ function loadTiles() {
         for (let j = 0; j < value; j++) {
             monetaryValue += diceCalc(loot["Value"][cr][0], loot["Value"][cr][1], 0, loot["Value"][cr][2]) // money is calculated in cp
         } // testing testing 123
-        console.log(monetaryValue)
+        textplate.textContent = monetaryValue + " cp"
     })
 }
 
