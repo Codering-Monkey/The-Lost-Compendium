@@ -8,6 +8,11 @@ fetch('../navbar/nav.html')
     let newelem = document.createElement("div");
     newelem.innerHTML = text;
     oldelem.parentNode.replaceChild(newelem,oldelem);
+    let link = document.createElement("link")
+    link.rel = "icon"
+    link.type = "image/x-icon"
+    link.href = "favicon.ico"
+    document.head.appendChild(link)
     if (!localStorage.getItem("Colour")) {
         if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
             localStorage.setItem("Colour", "Darcula")
