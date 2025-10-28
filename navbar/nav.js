@@ -8,6 +8,13 @@ fetch('../navbar/nav.html')
     let newelem = document.createElement("div");
     newelem.innerHTML = text;
     oldelem.parentNode.replaceChild(newelem,oldelem);
+    if (!localStorage.getItem("Colour")) {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            localStorage.setItem("Colour", "Darcula")
+        } else {
+            localStorage.setItem("Colour", "Forest")
+        }
+    }
     IdGet("settings").addEventListener("click", function() {
         let overlay = createOverlay()
 
@@ -26,13 +33,6 @@ fetch('../navbar/nav.html')
             colourOption.textContent = key
             colourEntry.appendChild(colourOption)
         });
-        if (!localStorage.getItem("Colour")) {
-            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                localStorage.setItem("Colour", "Darcula")
-            } else {
-                localStorage.setItem("Colour", "Forest")
-            }
-        }
         colourEntry.value = localStorage.getItem("Colour")
         colourEntry.addEventListener("change", function (e) {
             localStorage.setItem("Colour", colourEntry.value)
