@@ -110,9 +110,9 @@
                 ]
             },
             {
-              "Type": "Text",
-              "Location": "Full",
-              "Content": "*Special Equipment such as skis are required to reach this pace/n**The speed in water is dependant on the vehicles used"
+                "Type": "Text",
+                "Location": "Full",
+                "Content": "*Special Equipment such as skis are required to reach this pace/n**The speed in water is dependant on the vehicles used"
             }
         ]
     }

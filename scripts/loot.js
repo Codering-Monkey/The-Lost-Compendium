@@ -74,11 +74,39 @@ function loadTiles() {
 
         let monetaryValue = 0
         const cr = parseFloat(monster[key]["CR"])
+        let dice
+        if (cr in loot["Value"]) {
+            dice = loot["Value"][cr]
+        } else {
+            dice = [2, 8, 10**(Math.ceil(cr / 5) + 2)]
+        }
         for (let j = 0; j < value; j++) {
-            monetaryValue += diceCalc(loot["Value"][cr][0], loot["Value"][cr][1], 0, loot["Value"][cr][2]) // money is calculated in cp
-        } //whack a doodle doo
-        textplate.textContent = monetaryValue + " cp"
+            monetaryValue += diceCalc(dice[0], dice[1], 0, dice[2]) // money is calculated in cp
+        }
+
+        const currency = localStorage.getItem("Currency")
+        if (currency === "cp") {
+            textplate.textContent += monetaryValue + " cp"
+        } else if (currency === "gp") {
+            textplate.textContent += monetaryValue / 100 + " gp"
+        } else {
+            let monetaryText =""
+            let divider = 1000
+            const coinValues = ["pp", "gp", "sp", "cp"]
+            let currentCoin = 0
+            while (monetaryValue >= 1) {
+                if (monetaryValue / divider >= 1) {
+                    monetaryText += Math.floor(monetaryValue / divider) + " " + coinValues[currentCoin] + ", "
+                    monetaryValue -= Math.floor(monetaryValue / divider) * divider
+                }
+                monetaryValue = monetaryValue % divider
+                divider /= 10
+                currentCoin += 1
+            }
+            textplate.textContent += monetaryText.slice(0, -2)
+        }
     })
 }
 
+IdGet("reload").addEventListener("click", function() { loadTiles() })
 loadTiles()

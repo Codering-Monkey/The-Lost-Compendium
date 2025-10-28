@@ -8,15 +8,15 @@ unit_switch.addEventListener("click", function() {
 	if (unit_switch.firstChild.getAttribute("state") === "on") {
 		unit_switch.firstChild.setAttribute("state", "off")
 		unit_switch.firstChild.textContent = "ft"
-		localStorage.setItem("unit", "ft")
+		localStorage.setItem("Unit", "ft")
 	} else {
 		unit_switch.firstChild.setAttribute("state", "on")
 		unit_switch.firstChild.textContent = "m"
-		localStorage.setItem("unit", "m")
+		localStorage.setItem("Unit", "m")
 	}
 	loadMonster()
 })
-if (localStorage.getItem("unit") === "m") {
+if (localStorage.getItem("Unit") === "m") {
 	unit_switch.firstChild.setAttribute("state", "on")
 	unit_switch.firstChild.textContent = "m"
 }

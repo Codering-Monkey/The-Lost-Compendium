@@ -3,13 +3,13 @@
 :root {}
 
 * {
-	border: 0px;
-	padding: 0px;
-	margin: 0px;
+	border: 0;
+	padding: 0;
+	margin: 0;
 	overflow: hidden;
-	scrollbar-width: 10px;	
-	scrollbar-color: var(--dark) var(--dark-hover); 
-	font-family: "Markazi Text", Sans-serif;
+	scrollbar-width: thin;
+	scrollbar-color: var(--dark) var(--dark-hover);
+    font-family: "Markazi Text", "Open Sans", sans-serif;
 }
 
 body {
@@ -33,7 +33,7 @@ a:hover {
 
 button { 
 	padding: 8px;
-	margin: 8px 0px 8px 8px;
+	margin: 8px 0 8px 8px;
 	width: 100px;
 	background-color: var(--light);
 	color: var(--light-text)
@@ -56,6 +56,8 @@ input {
 select {
 	background-color: var(--dark);
 	color: var(--dark-text);
+    height: 18px;
+    margin: 8px;
 }
 
 hr {
@@ -104,7 +106,7 @@ td, th {
 	margin: 8px
 }
 
-.overlay-box input {
+.overlay-box input, .overlay-box select {
 	float: right;
 	margin: 8px;
 	min-width: 200px
@@ -132,7 +134,7 @@ td, th {
   	text-decoration: none;
   	width: 5vw;
 	height: 7vh;
-  	margin: 0px;
+  	margin: 0;
   	align-items: center;
   	justify-content: center;
 }
@@ -168,11 +170,11 @@ td, th {
   	z-index: 1;
 	width: 5vw;
 	font-size: 2.5vh;
-	box-shadow: 2px 0px var(--shadow)
+	box-shadow: 2px 0 var(--shadow)
 }
 
 .navbar .dropdown-content a:last-child {
-	box-shadow: 2px 0px var(--shadow), 2px 2px var(--shadow)
+	box-shadow: 2px 0 var(--shadow), 2px 2px var(--shadow)
 }
 
 .navbar .dropdown:hover .dropdown-content {
@@ -181,7 +183,7 @@ td, th {
 
 .navbar .dropdown-content a {
 	color: var(--light-text);
-  	padding: 0px 16px;
+  	padding: 0 16px;
   	text-decoration: none;
   	display: flex;
   	text-align: center;
@@ -201,7 +203,7 @@ td, th {
 }
 
 .body {
-	scrollbar-width: 10px;	
+	scrollbar-width: thin;	
 	scrollbar-color: var(--dark) var(--dark-hover); 
 	overflow-y: scroll;
 	height:89vh;
@@ -209,7 +211,7 @@ td, th {
 
 @keyframes dropdown-slide {
 	from {
-		height: 0vh
+		height: 0
 	}
 	to {
 		height: 80vh
@@ -223,7 +225,7 @@ td, th {
 	height: calc(90vh - 16px);
 	float: left;
 	list-style-type: none;
-	scrollbar-width: 10px;	
+	scrollbar-width: thin;	
 	scrollbar-color: var(--dark) var(--dark-hover); 
 	overflow-y: scroll;
 }
@@ -260,7 +262,7 @@ td, th {
 	color: var(--dark-text);
 	font-size: 16px;
 	padding: 8px 8px 8px 8px;
-	margin: 0px 0px 0px calc(calc(var(--indent) - 1) * 16px);
+	margin: 0 0 0 calc(calc(var(--indent) - 1) * 16px);
 	border-left: var(--contrast) solid;
 	cursor: pointer
 }
@@ -295,7 +297,7 @@ td, th {
 	color: var(--dark-text);
 	border-bottom: solid 1px var(--light);
 	height: fit-content;
-	margin: 12px 8px 4px 0px
+	margin: 12px 8px 4px 0
 }
 
 .portion {
@@ -306,7 +308,7 @@ td, th {
 }
 
 .portion div input, .portion div label {
-	padding: 0px 6px;
+	padding: 0 6px;
 	vertical-align: middle;
 	align-content: center;
 	font-weight: bolder;
@@ -341,14 +343,14 @@ td, th {
 	width: 80%;
 	float:right;
 	overflow-y: scroll;
-	scrollbar-width: 10px !important;
+	scrollbar-width: thin !important;
 	scrollbar-color: var(--dark) var(--dark-hover);
 	padding-bottom: 16px;
 	height: calc(90vh - 16px);
 }
 
 .content-box > div {
-	margin: 0px 8px 8px;
+	margin: 0 8px 8px;
 	overflow: visible;
 }
 
@@ -363,19 +365,19 @@ td, th {
 	width: calc(48% - 16px);
 	text-align: left;
 	clear: left;
-	padding: 8px 8px 0px;
+	padding: 8px 8px 0;
 }
 
 .content-box .right {
 	margin-left: calc(48% + 16px);
 	width: calc(48% - 16px);
-	padding: 8px 8px 0px;
+	padding: 8px 8px 0;
 	text-align: left;
 	clear: right;
 }
 
 .content-box .full {
-	padding: 8px 8px 0px;
+	padding: 8px 8px 0;
 	text-align: center
 }
 
@@ -456,7 +458,7 @@ td, th {
 }
 
 .scrollbox {
-	scrollbar-width: 10px;	
+	scrollbar-width: thin;	
 	scrollbar-color: var(--dark) var(--dark-hover); 
 	overflow-y: scroll;
 	width: 100%;
@@ -464,7 +466,7 @@ td, th {
 }
 
 .monster-row, .monster-row-short {
-	padding: 8px 0px;
+	padding: 8px 0;
 	margin: 8px;
 	color: var(--light-text);
 	display: grid;
@@ -483,8 +485,8 @@ td, th {
 
 .monster-row > div, .monster-row-short > div {
 	border-left: 2px solid var(--contrast);
-	padding: 0px;
-	margin: 0px
+	padding: 0;
+	margin: 0
 }
 
 .monster-row > div:nth-child(1), .monster-row-short > div:nth-child(1){
@@ -500,8 +502,8 @@ td, th {
 }
 
 .monster-row button, .monster-row a {
-	margin: 0px 4px;
-	padding: 0px 4px;
+	margin: 0 4px;
+	padding: 0 4px;
 	width: auto;
 	height: auto;
 	background-color: var(--dark);
@@ -518,12 +520,12 @@ td, th {
 }
 
 .monster-row input {
-	margin: 0px 4px;
-	padding: 0px;
+	margin: 0 4px;
+	padding: 0;
 	width: calc(100% - 8px);
 	height: auto;
 	background-color: var(--dark);
-	border: 0.5px solid var(--shadow);
+	border: 1px solid var(--shadow);
 	color: var(--dark-text)
 }
 
@@ -540,8 +542,8 @@ td, th {
 	background-color: var(--light-hover);
 	font-weight: bold;
 	position: sticky;
-	top: 0px;
-	box-shadow: 0px 6px var(--background);
+	top: 0;
+	box-shadow: 0 6px var(--background);
 	z-index: 2
 }
 
@@ -588,7 +590,7 @@ td, th {
 .container p {
 	float: left;
 	margin: 8px;
-	padding: 0px
+	padding: 0
 }
 
 .container select {
@@ -655,12 +657,12 @@ td, th {
 }
 
 .status[state="on"] {
-    right: 0px;
+    right: 0;
 	left: 12px
 }
 
 .status[state="off"] {
-    left: 0px;
+    left: 0;
 	right: 12px
 }
 

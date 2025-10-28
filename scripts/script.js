@@ -81,28 +81,7 @@ export function createOverlay(plain=false, createEvent=true, returnBoth=false) {
 	}
 }
 
-export function loadColours() {
-	if (!localStorage.getItem("Colour")) {
-		if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-			localStorage.setItem("Colour", "Darcula")
-		} else {
-			localStorage.setItem("Colour", "Forest")
-		}
-	};
-	const colours_container = IdGet("colours_dropdown")
-	Object.entries(colours).forEach(([key, value]) => {
-		const colour_item = document.createElement("a")
-		colour_item.textContent = key
-		colour_item.addEventListener("click", function (e) {
-		  	localStorage.setItem("Colour", this.textContent)
-			setColours()
-		});
-		colours_container.appendChild(colour_item)
-	})
-	setColours()
-}
-
-function setColours() {
+export function setColours() {
 	Object.entries(colours[localStorage.getItem("Colour")]).forEach(([key, value]) => {
 		document.querySelector(':root').style.setProperty(key, value);
 	})
