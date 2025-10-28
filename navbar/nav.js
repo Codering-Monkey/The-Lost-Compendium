@@ -11,7 +11,7 @@ fetch('../navbar/nav.html')
     let link = document.createElement("link")
     link.rel = "icon"
     link.type = "image/x-icon"
-    link.href = "favicon.ico"
+    link.href = "./favicon.ico"
     document.head.appendChild(link)
     if (!localStorage.getItem("Colour")) {
         if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
