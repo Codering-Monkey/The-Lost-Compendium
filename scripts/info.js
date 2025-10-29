@@ -189,4 +189,4 @@ function loadContent() {
 }
 
 window.addEventListener("hashchange", function() { loadInfo().then() });
-if (window.location.pathname === "/pages/info.html") { loadInfo().then() }
+if (window.location.pathname.split("/")[0] === "info.html") { loadInfo().then() }
