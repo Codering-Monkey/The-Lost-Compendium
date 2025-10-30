@@ -4,7 +4,7 @@ let info_source
 let data
 
 async function loadInfo() {
-	const substring = window.location.search.substring(1).split('=')
+	const substring = window.location.search.substring(1).split('&')[0].split("=")
 	if (substring[0] === "location") {
 		info_source = substring[1]
 	} else {
@@ -91,7 +91,7 @@ function toggleSidebarItem(trail, multibar_name) {
 }
 
 function sidebarRedirect(button_name) {
-	window.location.hash = "#" + info_source + "/" + button_name
+	window.location.search = "?location=" + info_source + "&path=" + button_name
 	loadContent()
 }
 
@@ -100,92 +100,94 @@ function loadContent() {
 	while (content_box.firstChild) {
     	content_box.removeChild(content_box.lastChild);
   	}
-	let trail = window.location.hash.split("#").pop().split("/")
-	trail.shift()
-	let item = data
-	for (let i = 0; i < trail.length; i++) {
-		trail[i] = trail[i].replaceAll("%20", " ")
-		for (let j = 0; j < item.length; j++) {
-			if (item[j]["Name"] === trail[i] && i+1 === trail.length) {
-				item = item[j]
-			} else if (item[j]["Name"] === trail[i]) {
-				item = item[j]["SubItems"]
-			}
-		}
-	}
-	const content = item["Content"]
-	for (let i = 0; i < content.length; i++) {
-		let content_info = content[i];
-		let content_item = document.createElement("div")
-		if (content_info["Location"] === "Left") {
-			content_item.classList = content_item.classList + "left"
-		} else if (content_info["Location"] === "Right") {
-			content_item.classList = content_item.classList + "right"
-		} else if (content_info["Location"] === "Full") {
-			content_item.classList = content_item.classList + "full"
-		}
-		if (content_info["Type"] === "Title") {
-			let content_item_title = document.createElement("h2")
-			content_item_title.textContent = content_info["Content"]
-			content_item.appendChild(content_item_title)
-		} else if (content_info["Type"] === "Subtitle") {
-			let content_item_subtitle = document.createElement("h3")
-			content_item_subtitle.textContent = content_info["Content"]
-			content_item.appendChild(content_item_subtitle)
-		} else if (content_info["Type"] === "Text") {
-			let content_item_text = document.createElement("t")
-			content_item_text.innerHTML = renderText(content_info["Content"])
-			content_item.appendChild(content_item_text)
-		} else if (content_info["Type"] === "Image") {
-			const image_sizes = ["Thin", "Normal", "Wide"]
-			let images = content_info["Content"]
-			if (!("Normal" in images)) {
-				if ("Thin" in images) {
-					images["Normal"] = images["Thin"]
-				} else if ("Wide" in images) {
-					images["Normal"] = images["Wide"]
-				} else {console.log("No Image Provided")}
-			}
-			if (!("Thin" in images)) {
-				images["Thin"] = images["Normal"]
-			}
-			if (!("Wide" in images)) {
-				images["Wide"] = images["Wide"]
-			}
-			for (let j = 0; j < image_sizes.length; j++) {
-				let content_item_image = document.createElement("img")
-				content_item_image.src = images[image_sizes[j]]
-				content_item_image.classList = content_item_image.classList + " " + image_sizes[j].toLowerCase()
-				content_item.appendChild(content_item_image)
-			}
-		} else if (content_info["Type"] === "Values") {
-			Object.entries(content_info["Content"]).forEach(([key, value]) => {
-				let text_key = document.createElement("strong")
-				text_key.textContent = key + ": "
-				content_item.appendChild(text_key)
-				let text_value = document.createElement("t")
-				text_value.innerHTML = renderText(value)
-				content_item.appendChild(text_value)
-				content_item.appendChild(document.createElement("br"))
-			});
-		} else if (content_info["Type"] === "Table") {
-			let content_item_table = document.createElement("table")
-			for (let i = 0; i < content_info["Content"].length; i++) {
-				let current_row = document.createElement("tr")
-				for (let j = 0; j < content_info["Content"][i].length; j++) {
-					let current_cell = document.createElement("td")
-					if (i === 0) {
-						current_cell = document.createElement("th")
-					}
-					current_cell.innerHTML = renderText(content_info["Content"][i][j])
-					current_row.appendChild(current_cell)
-				}
-				content_item_table.appendChild(current_row)
-			}
-			content_item.appendChild(content_item_table)
-		}
-		content_box.appendChild(content_item)
-	}
+	let trail = window.location.search.substring(1).split("&")[1].split("=")
+    if (trail[0] === "path") {
+        trail = trail[1].split("/")
+        let item = data
+        for (let i = 0; i < trail.length; i++) {
+            trail[i] = trail[i].replaceAll("%20", " ")
+            for (let j = 0; j < item.length; j++) {
+                if (item[j]["Name"] === trail[i] && i+1 === trail.length) {
+                    item = item[j]
+                } else if (item[j]["Name"] === trail[i]) {
+                    item = item[j]["SubItems"]
+                }
+            }
+        }
+        const content = item["Content"]
+        for (let i = 0; i < content.length; i++) {
+            let content_info = content[i];
+            let content_item = document.createElement("div")
+            if (content_info["Location"] === "Left") {
+                content_item.classList = content_item.classList + "left"
+            } else if (content_info["Location"] === "Right") {
+                content_item.classList = content_item.classList + "right"
+            } else if (content_info["Location"] === "Full") {
+                content_item.classList = content_item.classList + "full"
+            }
+            if (content_info["Type"] === "Title") {
+                let content_item_title = document.createElement("h2")
+                content_item_title.textContent = content_info["Content"]
+                content_item.appendChild(content_item_title)
+            } else if (content_info["Type"] === "Subtitle") {
+                let content_item_subtitle = document.createElement("h3")
+                content_item_subtitle.textContent = content_info["Content"]
+                content_item.appendChild(content_item_subtitle)
+            } else if (content_info["Type"] === "Text") {
+                let content_item_text = document.createElement("t")
+                content_item_text.innerHTML = renderText(content_info["Content"])
+                content_item.appendChild(content_item_text)
+            } else if (content_info["Type"] === "Image") {
+                const image_sizes = ["Thin", "Normal", "Wide"]
+                let images = content_info["Content"]
+                if (!("Normal" in images)) {
+                    if ("Thin" in images) {
+                        images["Normal"] = images["Thin"]
+                    } else if ("Wide" in images) {
+                        images["Normal"] = images["Wide"]
+                    } else {console.log("No Image Provided")}
+                }
+                if (!("Thin" in images)) {
+                    images["Thin"] = images["Normal"]
+                }
+                if (!("Wide" in images)) {
+                    images["Wide"] = images["Wide"]
+                }
+                for (let j = 0; j < image_sizes.length; j++) {
+                    let content_item_image = document.createElement("img")
+                    content_item_image.src = images[image_sizes[j]]
+                    content_item_image.classList = content_item_image.classList + " " + image_sizes[j].toLowerCase()
+                    content_item.appendChild(content_item_image)
+                }
+            } else if (content_info["Type"] === "Values") {
+                Object.entries(content_info["Content"]).forEach(([key, value]) => {
+                    let text_key = document.createElement("strong")
+                    text_key.textContent = key + ": "
+                    content_item.appendChild(text_key)
+                    let text_value = document.createElement("t")
+                    text_value.innerHTML = renderText(value)
+                    content_item.appendChild(text_value)
+                    content_item.appendChild(document.createElement("br"))
+                });
+            } else if (content_info["Type"] === "Table") {
+                let content_item_table = document.createElement("table")
+                for (let i = 0; i < content_info["Content"].length; i++) {
+                    let current_row = document.createElement("tr")
+                    for (let j = 0; j < content_info["Content"][i].length; j++) {
+                        let current_cell = document.createElement("td")
+                        if (i === 0) {
+                            current_cell = document.createElement("th")
+                        }
+                        current_cell.innerHTML = renderText(content_info["Content"][i][j])
+                        current_row.appendChild(current_cell)
+                    }
+                    content_item_table.appendChild(current_row)
+                }
+                content_item.appendChild(content_item_table)
+            }
+            content_box.appendChild(content_item)
+        }
+    }
 }
 
 window.addEventListener("hashchange", function() { loadInfo().then() });
