@@ -100,8 +100,8 @@ function loadContent() {
     	content_box.removeChild(content_box.lastChild);
   	}
 	let trail = window.location.search.substring(1).split("&")[1].split("=")
-    if (trail[0] === "path") {
-        trail = trail[1].split("/")
+    try {
+        trail = searchParam()["path"].split("/")
         let item = data
         for (let i = 0; i < trail.length; i++) {
             trail[i] = trail[i].replaceAll("%20", " ")
@@ -186,6 +186,8 @@ function loadContent() {
             }
             content_box.appendChild(content_item)
         }
+    } catch {
+        console.log("A path was not specified")
     }
 }
 
