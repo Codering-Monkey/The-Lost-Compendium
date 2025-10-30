@@ -355,3 +355,13 @@ export function loadScrollbox(monsters, clickCommand) {
 		renderItem(parent, valid_monsters[i], 1, "", valid_monsters[i], function() { clickCommand(valid_monsters[i]) })
 	}
 }
+
+export function searchParam() {
+    const searchLink = window.location.search.substring(1).split("&")
+    let searchDict = {}
+    for (let i = 0; i < searchLink.length; i++) {
+        let parameter = searchLink[i].split("=")
+        searchDict[parameter[0]] = parameter[1]
+    }
+    return searchDict
+}

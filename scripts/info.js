@@ -1,13 +1,12 @@
-import { IdGet, inject, capitalise, renderText } from "../scripts/script.js"
+import { IdGet, inject, capitalise, renderText, searchParam } from "../scripts/script.js"
 
 let info_source
 let data
 
 async function loadInfo() {
-	const substring = window.location.search.substring(1).split('&')[0].split("=")
-	if (substring[0] === "location") {
-		info_source = substring[1]
-	} else {
+	try {
+		info_source = searchParam()["location"]
+	} catch {
 		alert("An Error Occurred, Please specify a location query")
 	}
 	document.title = "The Lost Compendium - " + capitalise(info_source)
