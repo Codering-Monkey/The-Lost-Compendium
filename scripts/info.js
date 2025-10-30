@@ -4,28 +4,28 @@ let info_source
 let data
 
 async function loadInfo() {
-	try {
-		info_source = searchParam()["location"]
-	} catch {
-		alert("An Error Occurred, Please specify a location query")
-	}
-	document.title = "The Lost Compendium - " + capitalise(info_source)
-	let response = await fetch("../data/" + info_source + ".json")
-	let old_data = await response.json()
-	data = inject(old_data, info_source)
-	let sidebar = IdGet("sidebar");
-	let first = sidebar.firstChild
-	if (first) {
-		if (!(((first.className === "sidebar-multiitem") && (first.firstChild.textContent === data[0]["Name"] + "x")) || ((first.className === "sidebar-item") && (first.textContent === data[0]["Name"])))) {
-			while (sidebar.firstChild) {
-				sidebar.removeChild(sidebar.lastChild);
-			}
-			createSidebarStatic(sidebar, data, 1, "");
-		}
-	} else {
-		createSidebarStatic(sidebar, data, 1, "");
-	}
-	loadContent()
+    info_source = searchParam()["location"]
+    if (info_source) {
+        document.title = "The Lost Compendium - " + capitalise(info_source)
+        let response = await fetch("../data/" + info_source + ".json")
+        let old_data = await response.json()
+        data = inject(old_data, info_source)
+        let sidebar = IdGet("sidebar");
+        let first = sidebar.firstChild
+        if (first) {
+            if (!(((first.className === "sidebar-multiitem") && (first.firstChild.textContent === data[0]["Name"] + "x")) || ((first.className === "sidebar-item") && (first.textContent === data[0]["Name"])))) {
+                while (sidebar.firstChild) {
+                    sidebar.removeChild(sidebar.lastChild);
+                }
+                createSidebarStatic(sidebar, data, 1, "");
+            }
+        } else {
+            createSidebarStatic(sidebar, data, 1, "");
+        }
+        loadContent()
+    } else {
+        document.title = "The Lost Compendium - Info"
+    }
 }
 
 export function renderItem(parent, name, indent, trail, parameter, func=function(param, evt) { if (evt.target.id === trail + name + "_item") { sidebarRedirect(param) } }) {
@@ -99,9 +99,9 @@ function loadContent() {
 	while (content_box.firstChild) {
     	content_box.removeChild(content_box.lastChild);
   	}
-	let trail = window.location.search.substring(1).split("&")[1].split("=")
-    try {
-        trail = searchParam()["path"].split("/")
+	let trail = searchParam()["path"]
+    if (trail) {
+        trail = trail.split("/")
         let item = data
         for (let i = 0; i < trail.length; i++) {
             trail[i] = trail[i].replaceAll("%20", " ")
@@ -186,8 +186,6 @@ function loadContent() {
             }
             content_box.appendChild(content_item)
         }
-    } catch {
-        console.log("A path was not specified")
     }
 }
 
