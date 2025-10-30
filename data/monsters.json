@@ -82,6 +82,18 @@
                 "Psychic Drain": "If the aboleth has at least one creature Charmed or Grappled, it uses Consume Memories and regains 5 (1d10) Hit Points."
             }
         },
+        "Tags": [
+            "psychic",
+            "necrotic",
+            "defense",
+            "weapon",
+            "mobility",
+            "summoning",
+            "alchemy",
+            "divination",
+            "luck",
+            "exploration"
+        ],
         "Skills": {
             "History": "+12",
             "Perception": "+10"
@@ -157,6 +169,16 @@
                 "Whirlwind (Recharge 4\u20136)": "Strength Saving Throw: DC 13, one Medium or smaller creature in the elemental\u2019s space. Failure: 24 (4d10 + 2) Thunder damage, and the target is pushed up to 20 feet straight away from the elemental and has the Prone condition. Success: Half damage only."
             }
         },
+        "Tags": [
+            "lightning",
+            "psychic",
+            "radiant",
+            "defense",
+            "weapon",
+            "mobility",
+            "utility",
+            "summoning"
+        ],
         "Damage": {
             "Resistances": [
                 "Bludgeoning",
@@ -237,6 +259,11 @@
                 "Slam": "Melee Attack Roll: +4, reach 5 ft Hit: 5 (1d6 + 2) Bludgeoning damage."
             }
         },
+        "Tags": [
+            "weapon",
+            "mobility",
+            "crafting"
+        ],
         "Damage": {
             "Immunities": [
                 "Poison",
@@ -311,6 +338,11 @@
                 "Slash": "Melee Attack Roll: +4, reach 5 ft Hit: 6 (1d8 + 2) Slashing damage."
             }
         },
+        "Tags": [
+            "weapon",
+            "mobility",
+            "crafting"
+        ],
         "Damage": {
             "Immunities": [
                 "Poison",
@@ -384,6 +416,11 @@
                 "Smother": "Melee Attack Roll: +5, reach 5 ft Hit: 10 (2d6 + 3) Bludgeoning damage. If the target is a Medium or smaller creature, the rug can give it the Grappled condition (escape DC 13) instead of dealing damage. Until the grapple ends, the target has the Blinded and Restrained conditions, is suffocating, and takes 10 (2d6 + 3) Bludgeoning damage at the start of each of its turns."
             }
         },
+        "Tags": [
+            "weapon",
+            "mobility",
+            "crafting"
+        ],
         "Damage": {
             "Immunities": [
                 "Poison",
@@ -463,7 +500,12 @@
                 "Acid Spray (Recharge 6)": "Dexterity Saving Throw: DC 12, each creature in a 30-foot-long, 5-foot-wide Line.",
                 "Failure: 14 (4d6) Acid damage": "Success: Half damage"
             }
-        }
+        },
+        "Tags": [
+            "weapon",
+            "mobility",
+            "buff"
+        ]
     },
     "Assassin": {
         "Name": "Assassin",
@@ -538,6 +580,14 @@
                 "Cunning Action": "The assassin takes the Dash, Disengage, or Hide action."
             }
         },
+        "Tags": [
+            "radiant",
+            "defense",
+            "stealth",
+            "mobility",
+            "utility",
+            "buff"
+        ],
         "Damage": {
             "Resistances": [
                 "Poison"
@@ -612,6 +662,11 @@
                 "Rake": "Melee Attack Roll: +1, reach 5 ft Hit: 1 Slashing damage."
             }
         },
+        "Tags": [
+            "defense",
+            "weapon",
+            "mobility"
+        ],
         "Damage": {
             "Vulnerabilities": [
                 "Fire"
@@ -684,6 +739,11 @@
                 "Slam": "Melee Attack Roll: +6, reach 10 ft Hit: 14 (3d6 + 4) Bludgeoning damage."
             }
         },
+        "Tags": [
+            "defense",
+            "weapon",
+            "mobility"
+        ],
         "Damage": {
             "Vulnerabilities": [
                 "Fire"
@@ -756,7 +816,11 @@
             "Actions": {
                 "Beak": "Melee Attack Roll: +4, reach 5 ft Hit: 6 (1d8 + 2) Slashing damage."
             }
-        }
+        },
+        "Tags": [
+            "weapon",
+            "mobility"
+        ]
     },
     "Azer Sentinel": {
         "Name": "Azer Sentinel",
@@ -825,6 +889,16 @@
                 "Burning Hammer": "Melee Attack Roll: +5, reach 5 ft"
             }
         },
+        "Tags": [
+            "fire",
+            "cold",
+            "psychic",
+            "radiant",
+            "weapon",
+            "mobility",
+            "utility",
+            "summoning"
+        ],
         "Damage": {
             "Immunities": [
                 "Fire",
@@ -910,6 +984,20 @@
                 "Teleport": "The balor teleports itself or a willing demon within 10 feet of itself up to 60 feet to an unoccupied space the balor can see."
             }
         },
+        "Tags": [
+            "fire",
+            "psychic",
+            "necrotic",
+            "radiant",
+            "defense",
+            "mobility",
+            "teleportation",
+            "spellcasting",
+            "utility",
+            "buff",
+            "divination",
+            "exploration"
+        ],
         "Damage": {
             "Resistances": [
                 "Cold",
@@ -992,7 +1080,13 @@
                 "Scimitar": "Melee Attack Roll: +3, reach 5 ft Hit: 4 (1d6 + 1) Slashing damage.",
                 "Light Crossbow": "Ranged Attack Roll: +3, range 80/320 ft. Hit: 5 (1d8 + 1) Piercing damage."
             }
-        }
+        },
+        "Tags": [
+            "radiant",
+            "weapon",
+            "mobility",
+            "utility"
+        ]
     },
     "Bandit Captain": {
         "Name": "Bandit Captain",
@@ -1064,6 +1158,10 @@
                 "Parry": "Trigger: The bandit is hit by a melee attack roll while holding a weapon. Response: The bandit adds 2 to its AC against that attack, possibly causing it to miss."
             }
         },
+        "Tags": [
+            "weapon",
+            "mobility"
+        ],
         "Skills": {
             "Athletics": "+4",
             "Deception": "+4"
@@ -1142,6 +1240,18 @@
                 "Hurl Flame": "Ranged Attack Roll: +5, range 150 ft Hit: 17 (5d6) Fire damage. If the target is a flammable object that isn\u2019t being worn or carried, it starts burning."
             }
         },
+        "Tags": [
+            "fire",
+            "psychic",
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "spellcasting",
+            "buff",
+            "divination",
+            "exploration"
+        ],
         "Damage": {
             "Resistances": [
                 "Cold"
@@ -1224,7 +1334,12 @@
             "Bonus Actions": {
                 "Petrifying Gaze (Recharge 4\u20136)": "Constitution Saving Throw: DC 12, each creature in a 30-foot Cone. If the basilisk sees its reflection in the Cone, the basilisk must make this save. First Failure: The target has the Restrained condition and repeats the save at the end of its next turn if it is still Restrained, ending the effect on itself on a success. Second Failure: The target has the Petrified condition instead of the Restrained condition."
             }
-        }
+        },
+        "Tags": [
+            "mobility",
+            "buff",
+            "divination"
+        ]
     },
     "Bearded Devil": {
         "Name": "Bearded Devil",
@@ -1295,6 +1410,15 @@
                 "Infernal Glaive": "Melee Attack Roll: +5, reach 10 ft Hit: 8 (1d10 + 3) Slashing damage. If the target is a creature and doesn\u2019t already have an infernal wound, it is subjected to the following effect. Constitution Saving Throw: DC 12. Failure: The target receives an infernal wound. While wounded, the target loses 5 (1d10) Hit Points at the start of each of its turns. The wound closes after 1 minute, after a spell restores Hit Points to the target, or after the target or a creature within 5 feet of it takes an action to stanch the wound, doing so by succeeding on a DC 12 Wisdom (Medicine) check."
             }
         },
+        "Tags": [
+            "psychic",
+            "defense",
+            "weapon",
+            "mobility",
+            "spellcasting",
+            "buff",
+            "exploration"
+        ],
         "Damage": {
             "Resistances": [
                 "Cold"
@@ -1378,6 +1502,16 @@
                 "Swallow": "Dexterity Saving Throw: DC 18, one Large or smaller creature Grappled by the behir (the behir can have only one creature swallowed at a time). Failure: The behir swallows the target, which is no longer Grappled."
             }
         },
+        "Tags": [
+            "lightning",
+            "radiant",
+            "weapon",
+            "stealth",
+            "mobility",
+            "utility",
+            "buff",
+            "divination"
+        ],
         "Damage": {
             "Immunities": [
                 "Lightning"
@@ -1454,7 +1588,13 @@
             "Actions": {
                 "Greataxe": "Melee Attack Roll: +5, reach 5 ft Hit: 9 (1d12 + 3) Slashing damage."
             }
-        }
+        },
+        "Tags": [
+            "weapon",
+            "stealth",
+            "mobility",
+            "buff"
+        ]
     },
     "Black Dragon Wyrmling": {
         "Name": "Black Dragon Wyrmling",
@@ -1528,6 +1668,11 @@
                 "Acid Breath (Recharge 5\u20136)": "Dexterity Saving Throw: DC 11, each creature in a 15-foot-long, 5-footwide Line. Failure: 22 (5d8) Acid damage. Success: Half damage."
             }
         },
+        "Tags": [
+            "weapon",
+            "stealth",
+            "mobility"
+        ],
         "Damage": {
             "Immunities": [
                 "Acid"
@@ -1611,6 +1756,11 @@
                 "Acid Breath (Recharge 5\u20136)": "Dexterity Saving Throw: DC 14, each creature in a 30-foot-long, 5-footwide Line. Failure: 49 (14d6) Acid damage. Success: Half damage."
             }
         },
+        "Tags": [
+            "weapon",
+            "stealth",
+            "mobility"
+        ],
         "Damage": {
             "Immunities": [
                 "Acid"
@@ -1702,6 +1852,17 @@
                 "Pounce": "The dragon moves up to half its Speed, and it makes one Rend attack."
             }
         },
+        "Tags": [
+            "psychic",
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "spellcasting",
+            "utility",
+            "buff",
+            "divination"
+        ],
         "Damage": {
             "Immunities": [
                 "Acid"
@@ -1793,6 +1954,20 @@
                 "Pounce": "The dragon moves up to half its Speed, and it makes one Rend attack."
             }
         },
+        "Tags": [
+            "psychic",
+            "necrotic",
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "spellcasting",
+            "utility",
+            "buff",
+            "summoning",
+            "divination",
+            "crafting"
+        ],
         "Damage": {
             "Immunities": [
                 "Acid"
@@ -1876,6 +2051,14 @@
                 "Split": "Trigger: While the pudding is Large or Medium and has 10+ Hit Points, it becomes Bloodied or is subjected to Lightning or Slashing damage. Response: The pudding splits into two new Black Puddings. Each new pudding is one size smaller than the original pudding and acts on its Initiative. The original pudding\u2019s Hit Points are divided evenly between the new puddings (round down)."
             }
         },
+        "Tags": [
+            "radiant",
+            "weapon",
+            "mobility",
+            "teleportation",
+            "spellcasting",
+            "utility"
+        ],
         "Damage": {
             "Immunities": [
                 "Acid",
@@ -1954,6 +2137,13 @@
                 "Teleport (Recharge 4\u20136)": "The dog teleports up to 40 feet to an unoccupied space it can see."
             }
         },
+        "Tags": [
+            "stealth",
+            "mobility",
+            "teleportation",
+            "buff",
+            "divination"
+        ],
         "Skills": {
             "Perception": "+5",
             "Stealth": "+5"
@@ -2028,6 +2218,14 @@
                 "Lightning Breath (Recharge 5\u20136)": "Dexterity Saving Throw: DC 12, each creature in a 30-foot-long, 5-footwide Line. Failure: 21 (6d6) Lightning damage. Success: Half damage."
             }
         },
+        "Tags": [
+            "lightning",
+            "radiant",
+            "weapon",
+            "stealth",
+            "mobility",
+            "utility"
+        ],
         "Damage": {
             "Immunities": [
                 "Lightning"
@@ -2108,6 +2306,14 @@
                 "Lightning Breath (Recharge 5\u20136)": "Dexterity Saving Throw: DC 16, each creature in a 60-foot-long, 5-footwide Line. Failure: 55 (10d10) Lightning damage. Success: Half damage."
             }
         },
+        "Tags": [
+            "lightning",
+            "radiant",
+            "weapon",
+            "stealth",
+            "mobility",
+            "utility"
+        ],
         "Damage": {
             "Immunities": [
                 "Lightning"
@@ -2198,6 +2404,17 @@
                 "Tail Swipe": "The dragon makes one Rend attack"
             }
         },
+        "Tags": [
+            "lightning",
+            "radiant",
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "spellcasting",
+            "utility",
+            "divination"
+        ],
         "Damage": {
             "Immunities": [
                 "Lightning"
@@ -2288,6 +2505,17 @@
                 "Tail Swipe": "The dragon makes one Rend attack"
             }
         },
+        "Tags": [
+            "lightning",
+            "radiant",
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "spellcasting",
+            "utility",
+            "divination"
+        ],
         "Damage": {
             "Immunities": [
                 "Lightning"
@@ -2369,6 +2597,16 @@
                 "Infernal Sting": "Melee Attack Roll: +8, reach 10 ft Hit: 15 (2d10 + 4) Piercing damage plus 18 (4d8) Poison damage, and the target has the Poisoned condition until the start of the devil\u2019s next turn. While Poisoned, the target can\u2019t regain Hit Points."
             }
         },
+        "Tags": [
+            "psychic",
+            "defense",
+            "weapon",
+            "mobility",
+            "spellcasting",
+            "buff",
+            "divination",
+            "exploration"
+        ],
         "Damage": {
             "Resistances": [
                 "Cold"
@@ -2453,6 +2691,12 @@
                 "Sleep Breath": "Constitution Saving Throw: DC 11, each creature in a 15-foot Cone. Failure: The target has the Incapacitated condition until the end of its next turn, at which point it repeats the save. Second Failure: The target has the Unconscious condition for 1 minute. This effect ends for the target if it takes damage or a creature within 5 feet of it takes an action to wake it."
             }
         },
+        "Tags": [
+            "fire",
+            "weapon",
+            "stealth",
+            "mobility"
+        ],
         "Damage": {
             "Immunities": [
                 "Fire"
@@ -2534,6 +2778,12 @@
                 "Sleep Breath": "Constitution Saving Throw: DC 14, each creature in a 30-foot Cone. Failure: The target has the Incapacitated condition until the end of its next turn, at which point it repeats the save. Second Failure: The target has the Unconscious condition for 1 minute. This effect ends for the target if it takes damage or a creature within 5 feet of it takes an action to wake it."
             }
         },
+        "Tags": [
+            "fire",
+            "weapon",
+            "stealth",
+            "mobility"
+        ],
         "Damage": {
             "Immunities": [
                 "Fire"
@@ -2626,6 +2876,19 @@
                 "Scorching Sands": "Dexterity Saving Throw: DC 16, one creature the dragon can see within 120 feet. Failure: 27 (6d8) Fire damage, and the target\u2019s Speed is halved until the end of its next turn. Failure or Success: The dragon can\u2019t take this action again until the start of its next turn."
             }
         },
+        "Tags": [
+            "fire",
+            "psychic",
+            "radiant",
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "spellcasting",
+            "utility",
+            "illusion",
+            "divination"
+        ],
         "Damage": {
             "Immunities": [
                 "Fire"
@@ -2719,6 +2982,19 @@
                 "Scorching Sands": "Dexterity Saving Throw: DC 20, one creature the dragon can see within 120 feet. Failure: 36 (8d8) Fire damage, and the target\u2019s Speed is halved until the end of its next turn. Failure or Success: The dragon can\u2019t take this action again until the start of its next turn."
             }
         },
+        "Tags": [
+            "fire",
+            "psychic",
+            "radiant",
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "spellcasting",
+            "utility",
+            "illusion",
+            "divination"
+        ],
         "Damage": {
             "Immunities": [
                 "Fire"
@@ -2799,6 +3075,14 @@
                 "Repulsion Breath": "Strength Saving Throw: DC 12, each creature in a 30-foot Cone. Failure: The target is pushed up to 30 feet straight away from the dragon and has the Prone condition."
             }
         },
+        "Tags": [
+            "lightning",
+            "radiant",
+            "weapon",
+            "stealth",
+            "mobility",
+            "utility"
+        ],
         "Damage": {
             "Immunities": [
                 "Lightning"
@@ -2883,6 +3167,15 @@
                 "Repulsion Breath": "Strength Saving Throw: DC 15, each creature in a 30-foot Cone. Failure: The target is pushed up to 40 feet straight away from the dragon and has the Prone condition."
             }
         },
+        "Tags": [
+            "lightning",
+            "radiant",
+            "weapon",
+            "stealth",
+            "mobility",
+            "utility",
+            "divination"
+        ],
         "Damage": {
             "Immunities": [
                 "Lightning"
@@ -2976,6 +3269,18 @@
                 "Thunderclap": "Constitution Saving Throw: DC 17, each creature in a 20-foot-radius Sphere centered on a point the dragon can see within 90 feet. Failure: 10 (3d6) Thunder damage, and the target has the Deafened condition until the end of its next turn."
             }
         },
+        "Tags": [
+            "lightning",
+            "psychic",
+            "radiant",
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "spellcasting",
+            "utility",
+            "divination"
+        ],
         "Damage": {
             "Immunities": [
                 "Lightning"
@@ -3069,6 +3374,18 @@
                 "Thunderclap": "Constitution Saving Throw: DC 22, each creature in a 20-foot-radius Sphere centered on a point the dragon can see within 120 feet. Failure: 13 (3d8) Thunder damage, and the target has the Deafened condition until the end of its next turn."
             }
         },
+        "Tags": [
+            "lightning",
+            "psychic",
+            "radiant",
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "spellcasting",
+            "utility",
+            "divination"
+        ],
         "Damage": {
             "Immunities": [
                 "Lightning"
@@ -3154,6 +3471,13 @@
                 "Quick Grapple": "Dexterity Saving Throw: DC 13, one Medium or smaller creature the bugbear can see within 10 feet. Failure: The target has the Grappled condition (escape DC 13)."
             }
         },
+        "Tags": [
+            "stealth",
+            "mobility",
+            "buff",
+            "divination",
+            "exploration"
+        ],
         "Skills": {
             "Stealth": "+6",
             "Survival": "+3"
@@ -3228,6 +3552,15 @@
                 "Light Hammer": "Melee or Ranged Attack Roll: +4 (with Advantage if the target is Grappled by the bugbear), reach 10 ft. or range 20/60 ft. Hit: 9 (3d4 + 2) Bludgeoning damage."
             }
         },
+        "Tags": [
+            "radiant",
+            "weapon",
+            "stealth",
+            "mobility",
+            "utility",
+            "buff",
+            "exploration"
+        ],
         "Skills": {
             "Stealth": "+6",
             "Survival": "+2"
@@ -3304,6 +3637,11 @@
                 "Leap": "The bulette jumps up to 30 feet by spending 10 feet of movement."
             }
         },
+        "Tags": [
+            "weapon",
+            "mobility",
+            "buff"
+        ],
         "Skills": {
             "Perception": "+6"
         }
@@ -3377,6 +3715,11 @@
                 "Trampling Charge (Recharge 5\u20136)": "The centaur moves up to its Speed without provoking Opportunity Attacks and can move through the spaces of Medium or smaller creatures. Each creature whose space the centaur enters is targeted once by the following effect. Strength Saving Throw: DC 14. Failure: 7 (1d6 + 4) Bludgeoning damage, and the target has the Prone condition."
             }
         },
+        "Tags": [
+            "weapon",
+            "mobility",
+            "buff"
+        ],
         "Skills": {
             "Athletics": "+6",
             "Perception": "+3"
@@ -3456,6 +3799,18 @@
                 "Unnerving Gaze": "Trigger: A creature the devil can see starts its turn within 30 feet of the devil and can see the devil. Response\u2014Wisdom Saving Throw: DC 15, the triggering creature. Failure: The target has the Frightened condition until the end of its turn. Success: The target is immune to this devil\u2019s Unnerving Gaze for 24 hours."
             }
         },
+        "Tags": [
+            "fire",
+            "psychic",
+            "defense",
+            "weapon",
+            "mobility",
+            "spellcasting",
+            "buff",
+            "summoning",
+            "divination",
+            "exploration"
+        ],
         "Damage": {
             "Resistances": [
                 "Bludgeoning",
@@ -3539,6 +3894,12 @@
                 "Fire Breath (Recharge 5\u20136)": "Dexterity Saving Throw: DC 15, each creature in a 15-foot Cone. Failure: 31 (7d8) Fire damage. Success: Half damage."
             }
         },
+        "Tags": [
+            "fire",
+            "weapon",
+            "mobility",
+            "buff"
+        ],
         "Skills": {
             "Perception": "+8"
         }
@@ -3614,6 +3975,14 @@
                 "Paralyzing Tentacles": "Constitution Saving Throw: DC 13, one creature Grappled by the chuul. Failure: The target has the Poisoned condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically."
             }
         },
+        "Tags": [
+            "weapon",
+            "mobility",
+            "spellcasting",
+            "utility",
+            "summoning",
+            "divination"
+        ],
         "Damage": {
             "Immunities": [
                 "Poison",
@@ -3698,6 +4067,16 @@
                 "Hasten (Recharge 5\u20136)": "The golem takes the Dash and Disengage actions."
             }
         },
+        "Tags": [
+            "defense",
+            "weapon",
+            "mobility",
+            "teleportation",
+            "spellcasting",
+            "buff",
+            "divination",
+            "crafting"
+        ],
         "Damage": {
             "Resistances": [
                 "Bludgeoning",
@@ -3790,6 +4169,16 @@
                 "Phantasms (Recharge after a Short or Long Rest)": "The cloaker casts the Mirror Image spell, requiring no spell components and using Wisdom as the spellcasting ability."
             }
         },
+        "Tags": [
+            "radiant",
+            "weapon",
+            "stealth",
+            "mobility",
+            "spellcasting",
+            "utility",
+            "buff",
+            "illusion"
+        ],
         "Damage": {
             "Immunities": [
                 "Frightened"
@@ -3870,6 +4259,17 @@
                 "Misty Step": "The giant casts the Misty Step spell, using the same spellcasting ability as Spellcasting."
             }
         },
+        "Tags": [
+            "cold",
+            "lightning",
+            "radiant",
+            "weapon",
+            "mobility",
+            "spellcasting",
+            "utility",
+            "buff",
+            "divination"
+        ],
         "Skills": {
             "Insight": "+7",
             "Perception": "+11"
@@ -3940,6 +4340,10 @@
                 "Petrifying Bite": "Melee Attack Roll: +3, reach 5 ft Hit: 3 (1d4 + 1) Piercing damage. If the target is a creature, it is subjected to the following effect. Constitution Saving Throw: DC 11. First Failure: The target has the Restrained condition. The target repeats the save at the end of its next turn if it is still Restrained, ending the effect on itself on a success. Second Failure: The target has the Petrified condition, instead of the Restrained condition, for 24 hours."
             }
         },
+        "Tags": [
+            "cold",
+            "mobility"
+        ],
         "Damage": {
             "Immunities": [
                 "Petrified"
@@ -4012,7 +4416,13 @@
             "Actions": {
                 "Club": "Melee Attack Roll: +2, reach 5 ft Hit: 2 (1d4) Bludgeoning damage."
             }
-        }
+        },
+        "Tags": [
+            "cold",
+            "weapon",
+            "mobility",
+            "buff"
+        ]
     },
     "Copper Dragon Wyrmling": {
         "Name": "Copper Dragon Wyrmling",
@@ -4083,6 +4493,12 @@
                 "Slowing Breath": "Constitution Saving Throw: DC 11, each creature in a 15-foot Cone. Failure: The target can\u2019t take Reactions; its Speed is halved; and it can take either an action or a Bonus Action on its turn, not both."
             }
         },
+        "Tags": [
+            "weapon",
+            "stealth",
+            "mobility",
+            "buff"
+        ],
         "Damage": {
             "Immunities": [
                 "Acid"
@@ -4164,6 +4580,12 @@
                 "Slowing Breath": "Constitution Saving Throw: DC 14, each creature in a 30-foot Cone. Failure: The target can\u2019t take Reactions; its Speed is halved; and it can take either an action or a Bonus Action on its turn, not both."
             }
         },
+        "Tags": [
+            "weapon",
+            "stealth",
+            "mobility",
+            "buff"
+        ],
         "Damage": {
             "Immunities": [
                 "Acid"
@@ -4256,6 +4678,19 @@
                 "Pounce": "The dragon moves up to half its Speed, and it makes one Rend attack."
             }
         },
+        "Tags": [
+            "healing",
+            "psychic",
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "spellcasting",
+            "utility",
+            "buff",
+            "illusion",
+            "divination"
+        ],
         "Damage": {
             "Immunities": [
                 "Acid"
@@ -4348,6 +4783,19 @@
                 "Pounce": "The dragon moves up to half its Speed, and it makes one Rend attack."
             }
         },
+        "Tags": [
+            "healing",
+            "psychic",
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "spellcasting",
+            "utility",
+            "buff",
+            "illusion",
+            "divination"
+        ],
         "Damage": {
             "Immunities": [
                 "Acid"
@@ -4434,6 +4882,21 @@
                 "Divine Aid (2/Day)": "The couatl casts Bless, Lesser Restoration, or Sanctuary, requiring no spell components and using the same spellcasting ability as Spellcasting."
             }
         },
+        "Tags": [
+            "healing",
+            "psychic",
+            "radiant",
+            "defense",
+            "weapon",
+            "mobility",
+            "spellcasting",
+            "utility",
+            "buff",
+            "summoning",
+            "divination",
+            "crafting",
+            "exploration"
+        ],
         "Damage": {
             "Resistances": [
                 "Bludgeoning",
@@ -4514,6 +4977,14 @@
                 "Swarm of Grasping Hands": "Melee Attack Roll: +4, reach 5 ft. Hit: 20 (4d8 + 2) Necrotic damage, or 11 (2d8 + 2) Necrotic damage if the swarm is Bloodied."
             }
         },
+        "Tags": [
+            "cold",
+            "necrotic",
+            "defense",
+            "weapon",
+            "mobility",
+            "utility"
+        ],
         "Damage": {
             "Resistances": [
                 "Bludgeoning",
@@ -4592,6 +5063,13 @@
                 "Ritual Sickle": "Melee Attack Roll: +3, reach 5 ft Hit: 3 (1d4 + 1) Slashing damage plus 1 Necrotic damage."
             }
         },
+        "Tags": [
+            "necrotic",
+            "weapon",
+            "mobility",
+            "spellcasting",
+            "crafting"
+        ],
         "Skills": {
             "Deception": "+2",
             "Religion": "+2"
@@ -4665,6 +5143,15 @@
                 "Spiritual Weapon (2/Day)": "The cultist casts the Spiritual Weapon spell, using the same spellcasting ability as Spellcasting."
             }
         },
+        "Tags": [
+            "radiant",
+            "weapon",
+            "mobility",
+            "spellcasting",
+            "utility",
+            "buff",
+            "crafting"
+        ],
         "Skills": {
             "Deception": "+3",
             "Persuasion": "+3",
@@ -4739,6 +5226,16 @@
                 "Darkness Aura (1/Day)": "Magical Darkness fills a 15-foot Emanation originating from the darkmantle. This effect lasts while the darkmantle maintains Concentration on it, up to 10 minutes. Darkvision can\u2019t penetrate this area, and no light can illuminate it."
             }
         },
+        "Tags": [
+            "necrotic",
+            "radiant",
+            "weapon",
+            "stealth",
+            "mobility",
+            "spellcasting",
+            "utility",
+            "buff"
+        ],
         "Skills": {
             "Stealth": "+3"
         }
@@ -4808,6 +5305,11 @@
                 "Bite": "Melee Attack Roll: +4, reach 5 ft Hit: 4 (1d4 + 2) Piercing damage. If the target is a creature, it is subjected to the following effect. Constitution Saving Throw: DC 12. First Failure: The target has the Poisoned condition. While Poisoned, the target\u2019s Hit Point maximum doesn\u2019t return to normal when finishing a Long Rest, and it repeats the save every 24 hours that elapse, ending the effect on itself on a success. Subsequent Failures: The Poisoned target\u2019s Hit Point maximum decreases by 5 (1d10)."
             }
         },
+        "Tags": [
+            "necrotic",
+            "stealth",
+            "mobility"
+        ],
         "Damage": {
             "Immunities": [
                 "Blinded",
@@ -4896,6 +5398,21 @@
                 "Divine Aid (2/Day)": "The deva casts Cure Wounds, Lesser Restoration, or Remove Curse, using the same spellcasting ability as Spellcasting."
             }
         },
+        "Tags": [
+            "healing",
+            "psychic",
+            "necrotic",
+            "radiant",
+            "defense",
+            "weapon",
+            "mobility",
+            "spellcasting",
+            "utility",
+            "buff",
+            "divination",
+            "luck",
+            "exploration"
+        ],
         "Damage": {
             "Resistances": [
                 "Radiant"
@@ -4987,6 +5504,22 @@
                 "Spellcasting": "The djinni casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 17): At Will: Detect Evil and Good, Detect Magic 2/Day Each: Create Food and Water (can create wine instead of water), Tongues, Wind Walk 1/Day Each: Creation, Gaseous Form, Invisibility, Major Image, Plane Shift Doppelganger"
             }
         },
+        "Tags": [
+            "lightning",
+            "psychic",
+            "radiant",
+            "defense",
+            "weapon",
+            "mobility",
+            "teleportation",
+            "spellcasting",
+            "utility",
+            "buff",
+            "summoning",
+            "divination",
+            "crafting",
+            "luck"
+        ],
         "Damage": {
             "Immunities": [
                 "Lightning",
@@ -5066,6 +5599,17 @@
                 "each form": "Any equipment it is wearing or carrying isn\u2019t transformed."
             }
         },
+        "Tags": [
+            "psychic",
+            "weapon",
+            "mobility",
+            "teleportation",
+            "spellcasting",
+            "utility",
+            "buff",
+            "summoning",
+            "divination"
+        ],
         "Damage": {
             "Immunities": [
                 "Charmed"
@@ -5148,6 +5692,12 @@
                 "Steam Breath (Recharge 5\u20136)": "Constitution Saving Throw: DC 19, each creature in a 60-foot Cone. Failure: 56 (16d6) Fire damage. Success: Half damage. Failure or Success: Being underwater doesn\u2019t grant Resistance to this Fire damage."
             }
         },
+        "Tags": [
+            "fire",
+            "defense",
+            "weapon",
+            "mobility"
+        ],
         "Damage": {
             "Resistances": [
                 "Fire"
@@ -5220,6 +5770,16 @@
                 "Fetid Cloud (1/Day)": "Constitution Saving Throw: DC 11, each creature in a 10-foot Emanation originating from the dretch. Failure: The target has the Poisoned condition until the end of its next turn. While Poisoned, the creature can take either an action or a Bonus Action on its turn, not both, and it can\u2019t take Reactions."
             }
         },
+        "Tags": [
+            "psychic",
+            "radiant",
+            "defense",
+            "weapon",
+            "mobility",
+            "utility",
+            "buff",
+            "exploration"
+        ],
         "Damage": {
             "Resistances": [
                 "Cold",
@@ -5308,6 +5868,14 @@
                 "Magic of the Spider Queen (Recharge 5\u20136)": "The drider casts Darkness, Faerie Fire, or Web, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC 14)."
             }
         },
+        "Tags": [
+            "radiant",
+            "stealth",
+            "mobility",
+            "spellcasting",
+            "utility",
+            "buff"
+        ],
         "Skills": {
             "Perception": "+6",
             "Stealth": "+10"
@@ -5382,6 +5950,13 @@
                 "Spellcasting": "The druid casts one of the following spells, using Wisdom as the spellcasting ability (spell save DC 13): At Will: Druidcraft, Speak with Animals 2/Day Each: Entangle, Thunderwave 1/Day Each: Animal Messenger, Longstrider, Moonbeam Dryad"
             }
         },
+        "Tags": [
+            "radiant",
+            "weapon",
+            "mobility",
+            "spellcasting",
+            "crafting"
+        ],
         "Skills": {
             "Medicine": "+5",
             "Nature": "+3",
@@ -5463,6 +6038,18 @@
                 "Tree Stride": "If within 5 feet of a Large or bigger tree, the dryad teleports to an unoccupied space within 5 feet of a second Large or bigger tree that is within 60 feet of the previous tree."
             }
         },
+        "Tags": [
+            "psychic",
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "teleportation",
+            "spellcasting",
+            "buff",
+            "summoning",
+            "crafting"
+        ],
         "Skills": {
             "Perception": "+4",
             "Stealth": "+5"
@@ -5540,6 +6127,13 @@
                 "Rock Launch": "Ranged Attack Roll: +8, range 60 ft Hit: 8 (1d6 + 5) Bludgeoning damage. If the target is a Large or smaller creature, it has the Prone condition."
             }
         },
+        "Tags": [
+            "psychic",
+            "weapon",
+            "mobility",
+            "spellcasting",
+            "summoning"
+        ],
         "Damage": {
             "Vulnerabilities": [
                 "Thunder"
@@ -5626,6 +6220,20 @@
                 "Spellcasting": "The efreeti casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 16): At Will: Detect Magic, Elementalism 1/Day Each: Gaseous Form, Invisibility, Major Image, Plane Shift, Tongues, Wall of Fire (level 7 version) Erinyes"
             }
         },
+        "Tags": [
+            "fire",
+            "psychic",
+            "defense",
+            "weapon",
+            "mobility",
+            "teleportation",
+            "spellcasting",
+            "utility",
+            "buff",
+            "summoning",
+            "divination",
+            "luck"
+        ],
         "Damage": {
             "Immunities": [
                 "Fire"
@@ -5709,6 +6317,16 @@
                 "Parry": "Trigger: The erinyes is hit by a melee attack roll while holding a weapon. Response: The erinyes adds 4 to its AC against that attack, possibly causing it to miss."
             }
         },
+        "Tags": [
+            "psychic",
+            "defense",
+            "weapon",
+            "mobility",
+            "spellcasting",
+            "buff",
+            "divination",
+            "exploration"
+        ],
         "Damage": {
             "Resistances": [
                 "Cold"
@@ -5799,6 +6417,17 @@
                 "Reel": "The ettercap pulls one creature within 30 feet of itself that is Restrained by its Web Strand up to 25 feet straight toward itself."
             }
         },
+        "Tags": [
+            "fire",
+            "psychic",
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "buff",
+            "divination",
+            "exploration"
+        ],
         "Skills": {
             "Perception": "+3",
             "Stealth": "+4",
@@ -5871,6 +6500,13 @@
                 "Morningstar": "Melee Attack Roll: +7, reach 5 ft Hit: 14 (2d8 + 5) Piercing damage, and the target has Disadvantage on the next attack roll it makes before the end of its next turn."
             }
         },
+        "Tags": [
+            "psychic",
+            "weapon",
+            "mobility",
+            "buff",
+            "summoning"
+        ],
         "Damage": {
             "Immunities": [
                 "Blinded",
@@ -5954,6 +6590,16 @@
                 "Burn": "Melee Attack Roll: +6, reach 5 ft Hit: 10 (2d6 + 3) Fire damage. If the target is a creature or a flammable object, it starts burning."
             }
         },
+        "Tags": [
+            "fire",
+            "psychic",
+            "radiant",
+            "defense",
+            "weapon",
+            "mobility",
+            "utility",
+            "summoning"
+        ],
         "Damage": {
             "Resistances": [
                 "Bludgeoning",
@@ -6034,6 +6680,12 @@
                 "Hammer Throw": "Ranged Attack Roll: +11, range 60/240 ft. Hit: 23 (3d10 + 7) Bludgeoning damage plus 4 (1d8) Fire damage, and the target is pushed up to 15 feet straight away from the giant and has Disadvantage on the next attack roll it makes before the end of its next turn."
             }
         },
+        "Tags": [
+            "fire",
+            "weapon",
+            "mobility",
+            "buff"
+        ],
         "Damage": {
             "Immunities": [
                 "Fire"
@@ -6117,6 +6769,21 @@
                 "Slam": "Melee Attack Roll: +7, reach 5 ft Hit: 13 (2d8 + 4) Bludgeoning damage plus 4 (1d8) Lightning damage."
             }
         },
+        "Tags": [
+            "fire",
+            "cold",
+            "lightning",
+            "radiant",
+            "defense",
+            "weapon",
+            "mobility",
+            "teleportation",
+            "spellcasting",
+            "utility",
+            "buff",
+            "divination",
+            "crafting"
+        ],
         "Damage": {
             "Immunities": [
                 "Lightning",
@@ -6194,6 +6861,13 @@
                 "War Cry (Recharge 5\u20136)": "The giant or one creature of its choice that can see or hear it gains 16 (2d10 + 5) Temporary Hit Points and has Advantage on attack rolls until the start of the giant\u2019s next turn."
             }
         },
+        "Tags": [
+            "cold",
+            "weapon",
+            "mobility",
+            "buff",
+            "divination"
+        ],
         "Damage": {
             "Immunities": [
                 "Cold"
@@ -6268,6 +6942,11 @@
                 "Shriek": "Trigger: A creature or a source of Bright Light moves within 30 feet of the shrieker. Response: The shrieker emits a shriek audible within 300 feet of itself for 1 minute or until the shrieker dies."
             }
         },
+        "Tags": [
+            "radiant",
+            "mobility",
+            "utility"
+        ],
         "Damage": {
             "Immunities": [
                 "Blinded",
@@ -6342,6 +7021,10 @@
                 "Rotting Touch": "Melee Attack Roll: +2, reach 10 ft Hit: 4 (1d8) Necrotic damage."
             }
         },
+        "Tags": [
+            "necrotic",
+            "mobility"
+        ],
         "Damage": {
             "Immunities": [
                 "Blinded",
@@ -6420,6 +7103,13 @@
                 "Claw": "Melee Attack Roll: +4, reach 5 ft Hit: 7 (2d4 + 2) Slashing damage."
             }
         },
+        "Tags": [
+            "psychic",
+            "weapon",
+            "stealth",
+            "mobility",
+            "summoning"
+        ],
         "Damage": {
             "Immunities": [
                 "Poison",
@@ -6501,6 +7191,13 @@
                 "Engulf": "The cube moves up to its Speed without provoking Opportunity Attacks. The cube can move through the spaces of Large or smaller creatures if it has room inside itself to contain them (see the Ooze Cube trait). Dexterity Saving Throw: DC 12, each creature whose space the cube enters for the first time during this move. Failure: 10 (3d6) Acid damage, and the target is engulfed. An engulfed target is suffocating, can\u2019t cast spells with a Verbal component, has the Restrained condition, and takes 10 (3d6) Acid damage at the start of each of the cube\u2019s turns. When the cube moves, the engulfed target moves with it. An engulfed target can try to escape by taking an action to make a DC 12 Strength (Athletics) check. On a successful check, the target escapes and enters the nearest unoccupied space. Success: Half damage, and the target moves to an unoccupied space within 5 feet of the cube. If there is no unoccupied space, the target fails the save instead."
             }
         },
+        "Tags": [
+            "cold",
+            "mobility",
+            "spellcasting",
+            "buff",
+            "divination"
+        ],
         "Damage": {
             "Immunities": [
                 "Acid",
@@ -6578,6 +7275,12 @@
                 "Claw": "Melee Attack Roll: +5, reach 5 ft Hit: 10 (2d6 + 3) Slashing damage. If the target is a non-Undead creature, it is subjected to the following effect. Constitution Saving Throw: DC 10. Failure: The target has the Paralyzed condition until the end of its next turn."
             }
         },
+        "Tags": [
+            "necrotic",
+            "defense",
+            "weapon",
+            "mobility"
+        ],
         "Damage": {
             "Resistances": [
                 "Necrotic"
@@ -6664,6 +7367,22 @@
                 "Points or the ghost leaves as a Bonus Action": "When the possession ends, the ghost appears in an unoccupied space within 5 feet of the target, and the target is immune to this ghost\u2019s Possession for 24 hours."
             }
         },
+        "Tags": [
+            "cold",
+            "psychic",
+            "necrotic",
+            "radiant",
+            "defense",
+            "weapon",
+            "mobility",
+            "teleportation",
+            "spellcasting",
+            "utility",
+            "buff",
+            "summoning",
+            "divination",
+            "exploration"
+        ],
         "Damage": {
             "Resistances": [
                 "Acid",
@@ -6746,6 +7465,11 @@
                 "Claw": "Melee Attack Roll: +4, reach 5 ft Hit: 4 (1d4 + 2) Slashing damage. If the target is a creature that isn\u2019t an Undead or elf, it is subjected to the following effect. Constitution Saving Throw: DC 10. Failure: The target has the Paralyzed condition until the end of its next turn."
             }
         },
+        "Tags": [
+            "necrotic",
+            "weapon",
+            "mobility"
+        ],
         "Damage": {
             "Immunities": [
                 "Poison",
@@ -6828,6 +7552,12 @@
                 "Blinding Spittle (Recharge 5\u20136)": "Dexterity Saving Throw: DC 10, each creature in a 10-foot-radius Sphere centered on a point within 30 feet. Failure: 7 (2d6) Radiant damage, and the target has the Blinded condition until the end of the mouther\u2019s next turn."
             }
         },
+        "Tags": [
+            "defense",
+            "mobility",
+            "buff",
+            "exploration"
+        ],
         "Damage": {
             "Immunities": [
                 "Prone"
@@ -6906,6 +7636,18 @@
                 "Spellcasting": "The glabrezu casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save DC 16): At Will: Darkness, Detect Magic, Dispel Magic 1/Day Each: Confusion, Fly, Power Word Stun Gladiator"
             }
         },
+        "Tags": [
+            "psychic",
+            "radiant",
+            "defense",
+            "weapon",
+            "mobility",
+            "spellcasting",
+            "utility",
+            "buff",
+            "divination",
+            "exploration"
+        ],
         "Damage": {
             "Resistances": [
                 "Cold",
@@ -6991,6 +7733,12 @@
                 "Parry": "Trigger: The gladiator is hit by a melee attack roll while holding a weapon. Response: The gladiator adds 3 to its AC against that attack, possibly causing it to miss."
             }
         },
+        "Tags": [
+            "defense",
+            "weapon",
+            "mobility",
+            "divination"
+        ],
         "Skills": {
             "Athletics": "+10",
             "Performance": "+5"
@@ -7063,7 +7811,11 @@
             "Bonus Actions": {
                 "Rampage (1/Day)": "Immediately after dealing damage to a creature that is already Bloodied, the gnoll moves up to half its Speed, and it makes one Rend attack."
             }
-        }
+        },
+        "Tags": [
+            "mobility",
+            "buff"
+        ]
     },
     "Goblin Minion": {
         "Name": "Goblin Minion",
@@ -7133,6 +7885,11 @@
                 "Nimble Escape": "The goblin takes the Disengage or Hide action."
             }
         },
+        "Tags": [
+            "stealth",
+            "mobility",
+            "buff"
+        ],
         "Skills": {
             "Stealth": "+6"
         }
@@ -7206,6 +7963,13 @@
                 "Nimble Escape": "The goblin takes the Disengage or Hide action."
             }
         },
+        "Tags": [
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "buff"
+        ],
         "Skills": {
             "Stealth": "+6"
         }
@@ -7283,6 +8047,14 @@
                 "Redirect Attack": "Trigger: A creature the goblin can see makes an attack roll against it. Response: The goblin chooses a Small or Medium ally within 5 feet of itself."
             }
         },
+        "Tags": [
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "buff",
+            "divination"
+        ],
         "Skills": {
             "Stealth": "+6"
         }
@@ -7360,6 +8132,14 @@
                 "Weakening Breath": "Strength Saving Throw: DC 13, each creature that isn\u2019t currently affected by this breath in a 15-foot Cone. Failure: The target has Disadvantage on Strength-based D20 Tests and subtracts 2 (1d4) from its damage rolls. It repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically."
             }
         },
+        "Tags": [
+            "fire",
+            "weapon",
+            "stealth",
+            "mobility",
+            "buff",
+            "summoning"
+        ],
         "Damage": {
             "Immunities": [
                 "Fire"
@@ -7444,6 +8224,15 @@
                 "Weakening Breath": "Strength Saving Throw: DC 17, each creature that isn\u2019t currently affected by this breath in a 30-foot Cone. Failure: The target has Disadvantage on Strength-based D20 Tests and subtracts 3 (1d6) from its damage rolls. It repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically."
             }
         },
+        "Tags": [
+            "fire",
+            "weapon",
+            "stealth",
+            "mobility",
+            "buff",
+            "summoning",
+            "divination"
+        ],
         "Damage": {
             "Immunities": [
                 "Fire"
@@ -7537,6 +8326,21 @@
                 "Pounce": "The dragon moves up to half its Speed, and it makes one Rend attack."
             }
         },
+        "Tags": [
+            "fire",
+            "cold",
+            "lightning",
+            "radiant",
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "spellcasting",
+            "utility",
+            "buff",
+            "summoning",
+            "divination"
+        ],
         "Damage": {
             "Immunities": [
                 "Fire"
@@ -7625,6 +8429,21 @@
                 "Pounce": "The dragon moves up to half its Speed, and it makes one Rend attack."
             }
         },
+        "Tags": [
+            "fire",
+            "cold",
+            "lightning",
+            "radiant",
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "spellcasting",
+            "utility",
+            "buff",
+            "summoning",
+            "divination"
+        ],
         "Damage": {
             "Immunities": [
                 "Fire"
@@ -7700,6 +8519,13 @@
                 "Trample": "Dexterity Saving Throw: DC 16, one creature within 5 feet that has the Prone condition. Failure: 16 (2d10 + 5) Bludgeoning damage. Success: Half damage."
             }
         },
+        "Tags": [
+            "defense",
+            "weapon",
+            "mobility",
+            "buff",
+            "crafting"
+        ],
         "Damage": {
             "Immunities": [
                 "Exhaustion",
@@ -7780,6 +8606,13 @@
                 "Pseudopod": "Melee Attack Roll: +3, reach 5 ft Hit: 10 (2d8 + 1) Acid damage. Nonmagical armor worn by the target takes a -1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10. The penalty can be removed by casting the Mending spell on the armor."
             }
         },
+        "Tags": [
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "spellcasting"
+        ],
         "Damage": {
             "Resistances": [
                 "Acid",
@@ -7869,6 +8702,11 @@
                 "Poison Breath (Recharge 5\u20136)": "Constitution Saving Throw: DC 11, each creature in a 15-foot Cone. Failure: 21 (6d6) Poison damage. Success: Half damage."
             }
         },
+        "Tags": [
+            "weapon",
+            "stealth",
+            "mobility"
+        ],
         "Damage": {
             "Immunities": [
                 "Poison",
@@ -7953,6 +8791,11 @@
                 "Poison Breath (Recharge 5\u20136)": "Constitution Saving Throw: DC 14, each creature in a 30-foot Cone. Failure: 42 (12d6) Poison damage. Success: Half damage."
             }
         },
+        "Tags": [
+            "weapon",
+            "stealth",
+            "mobility"
+        ],
         "Damage": {
             "Immunities": [
                 "Poison",
@@ -8046,6 +8889,16 @@
                 "Pounce": "The dragon moves up to half its Speed, and it makes one Rend attack."
             }
         },
+        "Tags": [
+            "psychic",
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "spellcasting",
+            "utility",
+            "divination"
+        ],
         "Damage": {
             "Immunities": [
                 "Poison",
@@ -8139,6 +8992,16 @@
                 "Pounce": "The dragon moves up to half its Speed, and it makes one Rend attack."
             }
         },
+        "Tags": [
+            "psychic",
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "spellcasting",
+            "utility",
+            "divination"
+        ],
         "Damage": {
             "Immunities": [
                 "Poison",
@@ -8225,6 +9088,19 @@
                 "Spellcasting": "The hag casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC 12, +4 to hit with spell attacks): At Will: Dancing Lights, Disguise Self (24-hour duration), Invisibility (self only, and the hag leaves no tracks while Invisible), Minor Illusion, Ray of Sickness (level 3 version) Grick"
             }
         },
+        "Tags": [
+            "cold",
+            "radiant",
+            "weapon",
+            "stealth",
+            "mobility",
+            "spellcasting",
+            "utility",
+            "summoning",
+            "illusion",
+            "divination",
+            "exploration"
+        ],
         "Skills": {
             "Arcana": "+5",
             "Deception": "+4",
@@ -8299,6 +9175,11 @@
                 "Tentacles": "Melee Attack Roll: +4, reach 5 ft Hit: 7 (1d10 + 2) Slashing damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 12) from all four tentacles."
             }
         },
+        "Tags": [
+            "weapon",
+            "stealth",
+            "mobility"
+        ],
         "Skills": {
             "Stealth": "+4"
         }
@@ -8369,6 +9250,10 @@
                 "Rend": "Melee Attack Roll: +6, reach 5 ft Hit: 8 (1d8 + 4) Piercing damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 14) from both of the griffon\u2019s front claws."
             }
         },
+        "Tags": [
+            "mobility",
+            "utility"
+        ],
         "Skills": {
             "Perception": "+5"
         }
@@ -8438,6 +9323,13 @@
                 "Bone Cudgel": "Melee Attack Roll: +5, reach 5 ft Hit: 6 (1d6 + 3) Bludgeoning damage plus 2 (1d4) Psychic damage."
             }
         },
+        "Tags": [
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "utility"
+        ],
         "Skills": {
             "Athletics": "+5",
             "Perception": "+3",
@@ -8517,6 +9409,15 @@
                 "Spellcasting": "The naga casts one of the following spells, requiring no Somatic or Material components and using Wisdom as the spellcasting ability (spell save DC 16): At Will: Thaumaturgy 1/Day Each: Clairvoyance, Cure Wounds (level 6 version), Flame Strike (level 6 version), Geas, True Seeing Guards"
             }
         },
+        "Tags": [
+            "healing",
+            "fire",
+            "defense",
+            "weapon",
+            "mobility",
+            "spellcasting",
+            "divination"
+        ],
         "Damage": {
             "Immunities": [
                 "Poison",
@@ -8595,6 +9496,10 @@
                 "Spear": "Melee or Ranged Attack Roll: +3, reach 5 ft or range 20/60 ft. Hit: 4 (1d6 + 1) Piercing damage."
             }
         },
+        "Tags": [
+            "defense",
+            "mobility"
+        ],
         "Skills": {
             "Perception": "+2"
         }
@@ -8665,6 +9570,11 @@
                 "Longsword": "Melee Attack Roll: +6, reach 5 ft Hit: 15 (2d10 + 4) Slashing damage."
             }
         },
+        "Tags": [
+            "defense",
+            "weapon",
+            "mobility"
+        ],
         "Skills": {
             "Athletics": "+6",
             "Perception": "+4"
@@ -8744,6 +9654,16 @@
                 "Leap": "The half-dragon jumps up to 30 feet by spending 10 feet of movement."
             }
         },
+        "Tags": [
+            "cold",
+            "radiant",
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "utility",
+            "buff"
+        ],
         "Damage": {
             "Resistances": [
                 "Damage",
@@ -8825,7 +9745,14 @@
                 "Claw": "Melee Attack Roll: +3, reach 5 ft Hit: 6 (2d4 + 1) Slashing damage.",
                 "Luring Song": "The harpy sings a magical melody, which lasts until the harpy\u2019s Concentration ends on it. Wisdom Saving Throw: DC 11, each Humanoid and Giant in a 300-foot Emanation originating from the harpy when the song starts. Failure: The target has the Charmed condition until the song ends and repeats the save at the end of each of its turns. While Charmed, the target has the Incapacitated condition and ignores the Luring Song of other harpies. If the target is more than 5 feet from the harpy, the target moves on its turn toward the harpy by the most direct route, trying to get within 5 feet of the harpy. It doesn\u2019t avoid Opportunity Attacks; however, before moving into damaging terrain (such as lava or a pit) and whenever it takes damage from a source other than the harpy, the target repeats the save."
             }
-        }
+        },
+        "Tags": [
+            "defense",
+            "weapon",
+            "mobility",
+            "spellcasting",
+            "exploration"
+        ]
     },
     "Hell Hound": {
         "Name": "Hell Hound",
@@ -8896,6 +9823,11 @@
                 "Fire Breath (Recharge 5\u20136)": "Dexterity Saving Throw: DC 12, each creature in a 15-foot Cone. Failure: 17 (5d6) Fire damage. Success: Half damage."
             }
         },
+        "Tags": [
+            "fire",
+            "mobility",
+            "buff"
+        ],
         "Damage": {
             "Immunities": [
                 "Fire"
@@ -8979,6 +9911,17 @@
                 "Leap": "The hezrou jumps up to 30 feet by spending 10 feet of movement."
             }
         },
+        "Tags": [
+            "psychic",
+            "radiant",
+            "defense",
+            "weapon",
+            "mobility",
+            "spellcasting",
+            "utility",
+            "buff",
+            "exploration"
+        ],
         "Damage": {
             "Resistances": [
                 "Cold",
@@ -9056,6 +9999,10 @@
                 "Trash Lob": "Ranged Attack Roll: +8, range 60/240 ft. Hit: 16 (2d10 + 5) Bludgeoning damage, and the target has the Poisoned condition until the end of its next turn."
             }
         },
+        "Tags": [
+            "weapon",
+            "mobility"
+        ],
         "Skills": {
             "Perception": "+2"
         }
@@ -9128,6 +10075,10 @@
                 "Rend": "Melee Attack Roll: +5, reach 5 ft Hit: 7 (1d8 + 3) Slashing damage."
             }
         },
+        "Tags": [
+            "weapon",
+            "mobility"
+        ],
         "Skills": {
             "Perception": "+5"
         }
@@ -9200,7 +10151,13 @@
                 "Longsword": "Melee Attack Roll: +3, reach 5 ft Hit: 12 (2d10 + 1) Slashing damage.",
                 "Longbow": "Ranged Attack Roll: +3, range 150/600 ft"
             }
-        }
+        },
+        "Tags": [
+            "defense",
+            "weapon",
+            "mobility",
+            "buff"
+        ]
     },
     "Hobgoblin Captain": {
         "Name": "Hobgoblin Captain",
@@ -9271,7 +10228,12 @@
                 "Greatsword": "Melee Attack Roll: +4, reach 5 ft Hit: 9 (2d6 + 2) Slashing damage plus 3 (1d6) Poison damage.",
                 "Longbow": "Ranged Attack Roll: +4, range 150/600 ft. Hit: 6 (1d8 + 2) Piercing damage plus 5 (2d4) Poison damage."
             }
-        }
+        },
+        "Tags": [
+            "weapon",
+            "mobility",
+            "buff"
+        ]
     },
     "Homunculus": {
         "Name": "Homunculus",
@@ -9341,6 +10303,12 @@
                 "Bite": "Melee Attack Roll: +4, reach 5 ft Hit: 1 Piercing damage, and the target is subjected to the following effect. Constitution Saving Throw: DC 12. Failure: The target has the Poisoned condition until the end of the homunculus\u2019s next turn. Failure by 5 or More: The target has the Poisoned condition for 1 minute. While Poisoned, the target has the Unconscious condition, which ends early if the target takes any damage."
             }
         },
+        "Tags": [
+            "mobility",
+            "summoning",
+            "crafting",
+            "exploration"
+        ],
         "Damage": {
             "Immunities": [
                 "Poison",
@@ -9421,6 +10389,17 @@
                 "Infernal Tail": "Dexterity Saving Throw: DC 17, one creature the devil can see within 10 feet. Failure: 10 (1d8 + 6) Necrotic damage, and the target receives an infernal wound if it doesn\u2019t have one. While wounded, the target loses 10 (3d6) Hit Points at the start of each of its turns. The wound closes after 1 minute, after a spell restores Hit Points to the target, or after the target or a creature within 5 feet of it takes an action to stanch the wound, doing so by succeeding on a DC 17 Wisdom (Medicine) check."
             }
         },
+        "Tags": [
+            "fire",
+            "psychic",
+            "necrotic",
+            "defense",
+            "mobility",
+            "spellcasting",
+            "buff",
+            "divination",
+            "exploration"
+        ],
         "Damage": {
             "Resistances": [
                 "Cold"
@@ -9503,6 +10482,11 @@
                 "Bite": "Melee Attack Roll: +8, reach 10 ft Hit: 10 (1d10 + 5) Piercing damage."
             }
         },
+        "Tags": [
+            "fire",
+            "cold",
+            "mobility"
+        ],
         "Damage": {
             "Immunities": [
                 "Blinded",
@@ -9587,6 +10571,18 @@
                 "Ice Wall (Recharge 6)": "The devil casts Wall of Ice (level 8 version), requiring no spell components and using Intelligence as the spellcasting ability (spell save DC 17)."
             }
         },
+        "Tags": [
+            "cold",
+            "psychic",
+            "defense",
+            "weapon",
+            "mobility",
+            "spellcasting",
+            "buff",
+            "summoning",
+            "divination",
+            "exploration"
+        ],
         "Damage": {
             "Immunities": [
                 "Cold",
@@ -9671,6 +10667,15 @@
                 "Shape-Shift": "The imp shape-shifts to resemble a rat (Speed 20 ft.), a raven (20 ft., Fly 60 ft.), or a spider (20 ft., Climb 20 ft.), or it returns to its true form. Its game statistics are the same in each form, except for its Speed. Any equipment it is wearing or carrying isn\u2019t transformed."
             }
         },
+        "Tags": [
+            "defense",
+            "stealth",
+            "mobility",
+            "teleportation",
+            "spellcasting",
+            "buff",
+            "divination"
+        ],
         "Damage": {
             "Resistances": [
                 "Cold"
@@ -9765,6 +10770,21 @@
                 "action to wake it": "Otherwise, the target takes 18 (4d8) Psychic damage."
             }
         },
+        "Tags": [
+            "psychic",
+            "necrotic",
+            "defense",
+            "stealth",
+            "mobility",
+            "teleportation",
+            "spellcasting",
+            "utility",
+            "buff",
+            "illusion",
+            "divination",
+            "luck",
+            "exploration"
+        ],
         "Damage": {
             "Resistances": [
                 "Cold",
@@ -9847,6 +10867,16 @@
                 "Vortex": "Constitution Saving Throw: DC 14, one Large or smaller creature in the stalker\u2019s space. Failure: 7 (1d8 + 3) Thunder damage, and the target has the Grappled condition (escape DC 13). Until the grapple ends, the target can\u2019t cast spells with a Verbal component and takes 7 (2d6) Thunder damage at the start of each of the stalker\u2019s turns."
             }
         },
+        "Tags": [
+            "lightning",
+            "psychic",
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "spellcasting",
+            "summoning"
+        ],
         "Damage": {
             "Resistances": [
                 "Bludgeoning",
@@ -9937,6 +10967,17 @@
                 "Poison Breath (Recharge 6)": "Constitution Saving Throw: DC 18, each creature in a 60-foot Cone. Failure: 55 (10d10) Poison damage. Success: Half damage."
             }
         },
+        "Tags": [
+            "fire",
+            "lightning",
+            "defense",
+            "weapon",
+            "mobility",
+            "teleportation",
+            "spellcasting",
+            "buff",
+            "crafting"
+        ],
         "Damage": {
             "Immunities": [
                 "Fire",
@@ -10016,6 +11057,11 @@
                 "Parry": "Trigger: The knight is hit by a melee attack roll while holding a weapon. Response: The knight adds 2 to its AC against that attack, possibly causing it to miss."
             }
         },
+        "Tags": [
+            "radiant",
+            "weapon",
+            "mobility"
+        ],
         "Damage": {
             "Immunities": [
                 "Frightened"
@@ -10090,7 +11136,13 @@
             "Actions": {
                 "Dagger": "Melee or Ranged Attack Roll: +4, reach 5 ft or range 20/60 ft. Hit: 4 (1d4 + 2) Piercing damage."
             }
-        }
+        },
+        "Tags": [
+            "radiant",
+            "mobility",
+            "utility",
+            "buff"
+        ]
     },
     "Kraken": {
         "Name": "Kraken",
@@ -10175,6 +11227,17 @@
                 "Toxic Ink": "Constitution Saving Throw: DC 23, each creature in a 15-foot Emanation originating from the kraken while it is underwater. Failure: The target has the Blinded and Poisoned conditions until the end of the kraken\u2019s next turn. The kraken then moves up to its Speed. Failure or Success: The kraken can\u2019t take this action again until the start of its next turn."
             }
         },
+        "Tags": [
+            "lightning",
+            "psychic",
+            "radiant",
+            "defense",
+            "weapon",
+            "mobility",
+            "utility",
+            "divination",
+            "exploration"
+        ],
         "Damage": {
             "Immunities": [
                 "Cold",
@@ -10259,6 +11322,18 @@
                 "Leap": "The lamia jumps up to 30 feet by spending 10 feet of movement."
             }
         },
+        "Tags": [
+            "psychic",
+            "necrotic",
+            "weapon",
+            "stealth",
+            "mobility",
+            "spellcasting",
+            "buff",
+            "illusion",
+            "divination",
+            "luck"
+        ],
         "Skills": {
             "Deception": "+7",
             "Insight": "+4",
@@ -10331,6 +11406,13 @@
                 "Vile Slime": "Melee Attack Roll: +2, reach 5 ft Hit: 2 (1d4) Poison damage."
             }
         },
+        "Tags": [
+            "healing",
+            "radiant",
+            "defense",
+            "mobility",
+            "spellcasting"
+        ],
         "Damage": {
             "Resistances": [
                 "Cold"
@@ -10424,6 +11506,19 @@
                 "Frightening Gaze": "The lich casts Fear, using the same spellcasting ability as Spellcasting. The lich can\u2019t take this action again until the start of its next turn."
             }
         },
+        "Tags": [
+            "cold",
+            "lightning",
+            "psychic",
+            "necrotic",
+            "radiant",
+            "defense",
+            "mobility",
+            "teleportation",
+            "spellcasting",
+            "utility",
+            "divination"
+        ],
         "Damage": {
             "Resistances": [
                 "Cold",
@@ -10515,6 +11610,15 @@
                 "Protective Magic (3/Day)": "The mage casts Counterspell or Shield in response to the spell\u2019s trigger, using the same spellcasting ability as Spellcasting."
             }
         },
+        "Tags": [
+            "radiant",
+            "defense",
+            "mobility",
+            "spellcasting",
+            "utility",
+            "buff",
+            "divination"
+        ],
         "Skills": {
             "Arcana": "+6",
             "History": "+6",
@@ -10596,6 +11700,19 @@
                 "Protective Magic (3/Day)": "The archmage casts Counterspell or Shield in response to the spell\u2019s trigger, using the same spellcasting ability as Spellcasting."
             }
         },
+        "Tags": [
+            "lightning",
+            "psychic",
+            "radiant",
+            "defense",
+            "mobility",
+            "teleportation",
+            "spellcasting",
+            "utility",
+            "buff",
+            "illusion",
+            "divination"
+        ],
         "Damage": {
             "Immunities": [
                 "Psychic",
@@ -10681,6 +11798,16 @@
                 "Ignited Illumination": "The magmin sets itself ablaze or extinguishes its flames. While ablaze, the magmin sheds Bright Light in a 10-foot radius and Dim Light for an additional 10 feet."
             }
         },
+        "Tags": [
+            "fire",
+            "psychic",
+            "necrotic",
+            "radiant",
+            "mobility",
+            "utility",
+            "buff",
+            "summoning"
+        ],
         "Damage": {
             "Immunities": [
                 "Fire"
@@ -10753,7 +11880,11 @@
                 "Rend": "Melee Attack Roll: +5, reach 5 ft Hit: 7 (1d8 + 3) Slashing damage.",
                 "Tail Spike": "Ranged Attack Roll: +5, range 100/200 ft"
             }
-        }
+        },
+        "Tags": [
+            "weapon",
+            "mobility"
+        ]
     },
     "Marilith": {
         "Name": "Marilith",
@@ -10835,6 +11966,19 @@
                 "Parry": "Trigger: The marilith is hit by a melee attack roll while holding a weapon. Response: The marilith adds 5 to its AC against that attack, possibly causing it to miss."
             }
         },
+        "Tags": [
+            "psychic",
+            "radiant",
+            "defense",
+            "weapon",
+            "mobility",
+            "teleportation",
+            "spellcasting",
+            "utility",
+            "buff",
+            "divination",
+            "exploration"
+        ],
         "Damage": {
             "Resistances": [
                 "Cold",
@@ -10920,6 +12064,13 @@
                 "Petrifying Gaze (Recharge 5\u20136)": "Constitution Saving Throw: DC 13, each creature in a 30-foot Cone. If the medusa sees its reflection in the Cone, the medusa must make this save. First Failure: The target has the Restrained condition and repeats the save at the end of its next turn if it is still Restrained, ending the effect on itself on a success. Second Failure: The target has the Petrified condition instead of the Restrained condition."
             }
         },
+        "Tags": [
+            "weapon",
+            "stealth",
+            "mobility",
+            "buff",
+            "divination"
+        ],
         "Skills": {
             "Deception": "+5",
             "Perception": "+4",
@@ -10997,6 +12148,15 @@
                 "Sleep (1/Day)": "The mephit casts the Sleep spell, requiring no spell components and using Charisma as the spellcasting ability (spell save DC 10)."
             }
         },
+        "Tags": [
+            "psychic",
+            "necrotic",
+            "weapon",
+            "stealth",
+            "mobility",
+            "spellcasting",
+            "summoning"
+        ],
         "Damage": {
             "Vulnerabilities": [
                 "Fire"
@@ -11083,6 +12243,16 @@
                 "Frost Breath (Recharge 6)": "Constitution Saving Throw: DC 10, each creature in a 15-foot Cone. Failure: 7 (3d4) Cold damage. Success: Half damage."
             }
         },
+        "Tags": [
+            "cold",
+            "psychic",
+            "necrotic",
+            "weapon",
+            "stealth",
+            "mobility",
+            "spellcasting",
+            "summoning"
+        ],
         "Damage": {
             "Vulnerabilities": [
                 "Fire"
@@ -11169,6 +12339,15 @@
                 "Fire Breath (Recharge 6)": "Dexterity Saving Throw: DC 11, each creature in a 15-foot Cone. Failure: 7 (2d6) Fire damage. Success: Half damage."
             }
         },
+        "Tags": [
+            "fire",
+            "psychic",
+            "necrotic",
+            "weapon",
+            "stealth",
+            "mobility",
+            "summoning"
+        ],
         "Damage": {
             "Vulnerabilities": [
                 "Cold"
@@ -11255,6 +12434,18 @@
                 "Steam Breath (Recharge 6)": "Constitution Saving Throw: DC 10, each creature in a 15-foot Cone. Failure: 5 (2d4) Fire damage, and the target\u2019s Speed decreases by 10 feet until the end of the mephit\u2019s next turn. Success: Half damage only. Failure or Success: Being underwater doesn\u2019t grant Resistance to this Fire damage."
             }
         },
+        "Tags": [
+            "fire",
+            "psychic",
+            "necrotic",
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "buff",
+            "summoning",
+            "illusion"
+        ],
         "Damage": {
             "Immunities": [
                 "Fire",
@@ -11334,7 +12525,14 @@
             "Actions": {
                 "Ocean Spear": "Melee or Ranged Attack Roll: +2, reach 5 ft. or range 20/60 ft. Hit: 3 (1d6) Piercing damage plus 2 (1d4) Cold damage. If the target is a creature, its Speed decreases by 10 feet until the end of its next turn. Hit or Miss: The spear magically returns to the merfolk\u2019s hand immediately after a ranged attack."
             }
-        }
+        },
+        "Tags": [
+            "cold",
+            "psychic",
+            "mobility",
+            "spellcasting",
+            "summoning"
+        ]
     },
     "Merrow": {
         "Name": "Merrow",
@@ -11408,7 +12606,12 @@
                 "Harpoon": "Melee or Ranged Attack Roll: +6, reach 5 ft",
                 "or range 20/60 ft": "Hit: 11 (2d6 + 4) Piercing damage"
             }
-        }
+        },
+        "Tags": [
+            "defense",
+            "weapon",
+            "mobility"
+        ]
     },
     "Mimic": {
         "Name": "Mimic",
@@ -11482,6 +12685,13 @@
                 "Shape-Shift": "The mimic shape-shifts to resemble a Medium or Small object while retaining its game statistics, or it returns to its true blob form. Any equipment it is wearing or carrying isn\u2019t transformed."
             }
         },
+        "Tags": [
+            "weapon",
+            "stealth",
+            "mobility",
+            "teleportation",
+            "buff"
+        ],
         "Damage": {
             "Immunities": [
                 "Acid",
@@ -11557,6 +12767,12 @@
                 "Gore (Recharge 5\u20136)": "Melee Attack Roll: +6, reach 5 ft. Hit: 18 (4d6 + 4) Piercing damage. If the target is a Large or smaller creature and the minotaur moved 10+ feet straight toward it immediately before the hit, the target takes an extra 10 (3d6) Piercing damage and has the Prone condition."
             }
         },
+        "Tags": [
+            "defense",
+            "weapon",
+            "mobility",
+            "exploration"
+        ],
         "Skills": {
             "Perception": "+7",
             "Survival": "+7"
@@ -11629,6 +12845,13 @@
                 "Dreadful Glare": "Wisdom Saving Throw: DC 11, one creature the mummy can see within 60 feet. Failure: The target has the Frightened condition until the end of the mummy\u2019s next turn. Success: The target is immune to this mummy\u2019s Dreadful Glare for 24 hours."
             }
         },
+        "Tags": [
+            "necrotic",
+            "weapon",
+            "mobility",
+            "divination",
+            "luck"
+        ],
         "Damage": {
             "Vulnerabilities": [
                 "Fire"
@@ -11724,6 +12947,19 @@
                 "Necrotic Strike": "The mummy makes one Rotting Fist or Channel Negative Energy attack."
             }
         },
+        "Tags": [
+            "cold",
+            "psychic",
+            "necrotic",
+            "defense",
+            "weapon",
+            "mobility",
+            "teleportation",
+            "spellcasting",
+            "buff",
+            "divination",
+            "luck"
+        ],
         "Damage": {
             "Vulnerabilities": [
                 "Fire"
@@ -11819,6 +13055,19 @@
                 "Pursuit": "Trigger: Another creature the nalfeshnee can see ends its move within 120 feet of the nalfeshnee."
             }
         },
+        "Tags": [
+            "psychic",
+            "radiant",
+            "defense",
+            "weapon",
+            "mobility",
+            "teleportation",
+            "spellcasting",
+            "utility",
+            "buff",
+            "divination",
+            "exploration"
+        ],
         "Damage": {
             "Resistances": [
                 "Cold",
@@ -11912,6 +13161,20 @@
                 "Shape-Shift": "The hag shape-shifts into a Small or Medium Humanoid, or it returns to its true form. Other than its size, its game statistics are the same in each form. Any equipment it is wearing or carrying isn\u2019t transformed."
             }
         },
+        "Tags": [
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "teleportation",
+            "spellcasting",
+            "utility",
+            "buff",
+            "summoning",
+            "illusion",
+            "divination",
+            "crafting"
+        ],
         "Damage": {
             "Resistances": [
                 "Cold",
@@ -11999,6 +13262,16 @@
                 "Ethereal Stride": "The nightmare and up to three willing creatures within 5 feet of it teleport to the Ethereal Plane from the Material Plane or vice versa."
             }
         },
+        "Tags": [
+            "fire",
+            "cold",
+            "radiant",
+            "defense",
+            "weapon",
+            "mobility",
+            "teleportation",
+            "utility"
+        ],
         "Damage": {
             "Immunities": [
                 "Fire"
@@ -12072,6 +13345,11 @@
                 "Parry": "Trigger: The noble is hit by a melee attack roll while holding a weapon. Response: The noble adds 2 to its AC against that attack, possibly causing it to miss."
             }
         },
+        "Tags": [
+            "weapon",
+            "mobility",
+            "divination"
+        ],
         "Skills": {
             "Deception": "+5",
             "Insight": "+4",
@@ -12150,6 +13428,13 @@
                 "Split": "Trigger: While the jelly is Large or Medium and has 10+ Hit Points, it becomes Bloodied or is subjected to Lightning or Slashing damage. Response: The jelly splits into two new Ochre Jellies. Each new jelly is one size smaller than the original jelly and acts on its Initiative."
             }
         },
+        "Tags": [
+            "radiant",
+            "defense",
+            "weapon",
+            "mobility",
+            "utility"
+        ],
         "Damage": {
             "Resistances": [
                 "Acid"
@@ -12227,7 +13512,11 @@
                 "Greatclub": "Melee Attack Roll: +6, reach 5 ft Hit: 13 (2d8 + 4) Bludgeoning damage.",
                 "Javelin": "Melee or Ranged Attack Roll: +6, reach 5 ft or range 30/120 ft. Hit: 11 (2d6 + 4) Piercing damage."
             }
-        }
+        },
+        "Tags": [
+            "weapon",
+            "mobility"
+        ]
     },
     "Oni": {
         "Name": "Oni",
@@ -12305,6 +13594,17 @@
                 "Invisibility": "The oni casts Invisibility on itself, requiring no spell components and using the same spellcasting ability as Spellcasting."
             }
         },
+        "Tags": [
+            "healing",
+            "psychic",
+            "necrotic",
+            "defense",
+            "weapon",
+            "mobility",
+            "teleportation",
+            "spellcasting",
+            "buff"
+        ],
         "Damage": {
             "Resistances": [
                 "Cold"
@@ -12384,7 +13684,14 @@
                 "Tentacle": "Melee Attack Roll: +6, reach 10 ft Hit: 12 (2d8 + 3) Piercing damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 13) from one of two tentacles.",
                 "Tentacle Slam": "Constitution Saving Throw: DC 14, each creature Grappled by the otyugh. Failure: 16 (3d8 + 3) Bludgeoning damage, and the target has the Stunned condition until the start of the otyugh\u2019s next turn. Success: Half damage only."
             }
-        }
+        },
+        "Tags": [
+            "psychic",
+            "weapon",
+            "mobility",
+            "summoning",
+            "exploration"
+        ]
     },
     "Owlbear": {
         "Name": "Owlbear",
@@ -12452,6 +13759,10 @@
                 "Rend": "Melee Attack Roll: +7, reach 5 ft Hit: 14 (2d8 + 5) Slashing damage."
             }
         },
+        "Tags": [
+            "weapon",
+            "mobility"
+        ],
         "Skills": {
             "Perception": "+5"
         }
@@ -12523,6 +13834,12 @@
                 "Hooves": "Melee Attack Roll: +6, reach 5 ft Hit: 7 (1d6 + 4) Bludgeoning damage plus 5 (2d4) Radiant damage."
             }
         },
+        "Tags": [
+            "radiant",
+            "weapon",
+            "mobility",
+            "teleportation"
+        ],
         "Skills": {
             "Perception": "+6"
         }
@@ -12601,6 +13918,14 @@
                 "Ethereal Jaunt": "The spider teleports from the Material Plane to the Ethereal Plane or vice versa."
             }
         },
+        "Tags": [
+            "cold",
+            "stealth",
+            "mobility",
+            "teleportation",
+            "buff",
+            "divination"
+        ],
         "Skills": {
             "Stealth": "+7"
         }
@@ -12670,7 +13995,11 @@
                 "Dagger": "Melee or Ranged Attack Roll: +5, reach 5 ft or range 20/60 ft. Hit: 5 (1d4 + 3) Piercing damage.",
                 "Enthralling Panache": "Wisdom Saving Throw: DC 12, one creature the pirate can see within 30 feet. Failure: The target has the Charmed condition until the start of the pirate\u2019s next turn."
             }
-        }
+        },
+        "Tags": [
+            "mobility",
+            "divination"
+        ]
     },
     "Pirate Captain": {
         "Name": "Pirate Captain",
@@ -12744,6 +14073,12 @@
                 "Riposte": "Trigger: The pirate is hit by a melee attack roll while holding a weapon. Response: The pirate adds 3 to its AC against that attack, possibly causing it to miss."
             }
         },
+        "Tags": [
+            "weapon",
+            "mobility",
+            "buff",
+            "divination"
+        ],
         "Skills": {
             "Acrobatics": "+7",
             "Perception": "+5"
@@ -12825,6 +14160,18 @@
                 "Hellfire Spellcasting (Recharge 4\u20136)": "The pit fiend casts Fireball (level 5 version) twice, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 21). It can replace one Fireball with Hold Monster (level 7 version) or Wall of Fire."
             }
         },
+        "Tags": [
+            "fire",
+            "cold",
+            "psychic",
+            "necrotic",
+            "defense",
+            "mobility",
+            "spellcasting",
+            "buff",
+            "summoning",
+            "exploration"
+        ],
         "Damage": {
             "Resistances": [
                 "Cold"
@@ -12917,6 +14264,22 @@
                 "Divine Aid (2/Day)": "The planetar casts Cure Wounds, Invisibility, Lesser Restoration, or Remove Curse, using the same spellcasting ability as Spellcasting."
             }
         },
+        "Tags": [
+            "healing",
+            "cold",
+            "psychic",
+            "necrotic",
+            "radiant",
+            "defense",
+            "weapon",
+            "mobility",
+            "spellcasting",
+            "utility",
+            "buff",
+            "divination",
+            "luck",
+            "exploration"
+        ],
         "Damage": {
             "Resistances": [
                 "Radiant"
@@ -13000,6 +14363,16 @@
                 "Divine Aid (1/Day)": "The priest casts Bless, Healing Word, or Sanctuary, using the same spellcasting ability as Spellcasting."
             }
         },
+        "Tags": [
+            "healing",
+            "fire",
+            "radiant",
+            "weapon",
+            "mobility",
+            "spellcasting",
+            "utility",
+            "buff"
+        ],
         "Skills": {
             "Medicine": "+4",
             "Religion": "+2"
@@ -13075,6 +14448,17 @@
                 "Divine Aid (3/Day)": "The priest casts Bless, Dispel Magic, Healing Word, or Lesser Restoration, using the same spellcasting ability as Spellcasting."
             }
         },
+        "Tags": [
+            "healing",
+            "fire",
+            "radiant",
+            "defense",
+            "weapon",
+            "mobility",
+            "spellcasting",
+            "utility",
+            "buff"
+        ],
         "Skills": {
             "Medicine": "+7",
             "Perception": "+5",
@@ -13152,6 +14536,14 @@
                 "Sting": "Constitution Saving Throw: DC 12, one creature the pseudodragon can see within 5 feet. Failure: 5 (2d4) Poison damage, and the target has the Poisoned condition for 1 hour. Failure by 5 or More: While Poisoned, the target also has the Unconscious condition, which ends early if the target takes damage or a creature within 5 feet of it takes an action to wake it."
             }
         },
+        "Tags": [
+            "defense",
+            "stealth",
+            "mobility",
+            "spellcasting",
+            "buff",
+            "divination"
+        ],
         "Skills": {
             "Perception": "+5",
             "Stealth": "+4"
@@ -13231,7 +14623,11 @@
                 "Swallow": "Strength Saving Throw: DC 19, one Large or smaller creature Grappled by the worm (it can have up to three creatures swallowed at a time). Failure: The target is swallowed by the worm, and the Grappled condition ends. A swallowed creature has the Blinded and Restrained conditions, has Total Cover against attacks and other effects outside the worm, and takes 17 (5d6) Acid damage at the start of each of the worm\u2019s turns.",
                 "Prone condition": "If the worm dies, any swallowed creature no longer has the Restrained condition and can escape from the corpse using 20 feet of movement, exiting Prone."
             }
-        }
+        },
+        "Tags": [
+            "mobility",
+            "buff"
+        ]
     },
     "Quasit": {
         "Name": "Quasit",
@@ -13304,6 +14700,18 @@
                 "Shape-Shift": "The quasit shape-shifts to resemble a bat (Speed 10 ft., Fly 40 ft.), a centipede (40 ft., Climb 40 ft.), or a toad (40 ft., Swim 40 ft.), or it returns to its true form. Its game statistics are the same in each form, except for its Speed. Any equipment it is wearing or carrying isn\u2019t transformed."
             }
         },
+        "Tags": [
+            "radiant",
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "teleportation",
+            "spellcasting",
+            "utility",
+            "buff",
+            "summoning"
+        ],
         "Damage": {
             "Resistances": [
                 "Cold",
@@ -13391,6 +14799,21 @@
                 "Spellcasting": "The rakshasa casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 18): At Will: Detect Magic, Detect Thoughts, Disguise Self, Mage Hand, Minor Illusion 1/Day Each: Fly, Invisibility, Major Image, Plane Shift Red Dragons"
             }
         },
+        "Tags": [
+            "psychic",
+            "necrotic",
+            "radiant",
+            "defense",
+            "weapon",
+            "mobility",
+            "teleportation",
+            "spellcasting",
+            "utility",
+            "summoning",
+            "illusion",
+            "divination",
+            "luck"
+        ],
         "Damage": {
             "Vulnerabilities": [
                 "Piercing",
@@ -13480,6 +14903,12 @@
                 "Fire Breath (Recharge 5\u20136)": "Dexterity Saving Throw: DC 13, each creature in a 15-foot Cone. Failure: 24 (7d6) Fire damage. Success: Half damage."
             }
         },
+        "Tags": [
+            "fire",
+            "weapon",
+            "stealth",
+            "mobility"
+        ],
         "Damage": {
             "Immunities": [
                 "Fire"
@@ -13560,6 +14989,12 @@
                 "Fire Breath (Recharge 5\u20136)": "Dexterity Saving Throw: DC 17, each creature in a 30-foot Cone. Failure: 56 (16d6) Fire damage. Success: Half damage."
             }
         },
+        "Tags": [
+            "fire",
+            "weapon",
+            "stealth",
+            "mobility"
+        ],
         "Damage": {
             "Immunities": [
                 "Fire"
@@ -13650,6 +15085,16 @@
                 "Pounce": "The dragon moves up to half its Speed, and it makes one Rend attack."
             }
         },
+        "Tags": [
+            "fire",
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "spellcasting",
+            "utility",
+            "divination"
+        ],
         "Damage": {
             "Immunities": [
                 "Fire"
@@ -13740,6 +15185,16 @@
                 "Pounce": "The dragon moves up to half its Speed, and it makes one Rend attack."
             }
         },
+        "Tags": [
+            "fire",
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "spellcasting",
+            "utility",
+            "divination"
+        ],
         "Damage": {
             "Immunities": [
                 "Fire"
@@ -13823,6 +15278,11 @@
                 "and has the Prone condition": "If the remorhaz dies, any swallowed creature no longer has the Restrained condition and can escape from the corpse by using 15 feet of movement, exiting Prone."
             }
         },
+        "Tags": [
+            "fire",
+            "mobility",
+            "buff"
+        ],
         "Damage": {
             "Immunities": [
                 "Cold",
@@ -13899,6 +15359,11 @@
                 "Swoop (Recharge 5\u20136)": "If the roc has a creature Grappled, the roc flies up to half its Fly Speed without provoking Opportunity Attacks and drops that creature."
             }
         },
+        "Tags": [
+            "weapon",
+            "mobility",
+            "buff"
+        ],
         "Skills": {
             "Perception": "+8"
         }
@@ -13975,6 +15440,12 @@
                 "Reel": "The roper pulls each creature Grappled by it up to 30 feet straight toward it."
             }
         },
+        "Tags": [
+            "psychic",
+            "defense",
+            "stealth",
+            "mobility"
+        ],
         "Skills": {
             "Perception": "+6",
             "Stealth": "+5"
@@ -14052,7 +15523,13 @@
             "Reactions": {
                 "Reflexive Antennae": "Trigger: An attack roll hits the rust monster. Response: The rust monster uses Antennae."
             }
-        }
+        },
+        "Tags": [
+            "cold",
+            "weapon",
+            "mobility",
+            "spellcasting"
+        ]
     },
     "Sahuagin Warrior": {
         "Name": "Sahuagin Warrior",
@@ -14128,6 +15605,17 @@
                 "Aquatic Charge": "The sahuagin swims up to its Swim Speed straight toward an enemy it can see."
             }
         },
+        "Tags": [
+            "psychic",
+            "defense",
+            "weapon",
+            "mobility",
+            "spellcasting",
+            "buff",
+            "summoning",
+            "divination",
+            "exploration"
+        ],
         "Damage": {
             "Resistances": [
                 "Acid",
@@ -14209,6 +15697,16 @@
                 "Fire damage": "The target has the Grappled condition (escape DC 14), and it has the Restrained condition until the grapple ends."
             }
         },
+        "Tags": [
+            "fire",
+            "cold",
+            "psychic",
+            "weapon",
+            "mobility",
+            "spellcasting",
+            "summoning",
+            "divination"
+        ],
         "Damage": {
             "Vulnerabilities": [
                 "Cold"
@@ -14287,6 +15785,16 @@
                 "Mockery": "Wisdom Saving Throw: DC 12, one creature the satyr can see within 90 feet. Failure: 5 (1d6 + 2) Psychic damage."
             }
         },
+        "Tags": [
+            "psychic",
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "spellcasting",
+            "buff",
+            "divination"
+        ],
         "Skills": {
             "Perception": "+2",
             "Performance": "+6",
@@ -14359,6 +15867,11 @@
                 "Longbow": "Ranged Attack Roll: +4, range 150/600 ft"
             }
         },
+        "Tags": [
+            "stealth",
+            "mobility",
+            "exploration"
+        ],
         "Skills": {
             "Nature": "+4",
             "Perception": "+5",
@@ -14439,7 +15952,19 @@
                 "Death Glare (Recharge 5\u20136)": "Wisdom Saving Throw: DC 11, one Frightened creature the hag can see within 30 feet. Failure: If the target has 20 Hit Points or fewer, it drops to 0 Hit Points. Otherwise, the target takes 13 (3d8) Psychic damage.",
                 "Illusory Appearance": "The hag casts Disguise Self, using Constitution as the spellcasting ability (spell save DC 13). The spell\u2019s duration is 24 hours."
             }
-        }
+        },
+        "Tags": [
+            "psychic",
+            "necrotic",
+            "weapon",
+            "stealth",
+            "mobility",
+            "spellcasting",
+            "utility",
+            "summoning",
+            "illusion",
+            "divination"
+        ]
     },
     "Shadow": {
         "Name": "Shadow",
@@ -14512,6 +16037,15 @@
                 "Shadow Stealth": "While in Dim Light or Darkness, the shadow takes the Hide action."
             }
         },
+        "Tags": [
+            "necrotic",
+            "radiant",
+            "defense",
+            "stealth",
+            "mobility",
+            "utility",
+            "buff"
+        ],
         "Damage": {
             "Vulnerabilities": [
                 "Radiant"
@@ -14605,6 +16139,15 @@
                 "Engulf": "Strength Saving Throw: DC 15, one Medium or smaller creature within 5 feet. Failure: The target is pulled into the shambling mound\u2019s space and has the Grappled condition (escape DC 14). Until the grapple ends, the target has the Blinded and Restrained conditions, and it takes 10 (3d6) Lightning damage at the start of each of its turns. When the shambling mound moves, the Grappled target moves with it, costing it no extra movement. The shambling mound can have only one creature Grappled by this action at a time."
             }
         },
+        "Tags": [
+            "lightning",
+            "radiant",
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "utility"
+        ],
         "Damage": {
             "Resistances": [
                 "Cold",
@@ -14696,6 +16239,17 @@
                 "Protection": "Trigger: An attack roll hits the wearer of the guardian\u2019s amulet while the wearer is within 5 feet of the guardian. Response: The wearer gains a +5 bonus to AC, including against the triggering attack and possibly causing it to miss, until the start of the guardian\u2019s next turn."
             }
         },
+        "Tags": [
+            "healing",
+            "defense",
+            "weapon",
+            "mobility",
+            "spellcasting",
+            "buff",
+            "summoning",
+            "crafting",
+            "exploration"
+        ],
         "Damage": {
             "Immunities": [
                 "Poison",
@@ -14774,6 +16328,12 @@
                 "Paralyzing Breath": "Constitution Saving Throw: DC 13, each creature in a 15-foot Cone. First Failure: The target has the Incapacitated condition until the end of its next turn, when it repeats the save. Second Failure: The target has the Paralyzed condition, and it repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically."
             }
         },
+        "Tags": [
+            "cold",
+            "stealth",
+            "mobility",
+            "summoning"
+        ],
         "Damage": {
             "Immunities": [
                 "Cold"
@@ -14854,6 +16414,13 @@
                 "Paralyzing Breath": "Constitution Saving Throw: DC 17, each creature in a 30-foot Cone. First Failure: The target has the Incapacitated condition until the end of its next turn, when it repeats the save. Second Failure: The target has the Paralyzed condition, and it repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically."
             }
         },
+        "Tags": [
+            "cold",
+            "weapon",
+            "stealth",
+            "mobility",
+            "summoning"
+        ],
         "Damage": {
             "Immunities": [
                 "Cold"
@@ -14945,6 +16512,18 @@
                 "Pounce": "The dragon moves up to half its Speed, and it makes one Rend attack."
             }
         },
+        "Tags": [
+            "cold",
+            "lightning",
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "spellcasting",
+            "utility",
+            "summoning",
+            "divination"
+        ],
         "Damage": {
             "Immunities": [
                 "Cold"
@@ -15036,6 +16615,20 @@
                 "Pounce": "The dragon moves up to half its Speed, and it makes one Rend attack."
             }
         },
+        "Tags": [
+            "cold",
+            "lightning",
+            "necrotic",
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "teleportation",
+            "spellcasting",
+            "utility",
+            "summoning",
+            "divination"
+        ],
         "Damage": {
             "Immunities": [
                 "Cold"
@@ -15112,6 +16705,11 @@
                 "Shortbow": "Ranged Attack Roll: +5, range 80/320 ft Hit: 6 (1d6 + 3) Piercing damage."
             }
         },
+        "Tags": [
+            "necrotic",
+            "weapon",
+            "mobility"
+        ],
         "Damage": {
             "Vulnerabilities": [
                 "Bludgeoning"
@@ -15187,6 +16785,12 @@
                 "Hooves": "Melee Attack Roll: +6, reach 5 ft Hit: 7 (1d6 + 4) Bludgeoning damage. If the target is a Large or smaller creature and the skeleton moved 20+ feet straight toward it immediately before the hit, the target has the Prone condition."
             }
         },
+        "Tags": [
+            "necrotic",
+            "defense",
+            "weapon",
+            "mobility"
+        ],
         "Damage": {
             "Vulnerabilities": [
                 "Bludgeoning"
@@ -15263,6 +16867,12 @@
                 "Slam": "Melee Attack Roll: +6, reach 5 ft Hit: 15 (2d10 + 4) Bludgeoning damage."
             }
         },
+        "Tags": [
+            "necrotic",
+            "defense",
+            "weapon",
+            "mobility"
+        ],
         "Damage": {
             "Vulnerabilities": [
                 "Bludgeoning"
@@ -15357,6 +16967,23 @@
                 "Radiant Teleport": "The solar teleports up to 60 feet to an unoccupied space it can see. Dexterity Saving Throw: DC 25, each creature in a 10-foot Emanation originating from the solar at its destination space. Failure: 11 (2d10) Radiant damage. Success: Half damage."
             }
         },
+        "Tags": [
+            "healing",
+            "psychic",
+            "necrotic",
+            "radiant",
+            "defense",
+            "weapon",
+            "mobility",
+            "teleportation",
+            "spellcasting",
+            "utility",
+            "buff",
+            "summoning",
+            "divination",
+            "luck",
+            "exploration"
+        ],
         "Damage": {
             "Immunities": [
                 "Poison",
@@ -15438,6 +17065,16 @@
                 "Life Drain": "Melee Attack Roll: +4, reach 5 ft Hit: 7 (2d6) Necrotic damage. If the target is a creature, its Hit Point maximum decreases by an amount equal to the damage taken."
             }
         },
+        "Tags": [
+            "necrotic",
+            "radiant",
+            "defense",
+            "weapon",
+            "mobility",
+            "utility",
+            "buff",
+            "exploration"
+        ],
         "Damage": {
             "Resistances": [
                 "Acid",
@@ -15526,6 +17163,15 @@
                 "Burst of Ingenuity (2/Day)": "Trigger: The sphinx or another creature within 30 feet makes an ability check or a saving throw. Response: The sphinx adds 2 to the roll."
             }
         },
+        "Tags": [
+            "radiant",
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "spellcasting",
+            "buff"
+        ],
         "Damage": {
             "Resistances": [
                 "Necrotic",
@@ -15617,6 +17263,20 @@
                 "Weight of Years": "Constitution Saving Throw: DC 16, one creature the sphinx can see within 120 feet. Failure: The target gains 1 Exhaustion level. While the target has any Exhaustion levels, it appears 3d10 years older. Failure or Success: The sphinx can\u2019t take this action again until the start of its next turn."
             }
         },
+        "Tags": [
+            "psychic",
+            "necrotic",
+            "defense",
+            "weapon",
+            "mobility",
+            "teleportation",
+            "spellcasting",
+            "utility",
+            "buff",
+            "illusion",
+            "divination",
+            "luck"
+        ],
         "Damage": {
             "Resistances": [
                 "Necrotic",
@@ -15714,6 +17374,20 @@
                 "Weight of Years": "Constitution Saving Throw: DC 16, one creature the sphinx can see within 120 feet. Failure: The target gains 1 Exhaustion level. While the target has any Exhaustion levels, it appears 3d10 years older. Failure or Success: The sphinx can\u2019t take this action again until the start of its next turn."
             }
         },
+        "Tags": [
+            "healing",
+            "lightning",
+            "psychic",
+            "defense",
+            "weapon",
+            "mobility",
+            "teleportation",
+            "spellcasting",
+            "utility",
+            "buff",
+            "summoning",
+            "divination"
+        ],
         "Damage": {
             "Resistances": [
                 "Necrotic",
@@ -15802,6 +17476,18 @@
                 "Spellcasting": "The naga casts one of the following spells, requiring no Somatic or Material components and using Intelligence as the spellcasting ability (spell save DC 14): At Will: Detect Magic, Mage Hand, Minor Illusion, Water Breathing 2/Day Each: Detect Thoughts, Dimension Door, Hold Person (level 3 version), Lightning Bolt (level 4 version) Sprite"
             }
         },
+        "Tags": [
+            "lightning",
+            "psychic",
+            "necrotic",
+            "radiant",
+            "mobility",
+            "teleportation",
+            "spellcasting",
+            "utility",
+            "illusion",
+            "divination"
+        ],
         "Damage": {
             "Immunities": [
                 "Poison",
@@ -15879,6 +17565,15 @@
                 "Invisibility": "The sprite casts Invisibility on itself, requiring no spell components and using Charisma as the spellcasting ability."
             }
         },
+        "Tags": [
+            "necrotic",
+            "stealth",
+            "mobility",
+            "spellcasting",
+            "summoning",
+            "divination",
+            "crafting"
+        ],
         "Skills": {
             "Perception": "+3",
             "Stealth": "+8"
@@ -15953,6 +17648,13 @@
                 "Cunning Action": "The spy takes the Dash, Disengage, or Hide action."
             }
         },
+        "Tags": [
+            "stealth",
+            "mobility",
+            "utility",
+            "buff",
+            "divination"
+        ],
         "Skills": {
             "Deception": "+5",
             "Insight": "+4",
@@ -16024,7 +17726,11 @@
                 "Proboscis": "Melee Attack Roll: +5, reach 5 ft Hit: 6 (1d6 + 3) Piercing damage, and the stirge attaches to the target. While attached, the stirge can\u2019t make Proboscis attacks, and the target takes 5 (2d4) Necrotic damage at the start of each of the stirge\u2019s turns.",
                 "movement": "The target or a creature within 5 feet of it can detach the stirge as an action."
             }
-        }
+        },
+        "Tags": [
+            "necrotic",
+            "mobility"
+        ]
     },
     "Stone Giant": {
         "Name": "Stone Giant",
@@ -16095,6 +17801,13 @@
                 "Deflect Missile (Recharge 5\u20136)": "Trigger: The giant is hit by a ranged attack roll and takes Bludgeoning, Piercing, or Slashing damage from it. Response: The giant reduces the damage it takes from the attack by 11 (1d10 + 6), and if that damage is reduced to 0, the giant can redirect some of the attack\u2019s force. Dexterity Saving Throw: DC 17, one creature the giant can see within 60 feet. Failure: 11 (1d10 + 6) Force damage."
             }
         },
+        "Tags": [
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "divination"
+        ],
         "Skills": {
             "Athletics": "+12",
             "Perception": "+4",
@@ -16174,6 +17887,16 @@
                 "Slow (Recharge 5\u20136)": "The golem casts the Slow spell, requiring no spell components and using Constitution as the spellcasting ability (spell save DC 17)."
             }
         },
+        "Tags": [
+            "lightning",
+            "defense",
+            "weapon",
+            "mobility",
+            "teleportation",
+            "spellcasting",
+            "buff",
+            "crafting"
+        ],
         "Damage": {
             "Immunities": [
                 "Poison",
@@ -16258,6 +17981,16 @@
                 "Spellcasting": "The giant casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC 18): At Will: Detect Magic, Light 1/Day: Control Weather Succubus"
             }
         },
+        "Tags": [
+            "lightning",
+            "radiant",
+            "defense",
+            "weapon",
+            "mobility",
+            "spellcasting",
+            "utility",
+            "divination"
+        ],
         "Damage": {
             "Resistances": [
                 "Cold"
@@ -16351,6 +18084,18 @@
                 "Shape-Shift": "The succubus shape-shifts into a Medium or Small Humanoid, or it returns to its true form. Its game statistics are the same in each form, except its Fly Speed is available only in its true form. Any equipment it is wearing or carrying isn\u2019t transformed."
             }
         },
+        "Tags": [
+            "psychic",
+            "defense",
+            "stealth",
+            "mobility",
+            "teleportation",
+            "spellcasting",
+            "utility",
+            "buff",
+            "divination",
+            "exploration"
+        ],
         "Damage": {
             "Resistances": [
                 "Cold",
@@ -16446,6 +18191,17 @@
                 "World-Shaking Movement": "The tarrasque moves up to its Speed. At the end of this movement, the tarrasque creates an instantaneous shock wave in a 60-foot Emanation originating from itself. Creatures in that area lose Concentration and, if Medium or smaller, have the Prone condition. The tarrasque can\u2019t take this action again until the start of its next turn."
             }
         },
+        "Tags": [
+            "lightning",
+            "defense",
+            "weapon",
+            "mobility",
+            "teleportation",
+            "spellcasting",
+            "buff",
+            "summoning",
+            "crafting"
+        ],
         "Damage": {
             "Resistances": [
                 "Bludgeoning",
@@ -16531,7 +18287,12 @@
                 "Mace": "Melee Attack Roll: +4, reach 5 ft Hit: 5 (1d6 + 2) Bludgeoning damage.",
                 "Heavy Crossbow": "Ranged Attack Roll: +3, range 100/400 ft. Hit: 6 (1d10 + 1) Piercing damage."
             }
-        }
+        },
+        "Tags": [
+            "weapon",
+            "mobility",
+            "buff"
+        ]
     },
     "Tough Boss": {
         "Name": "Tough Boss",
@@ -16601,7 +18362,12 @@
                 "Warhammer": "Melee Attack Roll: +5, reach 5 ft Hit: 12 (2d8 + 3) Bludgeoning damage. If the target is a Large or smaller creature, the tough pushes the target up to 10 feet straight away from itself.",
                 "Heavy Crossbow": "Ranged Attack Roll: +4, range 100/400 ft. Hit: 13 (2d10 + 2) Piercing damage."
             }
-        }
+        },
+        "Tags": [
+            "weapon",
+            "mobility",
+            "buff"
+        ]
     },
     "Treant": {
         "Name": "Treant",
@@ -16675,6 +18441,15 @@
                 "Animate Trees (1/Day)": "The treant magically animates up to two trees it can see within 60 feet of itself. Each tree uses the Treant stat block, except it has Intelligence and Charisma scores of 1, it can\u2019t speak, and it lacks this action. The tree takes its turn immediately after the treant on the same Initiative count, and it obeys the treant."
             }
         },
+        "Tags": [
+            "defense",
+            "weapon",
+            "mobility",
+            "spellcasting",
+            "utility",
+            "summoning",
+            "divination"
+        ],
         "Damage": {
             "Vulnerabilities": [
                 "Fire"
@@ -16757,6 +18532,15 @@
                 "Charge": "The troll moves up to half its Speed straight toward an enemy it can see."
             }
         },
+        "Tags": [
+            "healing",
+            "fire",
+            "defense",
+            "weapon",
+            "mobility",
+            "buff",
+            "divination"
+        ],
         "Skills": {
             "Perception": "+5"
         }
@@ -16828,7 +18612,14 @@
             "Actions": {
                 "Rend": "Melee Attack Roll: +6, reach 5 ft Hit: 9 (2d4 + 4) Slashing damage."
             }
-        }
+        },
+        "Tags": [
+            "healing",
+            "fire",
+            "weapon",
+            "mobility",
+            "summoning"
+        ]
     },
     "Unicorn": {
         "Name": "Unicorn",
@@ -16912,6 +18703,23 @@
                 "Shimmering Shield": "The unicorn targets itself or one creature it can see within 60 feet of itself. The target gains 10 (3d6) Temporary Hit Points, and its AC increases by 2 until the end of the unicorn\u2019s next turn."
             }
         },
+        "Tags": [
+            "healing",
+            "psychic",
+            "radiant",
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "spellcasting",
+            "utility",
+            "buff",
+            "summoning",
+            "divination",
+            "crafting",
+            "luck",
+            "exploration"
+        ],
         "Damage": {
             "Immunities": [
                 "Poison",
@@ -16994,6 +18802,15 @@
                 "Deathless Agility": "The familiar takes the Dash or Disengage action."
             }
         },
+        "Tags": [
+            "necrotic",
+            "defense",
+            "stealth",
+            "mobility",
+            "buff",
+            "summoning",
+            "exploration"
+        ],
         "Damage": {
             "Resistances": [
                 "Necrotic"
@@ -17090,6 +18907,17 @@
                 "Deathless Agility": "The vampire takes the Dash or Disengage action."
             }
         },
+        "Tags": [
+            "necrotic",
+            "radiant",
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "utility",
+            "buff",
+            "summoning"
+        ],
         "Damage": {
             "Resistances": [
                 "Necrotic"
@@ -17189,6 +19017,19 @@
                 "Deathless Strike": "The vampire moves up to half its Speed, and it makes one Grave Strike attack."
             }
         },
+        "Tags": [
+            "necrotic",
+            "radiant",
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "teleportation",
+            "spellcasting",
+            "utility",
+            "buff",
+            "summoning"
+        ],
         "Damage": {
             "Resistances": [
                 "Necrotic"
@@ -17272,6 +19113,18 @@
                 "Stunning Screech (1/Day)": "Constitution Saving Throw: DC 15, each creature in a 20-foot Emanation originating from the vrock (demons succeed automatically). Failure: 10 (3d6) Thunder damage, and the target has the Stunned condition until the end of the vrock\u2019s next turn."
             }
         },
+        "Tags": [
+            "lightning",
+            "psychic",
+            "radiant",
+            "defense",
+            "mobility",
+            "spellcasting",
+            "utility",
+            "buff",
+            "summoning",
+            "exploration"
+        ],
         "Damage": {
             "Resistances": [
                 "Cold",
@@ -17350,7 +19203,11 @@
             "Actions": {
                 "Spear": "Melee or Ranged Attack Roll: +3, reach 5 ft or range 20/60 ft. Hit: 4 (1d6 + 1) Piercing damage."
             }
-        }
+        },
+        "Tags": [
+            "mobility",
+            "buff"
+        ]
     },
     "Warrior Veteran": {
         "Name": "Warrior Veteran",
@@ -17421,6 +19278,12 @@
                 "Parry": "Trigger: The warrior is hit by a melee attack roll while holding a weapon. Response: The warrior adds 2 to its AC against that attack, possibly causing it to miss."
             }
         },
+        "Tags": [
+            "psychic",
+            "weapon",
+            "mobility",
+            "summoning"
+        ],
         "Skills": {
             "Athletics": "+5",
             "Perception": "+2"
@@ -17497,6 +19360,14 @@
                 "Whelm (Recharge 4\u20136)": "Strength Saving Throw: DC 15, each creature in the elemental\u2019s space. Failure: 22 (4d8 + 4) Bludgeoning damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC 14). Until the grapple ends, the target has the Restrained condition, is suffocating unless it can breathe water, and takes 9 (2d8) Bludgeoning damage at the start of each of the elemental\u2019s turns. The elemental can grapple one Large creature or up to two Medium or smaller creatures at a time with Whelm. As an action, a creature within 5 feet of the elemental can pull a creature out of it by succeeding on a DC 14 Strength (Athletics) check. Success: Half damage only."
             }
         },
+        "Tags": [
+            "cold",
+            "psychic",
+            "defense",
+            "weapon",
+            "mobility",
+            "summoning"
+        ],
         "Damage": {
             "Resistances": [
                 "Acid",
@@ -17583,6 +19454,14 @@
                 "Shape-Shift": "The werebear shape-shifts into a Large bear-humanoid hybrid form or a Large bear, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn\u2019t transformed."
             }
         },
+        "Tags": [
+            "necrotic",
+            "weapon",
+            "mobility",
+            "teleportation",
+            "buff",
+            "luck"
+        ],
         "Skills": {
             "Perception": "+7"
         }
@@ -17658,6 +19537,14 @@
                 "Shape-Shift": "The wereboar shape-shifts into a Medium boar-humanoid hybrid or a Small boar, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn\u2019t transformed."
             }
         },
+        "Tags": [
+            "necrotic",
+            "defense",
+            "mobility",
+            "teleportation",
+            "buff",
+            "luck"
+        ],
         "Skills": {
             "Perception": "+2"
         }
@@ -17734,6 +19621,15 @@
                 "Shape-Shift": "The wererat shape-shifts into a Medium rat-humanoid hybrid or a Small rat, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn\u2019t transformed."
             }
         },
+        "Tags": [
+            "necrotic",
+            "weapon",
+            "stealth",
+            "mobility",
+            "teleportation",
+            "buff",
+            "luck"
+        ],
         "Skills": {
             "Perception": "+4",
             "Stealth": "+5"
@@ -17812,6 +19708,15 @@
                 "Shape-Shift": "The weretiger shape-shifts into a Large tiger-humanoid hybrid or a Large tiger, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn\u2019t transformed."
             }
         },
+        "Tags": [
+            "necrotic",
+            "weapon",
+            "stealth",
+            "mobility",
+            "teleportation",
+            "buff",
+            "luck"
+        ],
         "Skills": {
             "Perception": "+5",
             "Stealth": "+4"
@@ -17892,6 +19797,15 @@
                 "Shape-Shift": "The werewolf shape-shifts into a Large wolf-humanoid hybrid or a Medium wolf, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn\u2019t transformed."
             }
         },
+        "Tags": [
+            "necrotic",
+            "weapon",
+            "stealth",
+            "mobility",
+            "teleportation",
+            "buff",
+            "luck"
+        ],
         "Skills": {
             "Perception": "+4",
             "Stealth": "+4"
@@ -17970,6 +19884,13 @@
                 "Cold Breath (Recharge 5\u20136)": "Constitution Saving Throw: DC 12, each creature in a 15-foot Cone. Failure: 22 (5d8) Cold damage. Success: Half damage."
             }
         },
+        "Tags": [
+            "cold",
+            "weapon",
+            "stealth",
+            "mobility",
+            "exploration"
+        ],
         "Damage": {
             "Immunities": [
                 "Cold"
@@ -18054,6 +19975,13 @@
                 "Cold Breath (Recharge 5\u20136)": "Constitution Saving Throw: DC 15, each creature in a 30-foot Cone. Failure: 40 (9d8) Cold damage. Success: Half damage."
             }
         },
+        "Tags": [
+            "cold",
+            "weapon",
+            "stealth",
+            "mobility",
+            "exploration"
+        ],
         "Damage": {
             "Immunities": [
                 "Cold"
@@ -18145,6 +20073,17 @@
                 "Pounce": "The dragon moves up to half its Speed, and it makes one Rend attack."
             }
         },
+        "Tags": [
+            "cold",
+            "psychic",
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "spellcasting",
+            "divination",
+            "exploration"
+        ],
         "Damage": {
             "Immunities": [
                 "Cold"
@@ -18236,6 +20175,18 @@
                 "Pounce": "The dragon moves up to half its Speed, and it makes one Rend attack."
             }
         },
+        "Tags": [
+            "cold",
+            "psychic",
+            "necrotic",
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "spellcasting",
+            "divination",
+            "exploration"
+        ],
         "Damage": {
             "Immunities": [
                 "Cold"
@@ -18317,6 +20268,16 @@
                 "is restored to life or its body is destroyed": "The wight can have no more than twelve zombies under its control at a time."
             }
         },
+        "Tags": [
+            "necrotic",
+            "radiant",
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "utility",
+            "buff"
+        ],
         "Damage": {
             "Resistances": [
                 "Necrotic"
@@ -18406,6 +20367,21 @@
                 "Vanish": "The wisp and its light have the Invisible condition until the wisp\u2019s Concentration ends on this effect, which ends early immediately after the wisp makes an attack roll or uses Consume Life."
             }
         },
+        "Tags": [
+            "lightning",
+            "necrotic",
+            "radiant",
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "spellcasting",
+            "utility",
+            "buff",
+            "alchemy",
+            "divination",
+            "exploration"
+        ],
         "Damage": {
             "Resistances": [
                 "Acid",
@@ -18490,6 +20466,12 @@
                 "Cold Breath (Recharge 5\u20136)": "Constitution Saving Throw: DC 12, each creature in a 15-foot Cone. Failure: 18 (4d8) Cold damage. Success: Half damage."
             }
         },
+        "Tags": [
+            "cold",
+            "stealth",
+            "mobility",
+            "buff"
+        ],
         "Damage": {
             "Immunities": [
                 "Cold"
@@ -18565,6 +20547,10 @@
                 "Bite": "Melee Attack Roll: +5, reach 5 ft Hit: 7 (1d8 + 3) Piercing damage, and the next attack roll made against the target before the start of the worg\u2019s next turn has Advantage."
             }
         },
+        "Tags": [
+            "mobility",
+            "buff"
+        ],
         "Skills": {
             "Perception": "+4"
         }
@@ -18640,6 +20626,18 @@
                 "Create Specter": "The wraith targets a Humanoid corpse within 10 feet of itself that has been dead for no longer than 1 minute. The target\u2019s spirit rises as a Specter in the space of its corpse or in the nearest unoccupied space. The specter is under the wraith\u2019s control. The wraith can have no more than seven specters under its control at a time."
             }
         },
+        "Tags": [
+            "necrotic",
+            "radiant",
+            "defense",
+            "weapon",
+            "mobility",
+            "utility",
+            "buff",
+            "summoning",
+            "crafting",
+            "exploration"
+        ],
         "Damage": {
             "Resistances": [
                 "Acid",
@@ -18723,6 +20721,9 @@
                 "Sting": "Melee Attack Roll: +7, reach 10 ft Hit: 11 (2d6 + 4) Piercing damage plus 24 (7d6) Poison damage, and the target has the Poisoned condition until the start of the wyvern\u2019s next turn."
             }
         },
+        "Tags": [
+            "mobility"
+        ],
         "Skills": {
             "Perception": "+4"
         }
@@ -18802,6 +20803,17 @@
                 "Charge": "The xorn moves up to its Speed or Burrow Speed straight toward an enemy it can sense."
             }
         },
+        "Tags": [
+            "psychic",
+            "necrotic",
+            "defense",
+            "weapon",
+            "stealth",
+            "mobility",
+            "spellcasting",
+            "buff",
+            "summoning"
+        ],
         "Damage": {
             "Immunities": [
                 "Poison",
@@ -18882,6 +20894,11 @@
                 "Slam": "Melee Attack Roll: +3, reach 5 ft Hit: 5 (1d8 + 1) Bludgeoning damage."
             }
         },
+        "Tags": [
+            "necrotic",
+            "weapon",
+            "mobility"
+        ],
         "Damage": {
             "Immunities": [
                 "Poison",
@@ -18957,6 +20974,11 @@
                 "Slam": "Melee Attack Roll: +6, reach 5 ft Hit: 13 (2d8"
             }
         },
+        "Tags": [
+            "necrotic",
+            "weapon",
+            "mobility"
+        ],
         "Damage": {
             "Immunities": [
                 "Poison",
