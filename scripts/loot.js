@@ -96,7 +96,11 @@ function loadTiles() {
             "Humanoid": {
                 "Main": [],
                 "Extra": []
-            }
+            },
+            "Undead": {
+                "Main": [],
+                "Extra": []
+            },
         }
 
         const currency = localStorage.getItem("Currency")
