@@ -88,6 +88,10 @@ function loadTiles() {
             "Dragon": {
                 "Main": [],
                 "Extra": []
+            },
+            "Fiend": {
+                "Main": [],
+                "Extra": []
             }
         }
 
