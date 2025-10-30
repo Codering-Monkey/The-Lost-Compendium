@@ -101,6 +101,10 @@ function loadTiles() {
                 "Main": [],
                 "Extra": []
             },
+            "Ooze": {
+                "Main": [],
+                "Extra": []
+            }
         }
 
         const currency = localStorage.getItem("Currency")
