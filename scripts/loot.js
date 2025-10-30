@@ -92,6 +92,10 @@ function loadTiles() {
             "Fiend": {
                 "Main": [],
                 "Extra": []
+            },
+            "Humanoid": {
+                "Main": [],
+                "Extra": []
             }
         }
 
