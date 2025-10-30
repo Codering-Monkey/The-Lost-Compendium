@@ -84,6 +84,13 @@ function loadTiles() {
             monetaryValue += diceCalc(dice[0], dice[1], 0, dice[2]) // money is calculated in cp
         }
 
+        const typeCatagories = {
+            "Dragon": {
+                "Main": [],
+                "Extra": []
+            }
+        }
+
         const currency = localStorage.getItem("Currency")
         if (currency === "cp") {
             textplate.textContent += monetaryValue + " cp"
