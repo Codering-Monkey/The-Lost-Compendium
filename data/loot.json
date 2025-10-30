@@ -86,72 +86,324 @@
                 "Jade game board with solid gold playing pieces",
                 "Bejeweled ivory drinking horn with gold filigree"
             ]
+        }
+    },
+    "Tag Types": {
+        "occult": "occult"
+    },
+    "Trinkets": {
+        "Bone Dice": {
+            "Name": "Bone Dice",
+            "Cost": "10",
+            "Type": "Occult"
         },
-        "Gemstones": {
-            "10": [
-                "Azurite (opaque mottled deep blue)",
-                "Banded agate (translucent striped brown, blue, white, or red)",
-                "Blue quartz (transparent pale blue)",
-                "Eye agate (translucent circles of gray, white, brown, blue, or green)",
-                "Hematite (opaque gray-black)",
-                "Lapis lazuli (opaque light and dark blue with yellow flecks)",
-                "Malachite (opaque striated light and dark green)",
-                "Moss agate (translucent pink or yellow-white with mossy gray or green markings)",
-                "Obsidian (opaque black)",
-                "Rhodochrosite (opaque light pink)",
-                "Tiger eye (translucent brown with golden center)",
-                "Turquoise (opaque light blue-green)"
-            ],
-            "50": [
-                "Bloodstone (opaque dark gray with red flecks)",
-                "Carnelian (opaque orange to red-brown)",
-                "Chalcedony (opaque white)",
-                "Chrysoprase (translucent green)",
-                "Citrine (transparent pale yellow-brown)",
-                "jasper (opaque blue, black, or brown)",
-                "Moonstone (translucent white with pale blue glow)",
-                "Onyx (opaque bands of black and white, or pure black or white)",
-                "Quartz (transparent white, smoky gray, or yellow)",
-                "Sardonyx (opaque bands of red and white)",
-                "Star rose quartz (translucent rosy stone with white star-shaped center)",
-                "Zircon (transparent pale blue-green)"
-            ],
-            "100": [
-                "Amber (transparent watery gold to rich gold)",
-                "Amethyst (transparent deep purple)",
-                "Chrysoberyl (transparent yellow-green to pale green)",
-                "Coral (opaque crimson)",
-                "Garnet (transparent red, brown-green, or violet)",
-                "jade (translucent light green, deep green, or white)",
-                "jet (opaque deep black)",
-                "Pearl (opaque lustrous white, yellow, or pink)",
-                "Spinel (transparent red, red-brown, or deep green)",
-                "Tourmaline (transparent pale green, blue, brown, or red)",
-                ""
-            ],
-            "500": [
-                "Alexandrite (transparent dark green)",
-                "Aquamarine (transparent pale blue-green)",
-                "Black pearl (opaque pure black)",
-                "Blue spinel (transparent deep blue)",
-                "Peridot (transparent rich olive green)",
-                "Topaz (transparent golden yellow)"
-            ],
-            "1000": [
-                "Black opal (translucent dark green with black mottling and golden flecks)",
-                "Blue sapphire (transparent blue-white to medium blue)",
-                "Emerald (transparent deep bright green)",
-                "Fire opal (translucent fiery red)",
-                "Opal (translucent pale blue with green and golden mottling)",
-                "Star ruby (translucent ruby with white star-shaped center)",
-                "Star sapphire (translucent blue sapphire with white star-shaped center)",
-                "Yellow sapphire (transparent fiery yellow or yellow-green)"
-            ],
-            "5000": [
-                "Black sapphire (translucent lustrous black with glowing highlights)",
-                "Diamond (transparent blue-white, canary, pink, brown, or blue)",
-                "Jacinth (transparent fiery orange)",
-                "Ruby (transparent clear red to deep crimson)"
+        "Obsidian": {
+            "Name": "Obsidian",
+            "Cost": "10",
+            "Type": "Gems"
+        },
+        "Black Candle": {
+            "Name": "Black Candle",
+            "Cost": "10",
+            "Type": "Occult"
+        },
+        "Tiger Eye": {
+            "Name": "Tiger Eye",
+            "Cost": "10",
+            "Type": "Gems"
+        },
+        "Silver Medallion": {
+            "Name": "Silver Medallion",
+            "Cost": "10",
+            "Type": "Occult"
+        },
+        "Turquoise": {
+            "Name": "Turquoise",
+            "Cost": "10",
+            "Type": "Gems"
+        },
+        "Vial of Grave Dust": {
+            "Name": "Vial of Grave Dust",
+            "Cost": "10",
+            "Type": "Occult"
+        },
+        "Hematite": {
+            "Name": "Hematite",
+            "Cost": "10",
+            "Type": "Gems"
+        },
+        "Jar of Ectoplasm": {
+            "Name": "Jar of Ectoplasm",
+            "Cost": "10",
+            "Type": "Occult"
+        },
+        "Lapis lazuli": {
+            "Name": "Lapis lazuli",
+            "Cost": "10",
+            "Type": "Gems"
+        },
+        "Obsidian Mirror": {
+            "Name": "Obsidian Mirror",
+            "Cost": "50",
+            "Type": "Occult"
+        },
+        "Onyx": {
+            "Name": "Onyx",
+            "Cost": "50",
+            "Type": "Gems"
+        },
+        "Bone Wand": {
+            "Name": "Bone Wand",
+            "Cost": "50",
+            "Type": "Occult"
+        },
+        "Bloodstone": {
+            "Name": "Bloodstone",
+            "Cost": "50",
+            "Type": "Gems"
+        },
+        "Blood Ink Vial": {
+            "Name": "Blood Ink Vial",
+            "Cost": "50",
+            "Type": "Occult"
+        },
+        "Jasper": {
+            "Name": "Jasper",
+            "Cost": "50",
+            "Type": "Gems"
+        },
+        "Black Onyx Soul Totem": {
+            "Name": "Black Onyx Soul Totem",
+            "Cost": "50",
+            "Type": "Occult"
+        },
+        "Moonstone": {
+            "Name": "Moonstone",
+            "Cost": "50",
+            "Type": "Gems"
+        },
+        "Silver Ritual Dagger": {
+            "Name": "Silver Ritual Dagger",
+            "Cost": "50",
+            "Type": "Occult"
+        },
+        "Rose Quartz": {
+            "Name": "Rose Quartz",
+            "Cost": "50",
+            "Type": "Gems"
+        },
+        "Ornate Obsidian Chalice": {
+            "Name": "Ornate Obsidian Chalice",
+            "Cost": "100",
+            "Type": "Occult"
+        },
+        "Amethyst": {
+            "Name": "Amethyst",
+            "Cost": "100",
+            "Type": "Gems"
+        },
+        "Bone Scepter": {
+            "Name": "Bone Scepter",
+            "Cost": "100",
+            "Type": "Occult"
+        },
+        "Amber": {
+            "Name": "Amber",
+            "Cost": "100",
+            "Type": "Gems"
+        },
+        "Black & Silver Circlet ": {
+            "Name": "Black & Silver Circlet ",
+            "Cost": "100",
+            "Type": "Occult"
+        },
+        "Garnet": {
+            "Name": "Garnet",
+            "Cost": "100",
+            "Type": "Gems"
+        },
+        "Grimoire (Basic)": {
+            "Name": "Grimoire",
+            "Cost": "100",
+            "Type": "Occult",
+            "Suffix": [
+                "of Sigils",
+                "of Skulls",
+                "of Bones"
+            ]
+        },
+        "Jade": {
+            "Name": "Jade",
+            "Cost": "100",
+            "Type": "Gems"
+        },
+        "Preserved Hand": {
+            "Name": "Preserved Hand",
+            "Cost": "100",
+            "Type": "Occult"
+        },
+        "Pearl": {
+            "Name": "Pearl",
+            "Cost": "100",
+            "Type": "Gems"
+        },
+        "Topaz": {
+            "Name": "Topaz",
+            "Cost": "500",
+            "Type": "Gems"
+        },
+        "Soul Pendant": {
+            "Name": "Soul Pendant",
+            "Cost": "500",
+            "Type": "Occult"
+        },
+        "Peridot": {
+            "Name": "Peridot",
+            "Cost": "500",
+            "Type": "Gems"
+        },
+        "Dark Steel Reliquary": {
+            "Name": "Dark Steel Reliquary",
+            "Cost": "500",
+            "Type": "Occult"
+        },
+        "Aquamarine": {
+            "Name": "Aquamarine",
+            "Cost": "500",
+            "Type": "Gems"
+        },
+        "Ornate Obsidian Ritual Chain": {
+            "Name": "Ornate Obsidian Ritual Chain",
+            "Cost": "500",
+            "Type": "Occult"
+        },
+        "Alexandrite": {
+            "Name": "Alexandrite",
+            "Cost": "500",
+            "Type": "Gems"
+        },
+        "Bejewlled Ritual Skull": {
+            "Name": "Bejewlled Ritual Skull",
+            "Cost": "500",
+            "Type": "Occult"
+        },
+        "Black Pearl": {
+            "Name": "Black Pearl",
+            "Cost": "500",
+            "Type": "Gems"
+        },
+        "Fire Opal": {
+            "Name": "Fire Opal",
+            "Cost": "1000",
+            "Type": "Gems"
+        },
+        "Voidstone Idol": {
+            "Name": "Voidstone Idol",
+            "Cost": "1000",
+            "Type": "Occult"
+        },
+        "Emerald": {
+            "Name": "Emerald",
+            "Cost": "1000",
+            "Type": "Gems"
+        },
+        "Pact Candle": {
+            "Name": "Pact Candle",
+            "Cost": "1000",
+            "Type": "Occult"
+        },
+        "Opal": {
+            "Name": "Opal",
+            "Cost": "1000",
+            "Type": "Gems"
+        },
+        "Bound Obsidian Reliquary": {
+            "Name": "Bound Obsidian Reliquary",
+            "Cost": "1000",
+            "Type": "Occult"
+        },
+        "Star Ruby": {
+            "Name": "Star Ruby",
+            "Cost": "1000",
+            "Type": "Gems"
+        },
+        "Veiled Ritual Mask": {
+            "Name": "Veiled Ritual Mask",
+            "Cost": "1000",
+            "Type": "Occult"
+        },
+        "Yellow Sapphire": {
+            "Name": "Yellow Sapphire",
+            "Cost": "1000",
+            "Type": "Gems"
+        },
+        "Obsidian Sarcophagus": {
+            "Name": "Obsidian Sarcophagus",
+            "Cost": "5000",
+            "Type": "Occult"
+        },
+        "Black Sapphire": {
+            "Name": "Black Sapphire",
+            "Cost": "5000",
+            "Type": "Gems"
+        },
+        "Eclipse Candle": {
+            "Name": "Eclipse Candle",
+            "Cost": "5000",
+            "Type": "Occult"
+        },
+        "Diamond": {
+            "Name": "Diamond",
+            "Cost": "5000",
+            "Type": "Gems"
+        },
+        "Crown of Sorrow": {
+            "Name": "Crown of Sorrow",
+            "Cost": "5000",
+            "Type": "Occult"
+        },
+        "Jacinth": {
+            "Name": "Jacinth",
+            "Cost": "5000",
+            "Type": "Gems"
+        },
+        "Mask of a Thousand Eyes": {
+            "Name": "Mask of a Thousand Eyes",
+            "Cost": "5000",
+            "Type": "Occult"
+        },
+        "Ruby": {
+            "Name": "Ruby",
+            "Cost": "5000",
+            "Type": "Gems"
+        },
+        "Soul Prism": {
+            "Name": "Soul Prism",
+            "Cost": "5000",
+            "Type": "Occult"
+        },
+        "Blue Diamond": {
+            "Name": "Blue Diamond",
+            "Cost": "5000",
+            "Type": "Gems"
+        },
+        "Grimoire (Intermediate)": {
+            "Name": "Grimoire",
+            "Cost": "500",
+            "Type": "Occult",
+            "Suffix": [
+                "of Flames",
+                "of Futures",
+                "of Rituals"
+            ]
+        },
+        "Grimoire (Advanced)": {
+            "Name": "Grimoire",
+            "Cost": "1000",
+            "Type": "Occult",
+            "Suffix": [
+                "of Souls",
+                "of Shadows"
             ]
         }
     }
