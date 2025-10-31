@@ -112,6 +112,10 @@ function loadTiles() {
             "Abberation": {
                 "Main": [],
                 "Extra": []
+            },
+            "Beast": {
+                "Main": [],
+                "Extra": []
             }
         }
 
