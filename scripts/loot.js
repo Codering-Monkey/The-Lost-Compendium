@@ -116,6 +116,10 @@ function loadTiles() {
             "Beast": {
                 "Main": [],
                 "Extra": []
+            },
+            "Fey": {
+                "Main": [],
+                "Extra": []
             }
         }
 
