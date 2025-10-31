@@ -120,7 +120,7 @@ function loadTiles() {
             "Fey": {
                 "Main": [],
                 "Extra": []
-            }
+            },
         }
 
         const currency = localStorage.getItem("Currency")
